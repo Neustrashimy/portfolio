@@ -1,0 +1,180 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #222;
+}
+
+header {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.card {
+    position: relative;
+    width: 92vw;
+    max-width: 620px;
+    aspect-ratio: 16 / 9;
+    margin: 27vh auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+    background: url('images/card_1.png') center/cover no-repeat;
+    color: #fff;
+}
+
+.qr-code {
+    position: absolute;
+    bottom: 4.5rem;
+    right: 2rem;
+    width: 4rem;
+    height: auto;
+}
+
+
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.tagline {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    text-align: right;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    font-weight: 500;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.credit {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.credit .label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.credit .value.small {
+    font-size: 1rem;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.credit .value.large {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.logo-text {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 2rem;
+    font-size: 1.6rem;
+    font-weight: 800;
+    opacity: 0.9;
+    letter-spacing: 0.12em;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.content-section {
+    max-width: 720px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.content-section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+}
+
+.about-intro-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.author-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.author-box img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.author-caption {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.self-intro-row {
+    flex: 1;
+    font-size: 1rem;
+    margin-top: 2.5rem;
+}
+
+.thumbnail-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.thumbnail-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.thumbnail-item img {
+    width: 120px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.thumbnail-item p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+ul,
+ol {
+    padding-left: 1.2rem;
+    font-size: 0.95rem;
+}
+
+ul li,
+ol li {
+    margin-bottom: 0.6rem;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+    margin: 4rem 0 2rem;
+}
