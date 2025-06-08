@@ -10,20 +10,41 @@ let current = 0;
 const card = document.querySelector('.card');
 const overlay = document.querySelector('.overlay');
 
+
+// 画像のプリロード
+function preloadImages(imagePaths, callback) {
+    let loaded = 0;
+    const total = imagePaths.length;
+
+    for (let i = 0; i < total; i++) {
+        const img = new Image();
+        img.src = imagePaths[i];
+        img.onload = () => {
+            loaded++;
+            if (loaded === total) {
+                callback(); // 全て読み込まれたら開始
+            }
+        };
+    }
+}
+
 function fadeToNextImage() {
-    // フェードアウト
     overlay.style.transition = 'opacity 1s ease';
     overlay.style.opacity = 1;
 
     setTimeout(() => {
-        // 画像切り替え
         current = (current + 1) % images.length;
         card.style.backgroundImage = `url('${images[current]}')`;
-
-        // フェードイン
-        overlay.style.opacity = 0.4; // 元の不透明度に戻す
+        overlay.style.opacity = 0.4;
     }, 1000);
 }
 
-// 初期化
-setInterval(fadeToNextImage, 15000); // ミリ秒
+// ページ読み込み後にプリロード→開始
+window.addEventListener('load', () => {
+    preloadImages(images, () => {
+        // 初回表示に即反映
+        card.style.backgroundImage = `url('${images[0]}')`;
+
+        setInterval(fadeToNextImage, 10000);
+    });
+});
