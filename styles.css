@@ -17,6 +17,11 @@ header {
     font-size: 1.1rem;
 }
 
+header a {
+    color: #222;
+    text-decoration: none;
+}
+
 .card {
     position: relative;
     width: 90vw;
