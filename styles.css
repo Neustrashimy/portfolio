@@ -27,6 +27,10 @@ header {
     overflow: hidden;
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
     background: url('images/card_1.png') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease;
     color: #fff;
 }
 
@@ -43,6 +47,7 @@ header {
 .overlay {
     position: absolute;
     inset: 0;
+    transition: opacity 1s ease;
     background: rgba(0, 0, 0, 0.4);
 }
 
