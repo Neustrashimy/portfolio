@@ -24,7 +24,7 @@ header a {
 
 .card {
     position: relative;
-    width: 90vw;
+    width: 85vw;
     max-width: 800px;
     aspect-ratio: 16 / 9;
     margin: 27vh auto;
