@@ -51,7 +51,21 @@ header a {
     position: absolute;
     inset: 0;
     transition: opacity 1s ease;
-    background: rgba(0, 0, 0, 0.4);
+    /* background: rgba(0, 0, 0, 0.4); */
+    background: linear-gradient(
+        to bottom,
+
+        /* 磁気ストライプ風の装飾 */
+
+        rgba(0, 0, 0, 0.4) 0%, /* 上の方の暗い部分 */
+        rgba(0, 0, 0, 0.4) 8%,
+
+        rgba(0, 0, 0, 0.3) 8%, /* 少し明るい部分 */
+        rgba(0, 0, 0, 0.3) 25%,
+
+        rgba(0, 0, 0, 0.4) 25%, /* 固法の部分 */
+        rgba(0, 0, 0, 0.4) 100%
+    );
 }
 
 .tagline {
