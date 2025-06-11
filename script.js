@@ -45,6 +45,6 @@ window.addEventListener('load', () => {
         // 初回表示に即反映
         card.style.backgroundImage = `url('${images[0]}')`;
 
-        setInterval(fadeToNextImage, 10000);
+        setInterval(fadeToNextImage, 15000);
     });
 });
