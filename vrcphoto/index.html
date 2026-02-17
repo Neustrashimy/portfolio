@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VRChat Memories</title>
+
+    <!-- 検索エンジンに載せない -->
+    <meta name="robots" content="noindex, nofollow" />
+
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="topbar">
+                <div class="brand">
+                    <div class="brand__title">VRChat Memories</div>
+                    <div class="brand__sub">Where did I go and what did I see?</div>
+                </div>
+
+                <div class="control">
+                    <label class="control__label" for="worldSelect">World</label>
+
+                    <div class="select">
+                        <select id="worldSelect" class="select__native"></select>
+                        <span class="select__arrow" aria-hidden="true"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="status" class="status">loading...</div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div id="content"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__text">© 2026 Neu Makise. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
