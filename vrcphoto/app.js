@@ -329,12 +329,12 @@ function loadImgNow(img) {
 
 function buildThumbPath(sha1) {
     const head2 = sha1.slice(0, 2);
-    return `./thumbs/${head2}/${sha1}.jpg`;
+    return `./thumbs/${head2}/${sha1}.webp`;
 }
 
 function buildStandardPath(sha1) {
     const head2 = sha1.slice(0, 2);
-    return `./standard/${head2}/${sha1}.jpg`;
+    return `./standard/${head2}/${sha1}.webp`;
 }
 
 function setStatus(text) {
