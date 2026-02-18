@@ -876,11 +876,6 @@
       "worldId": "wrld_73a17704-2f27-472b-90bf-dcf7df6a50ad"
     },
     {
-      "sha1": "d2a29cdf2975b5f6befe07e20a808cbf5afebd02",
-      "takenAt": "2025-12-17T22:14:49",
-      "worldId": "wrld_73a17704-2f27-472b-90bf-dcf7df6a50ad"
-    },
-    {
       "sha1": "2e3f57281229889bb3bdab97fee98c24676ef054",
       "takenAt": "2025-12-18T23:24:14",
       "worldId": "wrld_e1b40cdd-e81c-494e-a977-ccc70d3cea82"
@@ -1284,6 +1279,111 @@
       "sha1": "d609f3d2a26a04108c52738abc1bfe6d81b3683d",
       "takenAt": "2026-02-14T22:56:33",
       "worldId": "wrld_ecb39cf6-b8d7-48dd-98ed-26c31d1a4257"
+    },
+    {
+      "sha1": "671f1200521562b85a2b19164a06a795ca3c037f",
+      "takenAt": "2026-02-18T21:34:36",
+      "worldId": "wrld_b1d6808d-a891-4217-b91f-a0662e3ee621"
+    },
+    {
+      "sha1": "897cac1a1e6f98e5482385d6e36baadb5b1d7a52",
+      "takenAt": "2026-02-18T21:35:16",
+      "worldId": "wrld_b1d6808d-a891-4217-b91f-a0662e3ee621"
+    },
+    {
+      "sha1": "dddbda506a67ce67426fc91fc537dcf56aa22135",
+      "takenAt": "2026-02-18T21:36:22",
+      "worldId": "wrld_b1d6808d-a891-4217-b91f-a0662e3ee621"
+    },
+    {
+      "sha1": "d53570c9873bfe2f7a70ead7d6a1c409ad5810bd",
+      "takenAt": "2026-02-18T21:46:36",
+      "worldId": "wrld_66c67373-8a08-4426-bda2-14e4cdd133df"
+    },
+    {
+      "sha1": "6aeeb66da154377a8ff65c23812b0894d0d3ce4b",
+      "takenAt": "2026-02-18T21:46:50",
+      "worldId": "wrld_66c67373-8a08-4426-bda2-14e4cdd133df"
+    },
+    {
+      "sha1": "ef77776b7233670b0163229795263ae603a81086",
+      "takenAt": "2026-02-18T21:54:57",
+      "worldId": "wrld_20bb0e2d-2230-4770-afa6-3cc3c03ce9d6"
+    },
+    {
+      "sha1": "2dad6b6e0c9a28164205525995dd7b780eabd6de",
+      "takenAt": "2026-02-18T21:55:01",
+      "worldId": "wrld_20bb0e2d-2230-4770-afa6-3cc3c03ce9d6"
+    },
+    {
+      "sha1": "346478e7378259ae7238acf327069ff68adcf721",
+      "takenAt": "2026-02-18T21:55:33",
+      "worldId": "wrld_20bb0e2d-2230-4770-afa6-3cc3c03ce9d6"
+    },
+    {
+      "sha1": "66ef7a0c7663d488a70d893ec55cd34e0b3f3cde",
+      "takenAt": "2026-02-18T22:00:14",
+      "worldId": "wrld_6dcb50cc-da39-4214-9927-fc31615d1cfa"
+    },
+    {
+      "sha1": "ad96c9dec91d5dae4af39114c59b4e33c74422c8",
+      "takenAt": "2026-02-18T22:00:20",
+      "worldId": "wrld_6dcb50cc-da39-4214-9927-fc31615d1cfa"
+    },
+    {
+      "sha1": "0219c908bb35961b6f52cd86c975c68b2842f715",
+      "takenAt": "2026-02-18T22:01:08",
+      "worldId": "wrld_6dcb50cc-da39-4214-9927-fc31615d1cfa"
+    },
+    {
+      "sha1": "075787d0a8c68e08b3f00138b7f9913a0151b67d",
+      "takenAt": "2026-02-18T22:03:32",
+      "worldId": "wrld_37d9f462-0a2b-466a-948f-cb0afa42c78d"
+    },
+    {
+      "sha1": "e5d2a57317f56a78b623953444c8379b4c426fb5",
+      "takenAt": "2026-02-18T22:04:19",
+      "worldId": "wrld_37d9f462-0a2b-466a-948f-cb0afa42c78d"
+    },
+    {
+      "sha1": "518da8fd71ccc23bfadb7ce660b5bd506baad0a6",
+      "takenAt": "2026-02-18T22:05:25",
+      "worldId": "wrld_7a68f64f-e75b-4257-afe7-5bec37d5a2af"
+    },
+    {
+      "sha1": "1de0d353a08b92e62066af9864976cc36c44cc30",
+      "takenAt": "2026-02-18T22:07:29",
+      "worldId": "wrld_7a68f64f-e75b-4257-afe7-5bec37d5a2af"
+    },
+    {
+      "sha1": "767cf12d44cec1f04d13a2e4792b81e7377ec2b2",
+      "takenAt": "2026-02-18T22:09:52",
+      "worldId": "wrld_7a68f64f-e75b-4257-afe7-5bec37d5a2af"
+    },
+    {
+      "sha1": "fa347daced32e0ebbfe5476128c840ae66200c70",
+      "takenAt": "2026-02-18T22:35:23",
+      "worldId": "wrld_fad17823-602d-4cd3-85d1-ace514e75710"
+    },
+    {
+      "sha1": "35e4ce9fbb2b90dc20997ea37744fc97eceb0d20",
+      "takenAt": "2026-02-18T22:36:37",
+      "worldId": "wrld_fad17823-602d-4cd3-85d1-ace514e75710"
+    },
+    {
+      "sha1": "ae7df972f9ce052c625fef3fa07c9709eed59a53",
+      "takenAt": "2026-02-18T22:47:13",
+      "worldId": "wrld_71cbd14c-f2a2-421a-ad8b-869483b01770"
+    },
+    {
+      "sha1": "2399022515db6343df111199f387e502aea7f32e",
+      "takenAt": "2026-02-18T22:57:58",
+      "worldId": "wrld_66c67373-8a08-4426-bda2-14e4cdd133df"
+    },
+    {
+      "sha1": "b9308f604182fbcb19a28bb20f85b6f0e807e24d",
+      "takenAt": "2026-02-18T23:21:40",
+      "worldId": "wrld_d65e716d-a98d-43a3-9284-2a3a26a26c39"
     }
   ],
   "worlds": [
@@ -1726,6 +1826,38 @@
     {
       "worldId": "wrld_ecb39cf6-b8d7-48dd-98ed-26c31d1a4257",
       "worldName": "Stratocubulus"
+    },
+    {
+      "worldId": "wrld_b1d6808d-a891-4217-b91f-a0662e3ee621",
+      "worldName": "黒磯駅"
+    },
+    {
+      "worldId": "wrld_66c67373-8a08-4426-bda2-14e4cdd133df",
+      "worldName": "V․P․B․C․本部 洋上基地 2025⁄8⁄05 RAIN"
+    },
+    {
+      "worldId": "wrld_20bb0e2d-2230-4770-afa6-3cc3c03ce9d6",
+      "worldName": "月時雨通り ~Tsuki Shigure Street~"
+    },
+    {
+      "worldId": "wrld_6dcb50cc-da39-4214-9927-fc31615d1cfa",
+      "worldName": "Perimeter Lab ［Marathon］"
+    },
+    {
+      "worldId": "wrld_37d9f462-0a2b-466a-948f-cb0afa42c78d",
+      "worldName": "Elevator 004"
+    },
+    {
+      "worldId": "wrld_7a68f64f-e75b-4257-afe7-5bec37d5a2af",
+      "worldName": "ーゆめたびー"
+    },
+    {
+      "worldId": "wrld_fad17823-602d-4cd3-85d1-ace514e75710",
+      "worldName": "CONSTRUCT"
+    },
+    {
+      "worldId": "wrld_d65e716d-a98d-43a3-9284-2a3a26a26c39",
+      "worldName": "The Visitor"
     }
   ]
 }

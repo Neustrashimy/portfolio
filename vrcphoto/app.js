@@ -2,14 +2,6 @@
 
 "use strict";
 
-/**
- * 公開用ビューア
- * - コントロールはワールドのドロップダウンのみ
- * - 並びは takenAt の新しい順固定
- * - クリックで standard を別タブで開く（直リンク）
- * - サムネは IntersectionObserver で lazyload
- */
-
 /** @typedef {{ sha1: string, takenAt: string, worldId: (string|null) }} CatalogItem */
 /** @typedef {{ worldId: string, worldName: string }} WorldInfo */
 /** @typedef {{ items: CatalogItem[], worlds: WorldInfo[] }} Catalog */
