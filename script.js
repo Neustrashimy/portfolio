@@ -159,7 +159,7 @@ window.addEventListener('load', () => {
     });
 
     console.log(
-    '%c何かお探しですか？',
+    '%c＜◎＞＜◎＞　何かお探しですか？',
     'color: white; background: black; font-size: 20px; padding: 4px 8px;'
 );
 
