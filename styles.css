@@ -1,3 +1,11 @@
+/* =========================
+   Base
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin: 0;
@@ -7,6 +15,15 @@ body {
     background: #ffffff;
     color: #222;
 }
+
+/* モーダル表示中は背景スクロールを止める */
+body.is-modal-open {
+    overflow: hidden;
+}
+
+/* =========================
+   Header
+   ========================= */
 
 header {
     width: 100%;
@@ -22,102 +39,179 @@ header a {
     text-decoration: none;
 }
 
+/* =========================
+   Main Card
+   ========================= */
+
 .card {
     position: relative;
-    width: 85vw;
+
+    /* 画面幅に応じてカード自体が縮む */
+    width: 90vw;
     max-width: 800px;
+
+    /* 横長の名刺比率 */
     aspect-ratio: 16 / 9;
-    margin: 27vh auto;
+
+    /* 画面高さが低い時も破綻しにくいように margin を clamp */
+    margin: clamp(5rem, 27vh, 14rem) auto;
+
     border-radius: 16px;
     overflow: hidden;
+
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
-    background: url('images/card_1.png') center/cover no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+    /* 背景画像（JSで差し替え） */
+    background: url('images/card_1.png') center / cover no-repeat;
     transition: background-image 0.5s ease;
+
     color: #fff;
+
+    /* タップ可能に見せる */
+    cursor: pointer;
+
+    /* 対応ブラウザではカード幅基準単位(cqw)を有効化 */
+    container-type: inline-size;
 }
 
-.qr-code {
-    position: absolute;
-    bottom: 4.5rem;
-    right: 2rem;
-    width: 4rem;
-    height: auto;
-}
-
+/* オーバーレイは背景の上、文字の下 */
 .overlay {
     position: absolute;
     inset: 0;
+    background: rgba(0, 0, 0, 0.4);
     transition: opacity 1s ease;
-    /* background: rgba(0, 0, 0, 0.4); */
-    background: linear-gradient(
-        to bottom,
-
-        /* 磁気ストライプ風の装飾 */
-
-        rgba(0, 0, 0, 0.4) 0%, /* 上の方の暗い部分 */
-        rgba(0, 0, 0, 0.4) 8%,
-
-        rgba(0, 0, 0, 0.3) 8%, /* 少し明るい部分 */
-        rgba(0, 0, 0, 0.3) 25%,
-
-        rgba(0, 0, 0, 0.4) 25%, /* 固法の部分 */
-        rgba(0, 0, 0, 0.4) 100%
-    );
+    z-index: 1;
+    pointer-events: none;
 }
 
-.tagline {
+/* カード上のテキスト・QRは必ずオーバーレイより前面 */
+.tagline,
+.credit,
+.logo-text,
+.qr-code {
     position: absolute;
-    top: 1.5rem;
-    right: 2rem;
-    text-align: right;
-    font-size: 1.25rem;
-    line-height: 1.6;
-    font-weight: 500;
+    z-index: 2;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* ---- 配置（カード比率に追従させるため % 指定） ---- */
+
+.tagline {
+    top: 6%;
+    right: 4%;
+    text-align: right;
+
+    /* フォールバック：カードが90vwなのでvwでも追従しやすい */
+    font-size: clamp(10px, 1.8vw, 16px);
+    line-height: 1.45;
+    font-weight: 500;
 }
 
 .credit {
-    position: absolute;
-    bottom: 1.5rem;
-    left: 2rem;
-    font-size: 1.2rem;
-    line-height: 1.4;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    bottom: 6%;
+    left: 4%;
+
+    font-size: clamp(10px, 1.7vw, 16px);
+    line-height: 1.35;
 }
 
+/* credit内は「親の大きさに対する比率」で揃える（remは禁止） */
 .credit .label {
-    font-size: 0.9rem;
+    font-size: 0.80em;
     text-transform: uppercase;
     opacity: 0.8;
 }
 
+.credit .value {
+    font-size: 1.00em;
+}
+
 .credit .value.small {
-    font-size: 1rem;
+    font-size: 0.90em;
     opacity: 0.8;
     font-weight: 400;
 }
 
 .credit .value.large {
-    font-size: 1.8rem;
+    font-size: 1.55em;
     font-weight: 700;
 }
 
 .logo-text {
-    position: absolute;
-    bottom: 1.5rem;
-    right: 2rem;
-    font-size: 1.6rem;
+    bottom: 6%;
+    right: 4%;
+
+    font-size: clamp(12px, 2.1vw, 20px);
     font-weight: 800;
     opacity: 0.9;
     letter-spacing: 0.12em;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
 }
 
+.qr-code {
+    right: 4%;
+    bottom: 18%;
 
+    width: clamp(28px, 7vw, 64px);
+    height: auto;
+    display: block;
+}
 
+/* ---- 対応ブラウザでは「カード幅基準(cqw)」でさらに安定 ---- */
+@supports (font-size: 1cqw) {
+    .tagline {
+        font-size: clamp(10px, 2.2cqw, 16px);
+    }
+
+    .credit {
+        font-size: clamp(10px, 2.1cqw, 16px);
+    }
+
+    .logo-text {
+        font-size: clamp(12px, 2.8cqw, 20px);
+    }
+
+    .qr-code {
+        width: clamp(28px, 10cqw, 64px);
+    }
+}
+
+/* =========================
+   Fullscreen modal (card only)
+   ========================= */
+
+.card-modal-backdrop {
+    position: fixed;
+    inset: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2vh 2vw;
+
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+
+.card-modal-backdrop.is-open {
+    display: flex;
+}
+
+/* モーダル内カードは「余白ゼロ」「画面にフィット」 */
+.card.card--modal {
+    width: min(96vw, 1400px);
+    margin: 0;
+
+    /* 画面内に収める */
+    max-height: 96vh;
+
+    /* クリックしやすいが、閉じる操作は背景側で行う */
+    cursor: default;
+}
+
+/* =========================
+   Content Sections
+   ========================= */
 
 .content-section {
     max-width: 720px;
@@ -198,6 +292,10 @@ ul li,
 ol li {
     margin-bottom: 0.6rem;
 }
+
+/* =========================
+   Footer
+   ========================= */
 
 footer {
     text-align: center;
