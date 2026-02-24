@@ -1296,16 +1296,6 @@
       "worldId": "wrld_b1d6808d-a891-4217-b91f-a0662e3ee621"
     },
     {
-      "sha1": "d53570c9873bfe2f7a70ead7d6a1c409ad5810bd",
-      "takenAt": "2026-02-18T21:46:36",
-      "worldId": "wrld_66c67373-8a08-4426-bda2-14e4cdd133df"
-    },
-    {
-      "sha1": "6aeeb66da154377a8ff65c23812b0894d0d3ce4b",
-      "takenAt": "2026-02-18T21:46:50",
-      "worldId": "wrld_66c67373-8a08-4426-bda2-14e4cdd133df"
-    },
-    {
       "sha1": "ef77776b7233670b0163229795263ae603a81086",
       "takenAt": "2026-02-18T21:54:57",
       "worldId": "wrld_20bb0e2d-2230-4770-afa6-3cc3c03ce9d6"
@@ -1376,14 +1366,94 @@
       "worldId": "wrld_71cbd14c-f2a2-421a-ad8b-869483b01770"
     },
     {
-      "sha1": "2399022515db6343df111199f387e502aea7f32e",
-      "takenAt": "2026-02-18T22:57:58",
-      "worldId": "wrld_66c67373-8a08-4426-bda2-14e4cdd133df"
+      "sha1": "da70c0ae4863261f7ad83f1badd552b1f8c13786",
+      "takenAt": "2026-02-19T21:23:01",
+      "worldId": "wrld_9d54544c-8f89-4409-bf6f-6a95b62cb119"
     },
     {
-      "sha1": "b9308f604182fbcb19a28bb20f85b6f0e807e24d",
-      "takenAt": "2026-02-18T23:21:40",
-      "worldId": "wrld_d65e716d-a98d-43a3-9284-2a3a26a26c39"
+      "sha1": "554841f9bbd8ce624ac709c72aaed4a7645356e0",
+      "takenAt": "2026-02-19T21:31:38",
+      "worldId": "wrld_f2d6c0ca-2018-449d-a4f1-77ebd8da136e"
+    },
+    {
+      "sha1": "772208fd954f98d0cc83e169534d549c44ac847b",
+      "takenAt": "2026-02-19T21:37:39",
+      "worldId": "wrld_ffc088ae-90df-439b-bc66-0003f8f3f6a7"
+    },
+    {
+      "sha1": "44a9ccf290a21f887ef04f6e52bdb14e44544be0",
+      "takenAt": "2026-02-19T23:16:45",
+      "worldId": "wrld_d9b3fd1c-a4ac-4671-8766-17cdb561732a"
+    },
+    {
+      "sha1": "2ccff3b589829c001e9db47149c05d54d30f94d2",
+      "takenAt": "2026-02-19T23:23:40",
+      "worldId": "wrld_240299fa-7378-463b-a96b-74413aa20cb6"
+    },
+    {
+      "sha1": "d2436a186566249be449f582be4c9f7a171e1d83",
+      "takenAt": "2026-02-20T22:34:28",
+      "worldId": "wrld_6dd750e8-b253-4e79-9eb7-2af07490353f"
+    },
+    {
+      "sha1": "1fbc040703c53150e9f76d50eb87bb225583c96d",
+      "takenAt": "2026-02-20T22:54:19",
+      "worldId": "wrld_b305d7f6-84f2-4687-8a25-ae8b35030a08"
+    },
+    {
+      "sha1": "a726398fe9011ad80dd49feab1ebe03f8e1c67f3",
+      "takenAt": "2026-02-20T23:22:24",
+      "worldId": "wrld_40f98daf-3c98-47d9-8541-27e460d474a1"
+    },
+    {
+      "sha1": "daa043daefdcbd42e2c91cabe1ab5fe7fc69c09c",
+      "takenAt": "2026-02-20T23:22:54",
+      "worldId": "wrld_40f98daf-3c98-47d9-8541-27e460d474a1"
+    },
+    {
+      "sha1": "7b82cb4b97a10c8becf3560acdfb9c52620985de",
+      "takenAt": "2026-02-21T22:04:31",
+      "worldId": "wrld_919c43c4-bb02-411d-9e62-651ce6cd4f60"
+    },
+    {
+      "sha1": "2968c6006ab8cb19d233532c895beff9888eeba8",
+      "takenAt": "2026-02-21T22:17:10",
+      "worldId": "wrld_0cf105b8-a983-481d-acd6-ad25e9ae63be"
+    },
+    {
+      "sha1": "68779848b29e12ac1854ad337226d23986b91fd4",
+      "takenAt": "2026-02-21T22:18:18",
+      "worldId": "wrld_0cf105b8-a983-481d-acd6-ad25e9ae63be"
+    },
+    {
+      "sha1": "6f12c0266b95d45f26f3ebc3fdf584c169425199",
+      "takenAt": "2026-02-21T22:38:54",
+      "worldId": "wrld_c9ec7ff2-ca47-40e6-b7ec-7d9ba35aced7"
+    },
+    {
+      "sha1": "5fefcbddcbc20f41bc544547b034eaba68fd8bd1",
+      "takenAt": "2026-02-21T22:45:17",
+      "worldId": "wrld_c9ec7ff2-ca47-40e6-b7ec-7d9ba35aced7"
+    },
+    {
+      "sha1": "9b18a88471a5726f3614ccf18a4c4c1e52d88595",
+      "takenAt": "2026-02-21T22:53:20",
+      "worldId": "wrld_c9ec7ff2-ca47-40e6-b7ec-7d9ba35aced7"
+    },
+    {
+      "sha1": "277d7fd44017b48f27ee8b91c411090c8c348bab",
+      "takenAt": "2026-02-22T21:18:40",
+      "worldId": "wrld_33193c3e-2a06-45fa-b506-6f2a2db46289"
+    },
+    {
+      "sha1": "d0a098f53abb2dbba6fc3ada4eb4339dc4cc977e",
+      "takenAt": "2026-02-22T21:43:22",
+      "worldId": "wrld_4d3e1e35-886a-4ce9-b33c-e650bc307196"
+    },
+    {
+      "sha1": "660311fadf43a0944faf7864572b779a09c4a114",
+      "takenAt": "2026-02-22T23:23:11",
+      "worldId": "wrld_4d3e1e35-886a-4ce9-b33c-e650bc307196"
     }
   ],
   "worlds": [
@@ -1832,10 +1902,6 @@
       "worldName": "黒磯駅"
     },
     {
-      "worldId": "wrld_66c67373-8a08-4426-bda2-14e4cdd133df",
-      "worldName": "V․P․B․C․本部 洋上基地 2025⁄8⁄05 RAIN"
-    },
-    {
       "worldId": "wrld_20bb0e2d-2230-4770-afa6-3cc3c03ce9d6",
       "worldName": "月時雨通り ~Tsuki Shigure Street~"
     },
@@ -1856,8 +1922,56 @@
       "worldName": "CONSTRUCT"
     },
     {
-      "worldId": "wrld_d65e716d-a98d-43a3-9284-2a3a26a26c39",
-      "worldName": "The Visitor"
+      "worldId": "wrld_9d54544c-8f89-4409-bf6f-6a95b62cb119",
+      "worldName": "-ADMIN-"
+    },
+    {
+      "worldId": "wrld_f2d6c0ca-2018-449d-a4f1-77ebd8da136e",
+      "worldName": "謎解きワールド「Click」"
+    },
+    {
+      "worldId": "wrld_ffc088ae-90df-439b-bc66-0003f8f3f6a7",
+      "worldName": "town of connection"
+    },
+    {
+      "worldId": "wrld_d9b3fd1c-a4ac-4671-8766-17cdb561732a",
+      "worldName": "Exhibition ⁄ little traitors"
+    },
+    {
+      "worldId": "wrld_240299fa-7378-463b-a96b-74413aa20cb6",
+      "worldName": "追憶の原風景"
+    },
+    {
+      "worldId": "wrld_6dd750e8-b253-4e79-9eb7-2af07490353f",
+      "worldName": "パフェ職人への道~Parfait Masters Journey~"
+    },
+    {
+      "worldId": "wrld_b305d7f6-84f2-4687-8a25-ae8b35030a08",
+      "worldName": "終点の住処 Last Station Home"
+    },
+    {
+      "worldId": "wrld_40f98daf-3c98-47d9-8541-27e460d474a1",
+      "worldName": "L․I․F․E"
+    },
+    {
+      "worldId": "wrld_919c43c4-bb02-411d-9e62-651ce6cd4f60",
+      "worldName": "Mor Dhona"
+    },
+    {
+      "worldId": "wrld_0cf105b8-a983-481d-acd6-ad25e9ae63be",
+      "worldName": "_NODEONE"
+    },
+    {
+      "worldId": "wrld_c9ec7ff2-ca47-40e6-b7ec-7d9ba35aced7",
+      "worldName": "Dear‚ALICE․"
+    },
+    {
+      "worldId": "wrld_33193c3e-2a06-45fa-b506-6f2a2db46289",
+      "worldName": "Fractured Dimension"
+    },
+    {
+      "worldId": "wrld_4d3e1e35-886a-4ce9-b33c-e650bc307196",
+      "worldName": "mikinel's Private Island"
     }
   ]
 }

@@ -540,7 +540,7 @@ function openModal(it, worldName) {
     state.lastFocused = /** @type {any} */ (document.activeElement);
 
     el.modalWorldName.textContent = worldName;
-    el.modalSha1.textContent = it.sha1.slice(0, 8);
+    el.modalSha1.textContent = it.sha1;
     el.modalTakenAt.textContent = it.takenAt;
 
     state.isModalOpen = true;
