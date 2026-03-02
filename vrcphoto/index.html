@@ -28,6 +28,15 @@
                         <span class="select__arrow" aria-hidden="true"></span>
                     </div>
                 </div>
+
+                <div class="control control--checkbox">
+                    <div class="control__label">Grouping</div>
+
+                    <label class="checkbox">
+                        <input id="groupToggle" type="checkbox" />
+                        <span class="checkbox__text">Group by world</span>
+                    </label>
+                </div>
             </div>
 
             <div id="status" class="status">loading...</div>
@@ -49,7 +58,6 @@
     <!-- Modal -->
     <div id="photoModal" class="modal" aria-hidden="true">
         <div class="modal__dialog" role="dialog" aria-modal="true" aria-label="Photo">
-            <!-- ポラロイド表示 -->
             <div id="modalPolaroid" class="polaroid">
                 <div class="polaroid__photo">
                     <img id="modalImage" alt="" />
@@ -57,11 +65,13 @@
 
                 <div class="polaroid__footer">
                     <div class="polaroid__meta">
-                        <div id="modalWorldName" class="polaroid__world"></div>
+                        <!-- aタグに変更（JSでhrefの有無を切り替える） -->
+                        <a id="modalWorldName" class="polaroid__world polaroid__worldlink"></a>
+
                         <div class="polaroid__sub">
                             <span id="modalSha1" class="polaroid__sha1"></span>
-                            <span aria-hidden="true">•</span>
-                            <span id="modalTakenAt"></span>
+                            <span class="polaroid__sep" aria-hidden="true">•</span>
+                            <span id="modalTakenAt" class="polaroid__takenat"></span>
                         </div>
                     </div>
 
