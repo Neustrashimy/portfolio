@@ -2,2250 +2,2470 @@
   "items": [
     {
       "sha1": "f30963cae24c95641f33665639166293eb2ddce3",
-      "takenAt": "2025-08-29T21:54:36",
+      "takenAt": "2025-08-29T21:54:36+09:00",
       "worldId": "wrld_d4d009ed-06ea-4148-b1d1-fea5206c175f"
     },
     {
       "sha1": "a05d3ba05f3b7114d7a0c92c8930b37c81150686",
-      "takenAt": "2025-08-31T21:18:57",
+      "takenAt": "2025-08-31T21:18:57+09:00",
       "worldId": "wrld_5a4247fb-6600-4c1b-a6b9-7d875355be69"
     },
     {
       "sha1": "cbac7a6706f92899a4a2e9cdb7cc5e469aabf1a3",
-      "takenAt": "2025-08-31T21:19:24",
+      "takenAt": "2025-08-31T21:19:24+09:00",
       "worldId": "wrld_5a4247fb-6600-4c1b-a6b9-7d875355be69"
     },
     {
       "sha1": "877eece34b44a7a9469aebef3a22c77add64351a",
-      "takenAt": "2025-08-31T22:35:10",
+      "takenAt": "2025-08-31T22:35:10+09:00",
       "worldId": "wrld_3e4a1f3d-f701-4654-a30c-3d40071e1c23"
     },
     {
       "sha1": "77e8c952cd5bf6738884d81b9f1ab0d380224bbb",
-      "takenAt": "2025-09-03T22:33:36",
+      "takenAt": "2025-09-03T22:33:36+09:00",
       "worldId": "wrld_4aace314-8e3c-427f-994b-d269d9adb870"
     },
     {
       "sha1": "7be9fc1602cd9d707437307f77047dff73cde627",
-      "takenAt": "2025-09-03T22:35:12",
+      "takenAt": "2025-09-03T22:35:12+09:00",
       "worldId": "wrld_4aace314-8e3c-427f-994b-d269d9adb870"
     },
     {
       "sha1": "d7ff70557c7a052c02ac025de02e59fcd15b68b5",
-      "takenAt": "2025-09-05T21:32:35",
+      "takenAt": "2025-09-05T21:32:35+09:00",
       "worldId": "wrld_6b5d5bc6-765b-486c-a3c7-03836ef2a373"
     },
     {
       "sha1": "e233ef84b87fa103cbcea08deb3614c1c0768b83",
-      "takenAt": "2025-09-05T22:46:31",
+      "takenAt": "2025-09-05T22:46:31+09:00",
       "worldId": "wrld_47c75ab4-1246-4f04-9384-d60be45234ec"
     },
     {
       "sha1": "a76038be9db191f52ffe9a8fdbf493c25fb2b2b8",
-      "takenAt": "2025-09-05T22:48:35",
+      "takenAt": "2025-09-05T22:48:35+09:00",
       "worldId": "wrld_47c75ab4-1246-4f04-9384-d60be45234ec"
     },
     {
       "sha1": "271fb2d6620b230af672841ec5bf73e58a1433cd",
-      "takenAt": "2025-09-05T23:45:01",
+      "takenAt": "2025-09-05T23:45:01+09:00",
       "worldId": "wrld_b5c49166-2d50-4e48-a825-2ee483d043b6"
     },
     {
       "sha1": "b6e36ada6520ac4ac0bf1521cd7c39d02f913901",
-      "takenAt": "2025-09-05T23:52:06",
+      "takenAt": "2025-09-05T23:52:06+09:00",
       "worldId": "wrld_b5c49166-2d50-4e48-a825-2ee483d043b6"
     },
     {
       "sha1": "3d9315e5745e8a38cc7f89591cc7a2a6cc135b1c",
-      "takenAt": "2025-09-05T23:52:34",
+      "takenAt": "2025-09-05T23:52:34+09:00",
       "worldId": "wrld_b5c49166-2d50-4e48-a825-2ee483d043b6"
     },
     {
       "sha1": "6172dd27ff4d49014269cd954b5503ecdff6983a",
-      "takenAt": "2025-09-07T00:44:08",
+      "takenAt": "2025-09-07T00:44:08+09:00",
       "worldId": "wrld_6b5d5bc6-765b-486c-a3c7-03836ef2a373"
     },
     {
       "sha1": "74c47a1dbb0a551da5e29b7e2b43646963b22d49",
-      "takenAt": "2025-09-10T21:45:06",
+      "takenAt": "2025-09-10T21:45:06+09:00",
       "worldId": "wrld_07c6c17c-9f37-4fdb-aa41-c842d2a452d6"
     },
     {
       "sha1": "3edc6af6829351c6aa2f870851491a07757075b6",
-      "takenAt": "2025-09-11T21:17:52",
+      "takenAt": "2025-09-11T21:17:52+09:00",
       "worldId": "wrld_6b5d5bc6-765b-486c-a3c7-03836ef2a373"
     },
     {
       "sha1": "bddc59909196943983157085bc7b4cef1ed35c7c",
-      "takenAt": "2025-09-14T17:07:24",
+      "takenAt": "2025-09-14T17:07:24+09:00",
       "worldId": "wrld_285e486d-2353-47db-beb4-6df0d2c5d581"
     },
     {
       "sha1": "bd63626c94dcb673f79d3608ba45477da6cf6cb6",
-      "takenAt": "2025-09-15T20:47:41",
+      "takenAt": "2025-09-15T20:47:41+09:00",
       "worldId": "wrld_b2d24c29-1ded-4990-a90d-dd6dcc440300"
     },
     {
       "sha1": "b852abe6b0d019f397a73a905318de3d968eed39",
-      "takenAt": "2025-09-15T20:49:08",
+      "takenAt": "2025-09-15T20:49:08+09:00",
       "worldId": "wrld_b2d24c29-1ded-4990-a90d-dd6dcc440300"
     },
     {
       "sha1": "bb620895a48bd3890ede932e7a005c3d218e4a57",
-      "takenAt": "2025-09-15T20:50:56",
+      "takenAt": "2025-09-15T20:50:56+09:00",
       "worldId": "wrld_b2d24c29-1ded-4990-a90d-dd6dcc440300"
     },
     {
       "sha1": "468b2f08a57fbffd71519b6aa586fc41723739b6",
-      "takenAt": "2025-09-15T20:51:58",
+      "takenAt": "2025-09-15T20:51:58+09:00",
       "worldId": "wrld_b2d24c29-1ded-4990-a90d-dd6dcc440300"
     },
     {
       "sha1": "721ac92357b6273dd7b8a655da3f7ccfe4b5ec71",
-      "takenAt": "2025-09-15T21:02:30",
+      "takenAt": "2025-09-15T21:02:30+09:00",
       "worldId": "wrld_b2d24c29-1ded-4990-a90d-dd6dcc440300"
     },
     {
       "sha1": "fee1939ff3a3d66316aa4f77c4600dbfb741f0e3",
-      "takenAt": "2025-09-20T21:42:56",
+      "takenAt": "2025-09-20T21:42:56+09:00",
       "worldId": "wrld_6b5d5bc6-765b-486c-a3c7-03836ef2a373"
     },
     {
       "sha1": "dc5b7d5119a7ced9083ddc11e05e4b176a47f427",
-      "takenAt": "2025-09-20T21:44:39",
+      "takenAt": "2025-09-20T21:44:39+09:00",
       "worldId": "wrld_6b5d5bc6-765b-486c-a3c7-03836ef2a373"
     },
     {
       "sha1": "3c390e503c1b3181f7b999f18a90d359c0c42b0e",
-      "takenAt": "2025-09-20T23:18:25",
+      "takenAt": "2025-09-20T23:18:25+09:00",
       "worldId": "wrld_6f55a286-b851-4d3e-8933-e7a31138edd7"
     },
     {
       "sha1": "b55e5d7bb07eaab58b66cf53eeafd00f32d7ebae",
-      "takenAt": "2025-09-21T21:55:56",
+      "takenAt": "2025-09-21T21:55:56+09:00",
       "worldId": "wrld_0f2e25a6-1c09-4f25-9fdb-2c8cd009edfd"
     },
     {
       "sha1": "b523f9fe0363a48b73150bca21214a8e0bcc134b",
-      "takenAt": "2025-09-21T21:56:03",
+      "takenAt": "2025-09-21T21:56:03+09:00",
       "worldId": "wrld_0f2e25a6-1c09-4f25-9fdb-2c8cd009edfd"
     },
     {
       "sha1": "24638f4847bd8a70aea27e7646ada47cc3c64a64",
-      "takenAt": "2025-09-21T22:00:45",
+      "takenAt": "2025-09-21T22:00:45+09:00",
       "worldId": "wrld_22a0e3e6-8537-45fe-9cc7-aec045ed5fc1"
     },
     {
       "sha1": "e17600c6dac1abf4fecbd6b82ee94f2a84b94fa5",
-      "takenAt": "2025-09-21T22:00:51",
+      "takenAt": "2025-09-21T22:00:51+09:00",
       "worldId": "wrld_22a0e3e6-8537-45fe-9cc7-aec045ed5fc1"
     },
     {
       "sha1": "ad597beccc5c67ba862103ee0c912eac84da43a5",
-      "takenAt": "2025-09-21T22:01:07",
+      "takenAt": "2025-09-21T22:01:07+09:00",
       "worldId": "wrld_22a0e3e6-8537-45fe-9cc7-aec045ed5fc1"
     },
     {
       "sha1": "32b42ebd6089652625fada75935d699ce5ebe3b3",
-      "takenAt": "2025-09-21T22:03:36",
+      "takenAt": "2025-09-21T22:03:36+09:00",
       "worldId": "wrld_22a0e3e6-8537-45fe-9cc7-aec045ed5fc1"
     },
     {
       "sha1": "9c10681b0105c3ef6d98a61801be916d98ce5ab9",
-      "takenAt": "2025-09-21T22:10:32",
+      "takenAt": "2025-09-21T22:10:32+09:00",
       "worldId": "wrld_2319737c-df8a-4efa-a69b-940391422a23"
     },
     {
       "sha1": "93d524b77e825dbbb333d686a42ba6ec91029879",
-      "takenAt": "2025-09-21T22:24:54",
+      "takenAt": "2025-09-21T22:24:54+09:00",
       "worldId": "wrld_2bdeb15d-38c7-462e-b4ff-5a135390b47b"
     },
     {
       "sha1": "be115008d26cbbdc62f841fd8a62a0d7b3c95ee6",
-      "takenAt": "2025-09-21T22:25:00",
+      "takenAt": "2025-09-21T22:25:00+09:00",
       "worldId": "wrld_2bdeb15d-38c7-462e-b4ff-5a135390b47b"
     },
     {
       "sha1": "5ae9c851ce62db58adabf93b40a2f884bcae2553",
-      "takenAt": "2025-09-21T22:25:11",
+      "takenAt": "2025-09-21T22:25:11+09:00",
       "worldId": "wrld_2bdeb15d-38c7-462e-b4ff-5a135390b47b"
     },
     {
       "sha1": "a77494807b3a5d85cb7742991797e57f275b6b3c",
-      "takenAt": "2025-09-21T22:26:56",
+      "takenAt": "2025-09-21T22:26:56+09:00",
       "worldId": "wrld_2bdeb15d-38c7-462e-b4ff-5a135390b47b"
     },
     {
       "sha1": "7a0f80105bb811a15f4c56b8b07f82ed1f4f09c7",
-      "takenAt": "2025-09-21T22:42:50",
+      "takenAt": "2025-09-21T22:42:50+09:00",
       "worldId": "wrld_1f6ac4dc-2101-466f-a989-9bbc5b13a96c"
     },
     {
       "sha1": "57a196db5e4c123a048e93602558c00102daecbb",
-      "takenAt": "2025-09-21T22:42:52",
+      "takenAt": "2025-09-21T22:42:52+09:00",
       "worldId": "wrld_1f6ac4dc-2101-466f-a989-9bbc5b13a96c"
     },
     {
       "sha1": "2c747f4c4f995a26c1341cf9171474e3000c5af7",
-      "takenAt": "2025-09-21T22:42:58",
+      "takenAt": "2025-09-21T22:42:58+09:00",
       "worldId": "wrld_1f6ac4dc-2101-466f-a989-9bbc5b13a96c"
     },
     {
       "sha1": "db104762a1c44145b6f9ca752c4527516335e372",
-      "takenAt": "2025-09-21T22:45:45",
+      "takenAt": "2025-09-21T22:45:45+09:00",
       "worldId": "wrld_ef66230d-9a3a-4a98-a704-cfebeb25cd90"
     },
     {
       "sha1": "51180ee6b4372b4f0bac451e2af8ff972e081710",
-      "takenAt": "2025-09-21T22:45:54",
+      "takenAt": "2025-09-21T22:45:54+09:00",
       "worldId": "wrld_ef66230d-9a3a-4a98-a704-cfebeb25cd90"
     },
     {
       "sha1": "8ce38470cd2278a1b7ca84698135672b1ec93f09",
-      "takenAt": "2025-09-21T22:49:09",
+      "takenAt": "2025-09-21T22:49:09+09:00",
       "worldId": "wrld_4ad8b953-c81d-42e9-b342-c223beae1d77"
     },
     {
       "sha1": "38dde9eded59017101371810e146edb7927cb9e4",
-      "takenAt": "2025-09-21T22:53:31",
+      "takenAt": "2025-09-21T22:53:31+09:00",
       "worldId": "wrld_db95005e-66b9-4244-98ee-dd307d4d1b70"
     },
     {
       "sha1": "310c4bfca5e796764922ad6ad66394fd83ee8559",
-      "takenAt": "2025-09-21T23:02:02",
+      "takenAt": "2025-09-21T23:02:02+09:00",
       "worldId": "wrld_c55fe71d-3854-4734-8f3d-3a5757a111b4"
     },
     {
       "sha1": "d0d08123d1ecbd507e776c1e1d6e40a28fea8971",
-      "takenAt": "2025-09-21T23:02:18",
+      "takenAt": "2025-09-21T23:02:18+09:00",
       "worldId": "wrld_c55fe71d-3854-4734-8f3d-3a5757a111b4"
     },
     {
       "sha1": "e63b845d9c47ffb7a6504d1610fec30c3c6d1be1",
-      "takenAt": "2025-09-21T23:02:49",
+      "takenAt": "2025-09-21T23:02:49+09:00",
       "worldId": "wrld_c55fe71d-3854-4734-8f3d-3a5757a111b4"
     },
     {
       "sha1": "77adc86994c27e02b0625880420b0b277c950e0e",
-      "takenAt": "2025-09-25T22:25:18",
+      "takenAt": "2025-09-25T22:25:18+09:00",
       "worldId": "wrld_415ef912-5150-4808-b1ea-4f8ce2432045"
     },
     {
       "sha1": "e559f8d4b4b255d7cc7a535c67856b8450965435",
-      "takenAt": "2025-09-25T22:35:01",
+      "takenAt": "2025-09-25T22:35:01+09:00",
       "worldId": "wrld_415ef912-5150-4808-b1ea-4f8ce2432045"
     },
     {
       "sha1": "7e2256471dd97f7a7b0dff90f8f8b21747c07eac",
-      "takenAt": "2025-09-25T22:45:28",
+      "takenAt": "2025-09-25T22:45:28+09:00",
       "worldId": "wrld_24f06038-613e-47e7-86b4-6c594674ba85"
     },
     {
       "sha1": "be536cc7aa6e60ca34bc2365d4e6f36ff3e2b30b",
-      "takenAt": "2025-09-25T22:52:32",
+      "takenAt": "2025-09-25T22:52:32+09:00",
       "worldId": "wrld_24f06038-613e-47e7-86b4-6c594674ba85"
     },
     {
       "sha1": "0121fa5ea70ede3f2fd9c567197b040854b3fb6b",
-      "takenAt": "2025-09-25T23:01:13",
+      "takenAt": "2025-09-25T23:01:13+09:00",
       "worldId": "wrld_5b786184-c3e0-4c05-bcf1-c6f81503abf5"
     },
     {
       "sha1": "bcc65f0bc383ef020fcd2e1e67cd8681fce8a3c5",
-      "takenAt": "2025-10-02T22:34:53",
+      "takenAt": "2025-10-02T22:34:53+09:00",
       "worldId": "wrld_31caa0de-e6be-464e-b424-c31ce00c5f2d"
     },
     {
       "sha1": "7175563621c27f7f6f68150b633ff0e8427ca855",
-      "takenAt": "2025-10-02T22:37:06",
+      "takenAt": "2025-10-02T22:37:06+09:00",
       "worldId": "wrld_28cb3044-b883-467a-b841-6de11ca13a31"
     },
     {
       "sha1": "9a266305893a382048c9f9785f9c45b7eb312732",
-      "takenAt": "2025-10-02T22:48:58",
+      "takenAt": "2025-10-02T22:48:58+09:00",
       "worldId": "wrld_3090a85a-abba-4c04-8dea-e54ede2eb47e"
     },
     {
       "sha1": "66f2300f4807a703423326d343c67c295e408342",
-      "takenAt": "2025-10-02T23:12:29",
+      "takenAt": "2025-10-02T23:12:29+09:00",
       "worldId": "wrld_8f973ca3-9315-4f7d-84cc-9303f394797b"
     },
     {
       "sha1": "9d9a3a4822f16bf526e6ac87d9379bf897fc9c56",
-      "takenAt": "2025-10-02T23:19:45",
+      "takenAt": "2025-10-02T23:19:45+09:00",
       "worldId": "wrld_8f973ca3-9315-4f7d-84cc-9303f394797b"
     },
     {
       "sha1": "ad73755183d979e1d6b5dc9164b9199ef749c9dd",
-      "takenAt": "2025-10-04T21:05:30",
+      "takenAt": "2025-10-04T21:05:30+09:00",
       "worldId": "wrld_6b5d5bc6-765b-486c-a3c7-03836ef2a373"
     },
     {
       "sha1": "6929dd4c8af589e43db8926235798965f9b50e25",
-      "takenAt": "2025-10-04T21:42:48",
+      "takenAt": "2025-10-04T21:42:48+09:00",
       "worldId": "wrld_351a1a5e-faf4-4592-996d-a4ebc813a188"
     },
     {
       "sha1": "9e8dc564214b59c9cf8701cb798ee807dc5dc8c5",
-      "takenAt": "2025-10-04T22:31:32",
+      "takenAt": "2025-10-04T22:31:32+09:00",
       "worldId": "wrld_fcd3f18e-4d4e-4a44-95e1-f20277aad7f5"
     },
     {
       "sha1": "57ed7665d1c1c3aeead5a5773063fe88b27b75c0",
-      "takenAt": "2025-10-04T22:32:11",
+      "takenAt": "2025-10-04T22:32:11+09:00",
       "worldId": "wrld_fcd3f18e-4d4e-4a44-95e1-f20277aad7f5"
     },
     {
       "sha1": "73b71da154f1b0e13fbfd9577f984254c2d7dc64",
-      "takenAt": "2025-10-04T22:42:44",
+      "takenAt": "2025-10-04T22:42:44+09:00",
       "worldId": "wrld_6fdf3a22-1101-486b-a723-daa568986ae0"
     },
     {
       "sha1": "c631fb8450db002d7eb06429c996d6d1ab60e62c",
-      "takenAt": "2025-10-04T22:44:04",
+      "takenAt": "2025-10-04T22:44:04+09:00",
       "worldId": "wrld_6fdf3a22-1101-486b-a723-daa568986ae0"
     },
     {
       "sha1": "e317d299ed60e03dde9ee91aab9a2e093435e3fa",
-      "takenAt": "2025-10-04T22:45:31",
+      "takenAt": "2025-10-04T22:45:31+09:00",
       "worldId": "wrld_6fdf3a22-1101-486b-a723-daa568986ae0"
     },
     {
       "sha1": "bfdda21304e6befbc6623344ebf990264bc880c3",
-      "takenAt": "2025-10-04T22:47:45",
+      "takenAt": "2025-10-04T22:47:45+09:00",
       "worldId": "wrld_e8627147-3eab-47f1-8e85-2f05723ae26f"
     },
     {
       "sha1": "1ab046c6ae4a9747790a15d67bff0cb86ca77f63",
-      "takenAt": "2025-10-04T22:48:28",
+      "takenAt": "2025-10-04T22:48:28+09:00",
       "worldId": "wrld_e8627147-3eab-47f1-8e85-2f05723ae26f"
     },
     {
       "sha1": "68b77c901620b2e561d2a4d8b97174af580782aa",
-      "takenAt": "2025-10-04T22:51:05",
+      "takenAt": "2025-10-04T22:51:05+09:00",
       "worldId": "wrld_e8627147-3eab-47f1-8e85-2f05723ae26f"
     },
     {
       "sha1": "776d1f1d07c915d4ff8e83838c508e9f6701f156",
-      "takenAt": "2025-10-04T23:01:41",
+      "takenAt": "2025-10-04T23:01:41+09:00",
       "worldId": "wrld_a1b9a620-9bc0-4925-8ece-7ae1a2a6018d"
     },
     {
       "sha1": "1d7497cc2afc1b458e2bb37ecce9c3cbfc9835fa",
-      "takenAt": "2025-10-04T23:06:48",
+      "takenAt": "2025-10-04T23:06:48+09:00",
       "worldId": "wrld_a309ebed-e7c2-4fc4-bafd-bf39dea0e8b3"
     },
     {
       "sha1": "7843cc251bb979c74b97eac9080baeeedbd6dbdd",
-      "takenAt": "2025-10-04T23:08:01",
+      "takenAt": "2025-10-04T23:08:01+09:00",
       "worldId": "wrld_a309ebed-e7c2-4fc4-bafd-bf39dea0e8b3"
     },
     {
       "sha1": "3df7b090932b84ecf7ac1c70fcbd12ebed82ae21",
-      "takenAt": "2025-10-04T23:10:18",
+      "takenAt": "2025-10-04T23:10:18+09:00",
       "worldId": "wrld_a309ebed-e7c2-4fc4-bafd-bf39dea0e8b3"
     },
     {
       "sha1": "7fd825b04b87c11a70dbd1e8ae6a58b9da34645c",
-      "takenAt": "2025-10-04T23:11:06",
+      "takenAt": "2025-10-04T23:11:06+09:00",
       "worldId": "wrld_a309ebed-e7c2-4fc4-bafd-bf39dea0e8b3"
     },
     {
       "sha1": "1a70f07821beb19910913f0d30b979da575127b7",
-      "takenAt": "2025-10-04T23:15:47",
+      "takenAt": "2025-10-04T23:15:47+09:00",
       "worldId": "wrld_cc0f6ff7-2053-4214-80c3-57f786f4e37d"
     },
     {
       "sha1": "84ca087d4b47e0c47afed756e9abb5caf99c8edd",
-      "takenAt": "2025-10-04T23:16:13",
+      "takenAt": "2025-10-04T23:16:13+09:00",
       "worldId": "wrld_cc0f6ff7-2053-4214-80c3-57f786f4e37d"
     },
     {
       "sha1": "3843aebf5a581170c9ae312a1ba7207310e44e02",
-      "takenAt": "2025-10-04T23:17:22",
+      "takenAt": "2025-10-04T23:17:22+09:00",
       "worldId": "wrld_cc0f6ff7-2053-4214-80c3-57f786f4e37d"
     },
     {
       "sha1": "503a2478dbe8cf4a3fefa35cccae6a714e6ca4f7",
-      "takenAt": "2025-10-04T23:17:49",
+      "takenAt": "2025-10-04T23:17:49+09:00",
       "worldId": "wrld_cc0f6ff7-2053-4214-80c3-57f786f4e37d"
     },
     {
       "sha1": "c9d533642de22dd323f5d96d0e5257d353762879",
-      "takenAt": "2025-10-04T23:23:12",
+      "takenAt": "2025-10-04T23:23:12+09:00",
       "worldId": "wrld_fc7d1a92-4fac-42e9-9853-ab2fc048e419"
     },
     {
       "sha1": "1a9cfd5fd09e24853d0f2a6b6e40d51708d0860b",
-      "takenAt": "2025-10-04T23:23:29",
+      "takenAt": "2025-10-04T23:23:29+09:00",
       "worldId": "wrld_fc7d1a92-4fac-42e9-9853-ab2fc048e419"
     },
     {
       "sha1": "cc94ecc96f22546b26e9b1798a040de3522ccb0a",
-      "takenAt": "2025-10-04T23:24:11",
+      "takenAt": "2025-10-04T23:24:11+09:00",
       "worldId": "wrld_fc7d1a92-4fac-42e9-9853-ab2fc048e419"
     },
     {
       "sha1": "31a2b04c1dbea46ea3ccc126978eb36b8caf0447",
-      "takenAt": "2025-10-04T23:24:30",
+      "takenAt": "2025-10-04T23:24:30+09:00",
       "worldId": "wrld_fc7d1a92-4fac-42e9-9853-ab2fc048e419"
     },
     {
       "sha1": "49403a9ef7c4a51a738ccdfa7ceed2ef1d8fdb7b",
-      "takenAt": "2025-10-04T23:24:44",
+      "takenAt": "2025-10-04T23:24:44+09:00",
       "worldId": "wrld_fc7d1a92-4fac-42e9-9853-ab2fc048e419"
     },
     {
       "sha1": "800324a857de375bb695b305e994966aa961acfb",
-      "takenAt": "2025-10-04T23:27:47",
+      "takenAt": "2025-10-04T23:27:47+09:00",
       "worldId": "wrld_11f9a6a6-5db3-41ae-984b-f2724052822a"
     },
     {
       "sha1": "c13f32ca6837f7aeeb0ed809ec481125bd3eb1cd",
-      "takenAt": "2025-10-04T23:28:01",
+      "takenAt": "2025-10-04T23:28:01+09:00",
       "worldId": "wrld_11f9a6a6-5db3-41ae-984b-f2724052822a"
     },
     {
       "sha1": "fbf4e889520b53e7fab39014afe16ed9c7f4c39f",
-      "takenAt": "2025-10-04T23:28:08",
+      "takenAt": "2025-10-04T23:28:08+09:00",
       "worldId": "wrld_11f9a6a6-5db3-41ae-984b-f2724052822a"
     },
     {
       "sha1": "fad92f309444d292bb5fb14e802493753ac0eae7",
-      "takenAt": "2025-10-04T23:28:36",
+      "takenAt": "2025-10-04T23:28:36+09:00",
       "worldId": "wrld_11f9a6a6-5db3-41ae-984b-f2724052822a"
     },
     {
       "sha1": "647d14b42b8ea5ec7cf4c5db15e8acba4bffccdc",
-      "takenAt": "2025-10-04T23:28:43",
+      "takenAt": "2025-10-04T23:28:43+09:00",
       "worldId": "wrld_11f9a6a6-5db3-41ae-984b-f2724052822a"
     },
     {
       "sha1": "86f878a33123a5a411aa1481300084556903f3dc",
-      "takenAt": "2025-10-04T23:28:56",
+      "takenAt": "2025-10-04T23:28:56+09:00",
       "worldId": "wrld_11f9a6a6-5db3-41ae-984b-f2724052822a"
     },
     {
       "sha1": "70afc53a97c54981f8f83e89f70c5532c4e18bc2",
-      "takenAt": "2025-10-04T23:29:13",
+      "takenAt": "2025-10-04T23:29:13+09:00",
       "worldId": "wrld_11f9a6a6-5db3-41ae-984b-f2724052822a"
     },
     {
       "sha1": "5ae89c2e1080a2e45a6b90e2bfd36c728bbb6ea7",
-      "takenAt": "2025-10-05T21:30:19",
+      "takenAt": "2025-10-05T21:30:19+09:00",
       "worldId": "wrld_47270cae-e1c7-4dec-b963-5a7eb56c268a"
     },
     {
       "sha1": "7b420a19c39e435e02e574e3a51b9dec0ba588d0",
-      "takenAt": "2025-10-05T21:30:32",
+      "takenAt": "2025-10-05T21:30:32+09:00",
       "worldId": "wrld_47270cae-e1c7-4dec-b963-5a7eb56c268a"
     },
     {
       "sha1": "845284a4e82508d0e23c8ebdf7fd82e3d56f41c8",
-      "takenAt": "2025-10-05T21:33:00",
+      "takenAt": "2025-10-05T21:33:00+09:00",
       "worldId": "wrld_47270cae-e1c7-4dec-b963-5a7eb56c268a"
     },
     {
       "sha1": "7b5c4c4332192a0f90e4423318d02205775ec107",
-      "takenAt": "2025-10-05T21:35:58",
+      "takenAt": "2025-10-05T21:35:58+09:00",
       "worldId": "wrld_b9078cb5-4e20-4c39-893e-ff7aa77d7e63"
     },
     {
       "sha1": "fdbf82fa0fef5e955011e0145bb8700136cce595",
-      "takenAt": "2025-10-05T21:36:42",
+      "takenAt": "2025-10-05T21:36:42+09:00",
       "worldId": "wrld_b9078cb5-4e20-4c39-893e-ff7aa77d7e63"
     },
     {
       "sha1": "bc16d17088b95e9ca31617617eaf2797762e6f55",
-      "takenAt": "2025-10-05T21:38:56",
+      "takenAt": "2025-10-05T21:38:56+09:00",
       "worldId": "wrld_b1c45264-91ba-4048-be3e-2cb979c93fd6"
     },
     {
       "sha1": "12084ea3bd6b079debb8c93bb315e26391cb0c81",
-      "takenAt": "2025-10-05T21:39:06",
+      "takenAt": "2025-10-05T21:39:06+09:00",
       "worldId": "wrld_b1c45264-91ba-4048-be3e-2cb979c93fd6"
     },
     {
       "sha1": "f3ca1d524ed541576371569d523a4777e1b41ea3",
-      "takenAt": "2025-10-05T21:42:51",
+      "takenAt": "2025-10-05T21:42:51+09:00",
       "worldId": "wrld_a8b17ca6-8cf5-437a-bc47-9e440161dfc8"
     },
     {
       "sha1": "ced1369abc4bd01b962d5836fd71e137bb2aa234",
-      "takenAt": "2025-10-05T21:43:04",
+      "takenAt": "2025-10-05T21:43:04+09:00",
       "worldId": "wrld_a8b17ca6-8cf5-437a-bc47-9e440161dfc8"
     },
     {
       "sha1": "d41f354b1c1b6c2ad0079f453021b596406239ea",
-      "takenAt": "2025-10-05T21:48:29",
+      "takenAt": "2025-10-05T21:48:29+09:00",
       "worldId": "wrld_188b3d52-d8cf-4b9e-a762-9466eb21ec33"
     },
     {
       "sha1": "126cdc2714da3ec129508bada46e406e2e0ba524",
-      "takenAt": "2025-10-06T23:10:01",
+      "takenAt": "2025-10-06T23:10:01+09:00",
       "worldId": "wrld_7fccaa7d-ea8d-4e58-9bbc-d14e24534f14"
     },
     {
       "sha1": "d7e9693ec5cb546b6cc9c8a469fcf6ae7ba2a3e7",
-      "takenAt": "2025-10-06T23:10:18",
+      "takenAt": "2025-10-06T23:10:18+09:00",
       "worldId": "wrld_7fccaa7d-ea8d-4e58-9bbc-d14e24534f14"
     },
     {
       "sha1": "a38fcbe1ae54cb9436b1055228cb7fac84a701c8",
-      "takenAt": "2025-10-06T23:11:03",
+      "takenAt": "2025-10-06T23:11:03+09:00",
       "worldId": "wrld_7fccaa7d-ea8d-4e58-9bbc-d14e24534f14"
     },
     {
       "sha1": "edbb7bc140408df9775b3f1d38969fd972042842",
-      "takenAt": "2025-10-06T23:12:05",
+      "takenAt": "2025-10-06T23:12:05+09:00",
       "worldId": "wrld_7fccaa7d-ea8d-4e58-9bbc-d14e24534f14"
     },
     {
       "sha1": "4718932779c79c0fc276268bce7abd99d589b4af",
-      "takenAt": "2025-10-06T23:13:17",
+      "takenAt": "2025-10-06T23:13:17+09:00",
       "worldId": "wrld_7fccaa7d-ea8d-4e58-9bbc-d14e24534f14"
     },
     {
       "sha1": "61b7b51c9d989a5c96c9b4089756feb89e906015",
-      "takenAt": "2025-10-06T23:13:30",
+      "takenAt": "2025-10-06T23:13:30+09:00",
       "worldId": "wrld_7fccaa7d-ea8d-4e58-9bbc-d14e24534f14"
     },
     {
       "sha1": "bdee01eae4b4796f3c13731aafe97828f5ad1e40",
-      "takenAt": "2025-10-06T23:13:50",
+      "takenAt": "2025-10-06T23:13:50+09:00",
       "worldId": "wrld_7fccaa7d-ea8d-4e58-9bbc-d14e24534f14"
     },
     {
       "sha1": "d20d9ac026dda20fa67f7e6998527ef38989b17b",
-      "takenAt": "2025-10-06T23:15:19",
+      "takenAt": "2025-10-06T23:15:19+09:00",
       "worldId": "wrld_7fccaa7d-ea8d-4e58-9bbc-d14e24534f14"
     },
     {
       "sha1": "bf37074d4e37a029115ddefe443def2c02235ba5",
-      "takenAt": "2025-10-13T15:15:26",
+      "takenAt": "2025-10-13T15:15:26+09:00",
       "worldId": "wrld_6ae24d40-2fa8-4e6e-88df-c979a5db7653"
     },
     {
       "sha1": "32a45c956a751469c50c15a7dd202907717dae24",
-      "takenAt": "2025-10-15T22:11:44",
+      "takenAt": "2025-10-15T22:11:44+09:00",
       "worldId": "wrld_aa6e7212-d364-45eb-9482-aa3b75ed92c4"
     },
     {
       "sha1": "cf6d9e889a67f6e3585a03ded9306ddba1a309d1",
-      "takenAt": "2025-10-15T22:12:03",
+      "takenAt": "2025-10-15T22:12:03+09:00",
       "worldId": "wrld_aa6e7212-d364-45eb-9482-aa3b75ed92c4"
     },
     {
       "sha1": "ac50eac071487f914c6d02ffe3c5c173f366ad5a",
-      "takenAt": "2025-10-15T22:40:06",
+      "takenAt": "2025-10-15T22:40:06+09:00",
       "worldId": "wrld_4e4b6b19-b38c-4ca3-9697-efb4554d9ffb"
     },
     {
       "sha1": "8944e22e677e5f9b12c7e34dae8ed9b6669b26ac",
-      "takenAt": "2025-10-15T22:43:40",
+      "takenAt": "2025-10-15T22:43:40+09:00",
       "worldId": "wrld_4e4b6b19-b38c-4ca3-9697-efb4554d9ffb"
     },
     {
       "sha1": "39132f08dd5fb03f825ec9c9241c5dcb7646d0bb",
-      "takenAt": "2025-10-19T02:12:36",
+      "takenAt": "2025-10-19T02:12:36+09:00",
       "worldId": "wrld_ebd39163-7b07-4bb6-8cdb-478bcc76a5cf"
     },
     {
       "sha1": "9b741434a589a3c73c978eac0e1534824cbd4ecc",
-      "takenAt": "2025-10-25T23:36:49",
+      "takenAt": "2025-10-25T23:36:49+09:00",
       "worldId": "wrld_acc31d70-74b8-4e63-b75d-16f05e16987e"
     },
     {
       "sha1": "d5de7d0e1f9138b16e3682e53dab25fb2937714a",
-      "takenAt": "2025-10-26T22:36:56",
+      "takenAt": "2025-10-26T22:36:56+09:00",
       "worldId": "wrld_6660f3bd-c4d7-482f-ba1a-ccd0106f1315"
     },
     {
       "sha1": "f1cb4f1d94987af98154bce9afaef6e01469243d",
-      "takenAt": "2025-10-26T22:38:10",
+      "takenAt": "2025-10-26T22:38:10+09:00",
       "worldId": "wrld_6660f3bd-c4d7-482f-ba1a-ccd0106f1315"
     },
     {
       "sha1": "f8840e129fdeb3b8cde2ff08b9feaa5d9ecf2917",
-      "takenAt": "2025-11-01T22:01:30",
+      "takenAt": "2025-11-01T22:01:30+09:00",
       "worldId": "wrld_124b621e-06cb-4a75-9843-62c9c1418209"
     },
     {
       "sha1": "f946830f3ac1071e3010e82340e62b44e51af7aa",
-      "takenAt": "2025-11-01T22:31:46",
+      "takenAt": "2025-11-01T22:31:46+09:00",
       "worldId": "wrld_124b621e-06cb-4a75-9843-62c9c1418209"
     },
     {
       "sha1": "37daa665fc771c8c3302b9ec38f62a5207c57256",
-      "takenAt": "2025-11-06T23:39:56",
+      "takenAt": "2025-11-06T23:39:56+09:00",
       "worldId": "wrld_b78de466-e9b8-4e70-bc30-85073af77452"
     },
     {
       "sha1": "bde8afb2c4aa41653167cd9637ba51aaee61befc",
-      "takenAt": "2025-11-09T22:50:01",
+      "takenAt": "2025-11-09T22:50:01+09:00",
       "worldId": "wrld_c9141272-3225-491d-b293-2ee98975facb"
     },
     {
       "sha1": "95b505df2d60898fb7d7bcd2a59ea982cb968ac7",
-      "takenAt": "2025-11-10T23:36:27",
+      "takenAt": "2025-11-10T23:36:27+09:00",
       "worldId": "wrld_18820e1e-2f7c-4dde-b4bd-0c6038e26cd5"
     },
     {
       "sha1": "b81a42a0b86213bcf93b5cb9e60a0399df516869",
-      "takenAt": "2025-11-12T21:35:56",
+      "takenAt": "2025-11-12T21:35:56+09:00",
       "worldId": "wrld_6cbad47b-3657-431e-bb7f-1984e07f44e3"
     },
     {
       "sha1": "1e8f033f17faeb55c58b00d2a1d7f1adcf0eafeb",
-      "takenAt": "2025-11-15T21:42:27",
+      "takenAt": "2025-11-15T21:42:27+09:00",
       "worldId": "wrld_7cb65abe-40e6-43e8-8dc1-520a7e292cf1"
     },
     {
       "sha1": "844999f52b3d20eb6b9f4fe40211fc8fe85f0f84",
-      "takenAt": "2025-11-15T21:42:39",
+      "takenAt": "2025-11-15T21:42:39+09:00",
       "worldId": "wrld_7cb65abe-40e6-43e8-8dc1-520a7e292cf1"
     },
     {
       "sha1": "f7f99b3b70f2fb87f9eaeb79cb67c0c614193190",
-      "takenAt": "2025-11-15T21:47:36",
+      "takenAt": "2025-11-15T21:47:36+09:00",
       "worldId": "wrld_14c19548-b88d-4300-87c9-1f3d8c9ff500"
     },
     {
       "sha1": "cb69d9ed4285165b37e66e26558d1b0e7b5403a3",
-      "takenAt": "2025-11-15T22:00:51",
+      "takenAt": "2025-11-15T22:00:51+09:00",
       "worldId": "wrld_dc1ab8bf-b7c7-4de7-9e92-e0b375b2676c"
     },
     {
       "sha1": "c69fca5b629c5fe5f088aa5e7c782b2d727ae98b",
-      "takenAt": "2025-11-15T22:11:14",
+      "takenAt": "2025-11-15T22:11:14+09:00",
       "worldId": "wrld_963512ca-f96c-4e54-8cca-29a800576684"
     },
     {
       "sha1": "b852fca430f4a6c37022b87cbd9d82b215a4e1d2",
-      "takenAt": "2025-11-15T22:35:45",
+      "takenAt": "2025-11-15T22:35:45+09:00",
       "worldId": "wrld_277e695d-725c-4cda-98bc-7796af643ef5"
     },
     {
       "sha1": "5f86659a586c8ed04edb470b3910e9dedf9832f1",
-      "takenAt": "2025-11-17T22:07:45",
+      "takenAt": "2025-11-17T22:07:45+09:00",
       "worldId": "wrld_dd146b02-948b-4da1-b181-618792ff25b9"
     },
     {
       "sha1": "4c18c8141647ee4b7534a36522a6bd1e75e71bd7",
-      "takenAt": "2025-11-22T17:00:06",
+      "takenAt": "2025-11-22T17:00:06+09:00",
       "worldId": "wrld_ed1acb6a-fc2e-4d07-8ce7-86c36420fe47"
     },
     {
       "sha1": "c5383f0a3159cff1068d4f3d44540083612abf1f",
-      "takenAt": "2025-11-23T22:51:44",
+      "takenAt": "2025-11-23T22:51:44+09:00",
       "worldId": "wrld_2e2363ef-4452-4b63-8933-32f1f67ba553"
     },
     {
       "sha1": "96a5056c4c130b5bbf30931e6138ef116734786b",
-      "takenAt": "2025-11-23T22:55:21",
+      "takenAt": "2025-11-23T22:55:21+09:00",
       "worldId": "wrld_2e2363ef-4452-4b63-8933-32f1f67ba553"
     },
     {
       "sha1": "7c2cb8997851e195cb7278f24ae3db7b6606732c",
-      "takenAt": "2025-11-23T23:12:57",
+      "takenAt": "2025-11-23T23:12:57+09:00",
       "worldId": "wrld_69c41e95-1539-426a-a321-34412e0b021e"
     },
     {
       "sha1": "c67cd8743d97d153f4015661ded570302eb84d1a",
-      "takenAt": "2025-11-23T23:13:07",
+      "takenAt": "2025-11-23T23:13:07+09:00",
       "worldId": "wrld_69c41e95-1539-426a-a321-34412e0b021e"
     },
     {
       "sha1": "2b92acf8f33c8d4e48162ae5e6a5676e3f46acb9",
-      "takenAt": "2025-11-23T23:29:39",
+      "takenAt": "2025-11-23T23:29:39+09:00",
       "worldId": "wrld_69c41e95-1539-426a-a321-34412e0b021e"
     },
     {
       "sha1": "3c235bf02774f927e9f2f10ade17a8add6f769b7",
-      "takenAt": "2025-11-23T23:29:43",
+      "takenAt": "2025-11-23T23:29:43+09:00",
       "worldId": "wrld_69c41e95-1539-426a-a321-34412e0b021e"
     },
     {
       "sha1": "69d5a501e01e9ba96bdf5f7d6232960a2543e5d8",
-      "takenAt": "2025-11-23T23:29:46",
+      "takenAt": "2025-11-23T23:29:46+09:00",
       "worldId": "wrld_69c41e95-1539-426a-a321-34412e0b021e"
     },
     {
       "sha1": "d6f33beece03c10673d1761e402f88c71a8460c5",
-      "takenAt": "2025-11-23T23:30:05",
+      "takenAt": "2025-11-23T23:30:05+09:00",
       "worldId": "wrld_69c41e95-1539-426a-a321-34412e0b021e"
     },
     {
       "sha1": "5dc26fc016497fc600d9bebd69a1a09fceff4839",
-      "takenAt": "2025-11-24T21:25:40",
+      "takenAt": "2025-11-24T21:25:40+09:00",
       "worldId": "wrld_251da81b-4c64-48dd-903b-9f23df42dae7"
     },
     {
       "sha1": "263ea208219ff568d78b14f6d01ae196a6da0d53",
-      "takenAt": "2025-11-27T21:49:05",
+      "takenAt": "2025-11-27T21:49:05+09:00",
       "worldId": "wrld_ab2c1526-c1b1-419d-b138-be32591e799f"
     },
     {
       "sha1": "8f11523f71efc77a6a3a694fe7fca4ca0c742285",
-      "takenAt": "2025-11-27T21:51:52",
+      "takenAt": "2025-11-27T21:51:52+09:00",
       "worldId": "wrld_ab2c1526-c1b1-419d-b138-be32591e799f"
     },
     {
       "sha1": "31417de64b12a90a559488f3740e895e4889df77",
-      "takenAt": "2025-11-27T21:56:58",
+      "takenAt": "2025-11-27T21:56:58+09:00",
       "worldId": "wrld_ab2c1526-c1b1-419d-b138-be32591e799f"
     },
     {
       "sha1": "3af2b04cdfbad56dec31523616b1b568576b5a43",
-      "takenAt": "2025-11-27T23:09:06",
+      "takenAt": "2025-11-27T23:09:06+09:00",
       "worldId": "wrld_0f774bfe-143d-4e12-9db0-85e017df28d6"
     },
     {
       "sha1": "8f10b24b8f9e2ad285540d193f781731eee04eca",
-      "takenAt": "2025-11-28T22:20:28",
+      "takenAt": "2025-11-28T22:20:28+09:00",
       "worldId": "wrld_1ddbfcf7-280c-484c-87e0-228e7fa1d826"
     },
     {
       "sha1": "9650199420ac088d67c129733d87c079249732b4",
-      "takenAt": "2025-11-29T02:22:59",
+      "takenAt": "2025-11-29T02:22:59+09:00",
       "worldId": "wrld_7a8ed4b3-6e31-45dc-95ba-2629e1eb8c27"
     },
     {
       "sha1": "d8c115e3c8802e3d98a93e320e4d5e99a206842d",
-      "takenAt": "2025-11-30T20:59:01",
+      "takenAt": "2025-11-30T20:59:01+09:00",
       "worldId": "wrld_429aa72f-0727-41d7-83a8-8402f2709066"
     },
     {
       "sha1": "204e039ab11c5b12c30fe0797ca0d4ee8da2c600",
-      "takenAt": "2025-11-30T21:19:11",
+      "takenAt": "2025-11-30T21:19:11+09:00",
       "worldId": "wrld_0d333062-c99b-474f-91b4-cee7a28519cb"
     },
     {
       "sha1": "ae381b0b1bd5e39b28b4b3fc091ab8e0c7f55cee",
-      "takenAt": "2025-12-01T22:18:14",
+      "takenAt": "2025-12-01T22:18:14+09:00",
       "worldId": "wrld_043affb0-0dd7-44f9-badf-bfb85374afad"
     },
     {
       "sha1": "5c3012e27d1ca05bf609d62315f577a419c98836",
-      "takenAt": "2025-12-01T23:32:46",
+      "takenAt": "2025-12-01T23:32:46+09:00",
       "worldId": "wrld_4f92d02d-f930-4e5c-a477-e5cb8f4494fb"
     },
     {
       "sha1": "0bb43cf0c337005ff532e3b250d7d5760a6fbafe",
-      "takenAt": "2025-12-03T22:02:58",
+      "takenAt": "2025-12-03T22:02:58+09:00",
       "worldId": "wrld_0c1aaf36-f67a-4ee3-b6fb-ec52baf6679e"
     },
     {
       "sha1": "9df9ea10fe89f4ad87f69b4474716d0cdaa6fd91",
-      "takenAt": "2025-12-03T22:03:31",
+      "takenAt": "2025-12-03T22:03:31+09:00",
       "worldId": "wrld_0c1aaf36-f67a-4ee3-b6fb-ec52baf6679e"
     },
     {
       "sha1": "bfac8ebd6603eddba7f5fd2ea81a5e04fa98bb60",
-      "takenAt": "2025-12-03T22:44:25",
+      "takenAt": "2025-12-03T22:44:25+09:00",
       "worldId": "wrld_81128c28-05a4-4518-a8eb-8c4e7af09375"
     },
     {
       "sha1": "c91dabeb2de36b164ab21306ad5bf36d84cf74db",
-      "takenAt": "2025-12-06T21:53:14",
+      "takenAt": "2025-12-06T21:53:14+09:00",
       "worldId": "wrld_e1b40cdd-e81c-494e-a977-ccc70d3cea82"
     },
     {
       "sha1": "3c9e0c006fac93106cf57f9e8608a7792a8a05e5",
-      "takenAt": "2025-12-06T22:13:03",
+      "takenAt": "2025-12-06T22:13:03+09:00",
       "worldId": "wrld_e1b40cdd-e81c-494e-a977-ccc70d3cea82"
     },
     {
       "sha1": "ff233993224a314b8bfc5fc5302cff9ebca0fcda",
-      "takenAt": "2025-12-06T22:21:59",
+      "takenAt": "2025-12-06T22:21:59+09:00",
       "worldId": "wrld_e1b40cdd-e81c-494e-a977-ccc70d3cea82"
     },
     {
       "sha1": "f0d4edd9e6154e8a281af22bbd9d875b63abbdd9",
-      "takenAt": "2025-12-06T22:23:22",
+      "takenAt": "2025-12-06T22:23:22+09:00",
       "worldId": "wrld_e1b40cdd-e81c-494e-a977-ccc70d3cea82"
     },
     {
       "sha1": "3570d23096595bba96c4ce82d98f8dad57b08b51",
-      "takenAt": "2025-12-06T22:24:15",
+      "takenAt": "2025-12-06T22:24:15+09:00",
       "worldId": "wrld_e1b40cdd-e81c-494e-a977-ccc70d3cea82"
     },
     {
       "sha1": "2ebc2e7fbc27e6c4dd5c1fbf967caf4c79c319b7",
-      "takenAt": "2025-12-06T22:27:45",
+      "takenAt": "2025-12-06T22:27:45+09:00",
       "worldId": "wrld_e1b40cdd-e81c-494e-a977-ccc70d3cea82"
     },
     {
       "sha1": "a3937b0d35b0ba92b7cb3204620d21f48914e573",
-      "takenAt": "2025-12-06T22:47:19",
+      "takenAt": "2025-12-06T22:47:19+09:00",
       "worldId": "wrld_e1b40cdd-e81c-494e-a977-ccc70d3cea82"
     },
     {
       "sha1": "3de61ee91cd1faead5f18c39cb991922e0528bc9",
-      "takenAt": "2025-12-06T22:48:23",
+      "takenAt": "2025-12-06T22:48:23+09:00",
       "worldId": "wrld_e1b40cdd-e81c-494e-a977-ccc70d3cea82"
     },
     {
       "sha1": "2b62983efb0d37f398cacdcd6cdad5f744a91c75",
-      "takenAt": "2025-12-06T22:55:05",
+      "takenAt": "2025-12-06T22:55:05+09:00",
       "worldId": "wrld_e1b40cdd-e81c-494e-a977-ccc70d3cea82"
     },
     {
       "sha1": "285915a6374e2d2ec85e51451ce08d31def82a85",
-      "takenAt": "2025-12-06T22:55:17",
+      "takenAt": "2025-12-06T22:55:17+09:00",
       "worldId": "wrld_e1b40cdd-e81c-494e-a977-ccc70d3cea82"
     },
     {
       "sha1": "192d96317fc0e5d9db0aa0254a92e41c1068bbbc",
-      "takenAt": "2025-12-06T23:26:04",
+      "takenAt": "2025-12-06T23:26:04+09:00",
       "worldId": "wrld_8da29e15-b925-4360-8263-8ab18f850b97"
     },
     {
       "sha1": "a9794ba80e56b5cbb0b1f8b680799a96e5e2e9e7",
-      "takenAt": "2025-12-06T23:29:07",
+      "takenAt": "2025-12-06T23:29:07+09:00",
       "worldId": "wrld_8da29e15-b925-4360-8263-8ab18f850b97"
     },
     {
       "sha1": "b4ea776c6f01b7137a3f8310fe8f7e8f90c70e08",
-      "takenAt": "2025-12-07T12:32:39",
+      "takenAt": "2025-12-07T12:32:39+09:00",
       "worldId": "wrld_20909c04-c52a-4f33-aea7-44532495d89c"
     },
     {
       "sha1": "16cb5c090b8746cbc2d90aa1ece5965fa2002660",
-      "takenAt": "2025-12-07T12:33:19",
+      "takenAt": "2025-12-07T12:33:19+09:00",
       "worldId": "wrld_20909c04-c52a-4f33-aea7-44532495d89c"
     },
     {
       "sha1": "fcaafabeddafcf504247d8797b7cbbb4f04f06b7",
-      "takenAt": "2025-12-07T16:14:02",
+      "takenAt": "2025-12-07T16:14:02+09:00",
       "worldId": "wrld_8da29e15-b925-4360-8263-8ab18f850b97"
     },
     {
       "sha1": "6ada3d21087b4f3db37e961764b3007b4406aa4a",
-      "takenAt": "2025-12-07T16:14:30",
+      "takenAt": "2025-12-07T16:14:30+09:00",
       "worldId": "wrld_8da29e15-b925-4360-8263-8ab18f850b97"
     },
     {
       "sha1": "02118e90cb5815694b6cdd4e2418cf492b5a7be4",
-      "takenAt": "2025-12-07T16:16:00",
+      "takenAt": "2025-12-07T16:16:00+09:00",
       "worldId": "wrld_8da29e15-b925-4360-8263-8ab18f850b97"
     },
     {
       "sha1": "fd0ebf7e1396223cac213227d571f6f838c59616",
-      "takenAt": "2025-12-07T16:16:27",
+      "takenAt": "2025-12-07T16:16:27+09:00",
       "worldId": "wrld_8da29e15-b925-4360-8263-8ab18f850b97"
     },
     {
       "sha1": "8bbbd43768671142fde3f4d6054b5cff5a361589",
-      "takenAt": "2025-12-07T16:17:05",
+      "takenAt": "2025-12-07T16:17:05+09:00",
       "worldId": "wrld_8da29e15-b925-4360-8263-8ab18f850b97"
     },
     {
       "sha1": "b673a12d3b253d0ce81b1b8a5e413b9e84ac22ee",
-      "takenAt": "2025-12-07T16:22:33",
+      "takenAt": "2025-12-07T16:22:33+09:00",
       "worldId": "wrld_8da29e15-b925-4360-8263-8ab18f850b97"
     },
     {
       "sha1": "1b57644d92fd369b4d8b8097a68f3d1da912692e",
-      "takenAt": "2025-12-07T21:53:53",
+      "takenAt": "2025-12-07T21:53:53+09:00",
       "worldId": "wrld_3d2caab1-f16c-4b01-80a2-7dbb1fe814d4"
     },
     {
       "sha1": "f210558f9a4caf9372affaeaa47ca982d7a20510",
-      "takenAt": "2025-12-07T23:29:57",
+      "takenAt": "2025-12-07T23:29:57+09:00",
       "worldId": "wrld_e5e5bb68-391d-459e-b746-a1068c55dca6"
     },
     {
       "sha1": "59dcba969d6fa3a23a7d064b1ad01bf2f346151f",
-      "takenAt": "2025-12-09T21:59:09",
+      "takenAt": "2025-12-09T21:59:09+09:00",
       "worldId": "wrld_1b0729a5-f667-43fe-a740-f36e950b86e7"
     },
     {
       "sha1": "9d8e1d7bb964c54b04411a6ed955d8e0fa600ffb",
-      "takenAt": "2025-12-14T23:18:45",
+      "takenAt": "2025-12-14T23:18:45+09:00",
       "worldId": "wrld_577bcb75-a418-41f0-b9fc-9d888c7eeb76"
     },
     {
       "sha1": "2bb8032af4a5d3d44677368adf89ebb0fac408c7",
-      "takenAt": "2025-12-17T20:42:24",
+      "takenAt": "2025-12-17T20:42:24+09:00",
       "worldId": "wrld_73a17704-2f27-472b-90bf-dcf7df6a50ad"
     },
     {
       "sha1": "5174129beb87cee3ba6809934112435d52cc7413",
-      "takenAt": "2025-12-17T20:43:17",
+      "takenAt": "2025-12-17T20:43:17+09:00",
       "worldId": "wrld_73a17704-2f27-472b-90bf-dcf7df6a50ad"
     },
     {
       "sha1": "2e3f57281229889bb3bdab97fee98c24676ef054",
-      "takenAt": "2025-12-18T23:24:14",
+      "takenAt": "2025-12-18T23:24:14+09:00",
       "worldId": "wrld_e1b40cdd-e81c-494e-a977-ccc70d3cea82"
     },
     {
       "sha1": "488fbd0c07926973d32258b6194bcde101cfd3e5",
-      "takenAt": "2025-12-20T21:27:34",
+      "takenAt": "2025-12-20T21:27:34+09:00",
       "worldId": "wrld_6c2e2a3b-45ae-4bc9-9cb2-d2a81482827a"
     },
     {
       "sha1": "53cd88a8ffd0a82f7e2c5aa06ff7602cf73f78bb",
-      "takenAt": "2025-12-28T21:29:33",
+      "takenAt": "2025-12-28T21:29:33+09:00",
       "worldId": "wrld_63cbfc3b-3037-44c5-9739-b7284fda528d"
     },
     {
       "sha1": "4f7c16c76a4687504af2a13e99f72039afcb233b",
-      "takenAt": "2025-12-30T12:32:11",
+      "takenAt": "2025-12-30T12:32:11+09:00",
       "worldId": "wrld_8ca15987-54f5-46c7-bb53-60a5c69582be"
     },
     {
       "sha1": "9141f038ce971390d08cab3f4a72ad4fe71dfead",
-      "takenAt": "2025-12-30T12:34:24",
+      "takenAt": "2025-12-30T12:34:24+09:00",
       "worldId": "wrld_8ca15987-54f5-46c7-bb53-60a5c69582be"
     },
     {
       "sha1": "10b6fa5e4a6c78608d71eab94db4de0c8d6367ea",
-      "takenAt": "2025-12-30T12:38:05",
+      "takenAt": "2025-12-30T12:38:05+09:00",
       "worldId": "wrld_8ca15987-54f5-46c7-bb53-60a5c69582be"
     },
     {
       "sha1": "41c59119bb3ede3f998d8c62855f162a672c45da",
-      "takenAt": "2025-12-30T12:40:13",
+      "takenAt": "2025-12-30T12:40:13+09:00",
       "worldId": "wrld_8ca15987-54f5-46c7-bb53-60a5c69582be"
     },
     {
       "sha1": "b4eabdbf1ec42f739eaca7aea20ed7d8c03e1ba5",
-      "takenAt": "2025-12-30T12:41:11",
+      "takenAt": "2025-12-30T12:41:11+09:00",
       "worldId": "wrld_8ca15987-54f5-46c7-bb53-60a5c69582be"
     },
     {
       "sha1": "4a0b0afcdbbfc11238cdeb280dd23573a8b9b36f",
-      "takenAt": "2025-12-30T12:43:40",
+      "takenAt": "2025-12-30T12:43:40+09:00",
       "worldId": "wrld_8ca15987-54f5-46c7-bb53-60a5c69582be"
     },
     {
       "sha1": "9cfb0c561d7c26c2371f6bff53460099613dd84d",
-      "takenAt": "2025-12-30T12:48:55",
+      "takenAt": "2025-12-30T12:48:55+09:00",
       "worldId": "wrld_8ca15987-54f5-46c7-bb53-60a5c69582be"
     },
     {
       "sha1": "eadeea6f72f463f1014fa4648a328ffc70fc447f",
-      "takenAt": "2025-12-30T12:57:06",
+      "takenAt": "2025-12-30T12:57:06+09:00",
       "worldId": "wrld_3e4a1f3d-f701-4654-a30c-3d40071e1c23"
     },
     {
       "sha1": "336a7988d73f7eb4fd9d2ec0c1ef329f28168407",
-      "takenAt": "2025-12-31T22:30:14",
+      "takenAt": "2025-12-31T22:30:14+09:00",
       "worldId": "wrld_a560491e-6f55-4d13-a96f-cdbc34dd80f8"
     },
     {
       "sha1": "89ded654f8f8682e792421257cfde591f75a578a",
-      "takenAt": "2025-12-31T23:29:18",
+      "takenAt": "2025-12-31T23:29:18+09:00",
       "worldId": "wrld_d048292b-42ad-4204-9372-0103d9a46f71"
     },
     {
       "sha1": "83f871c2f6dc07cd9d914d09f89b9d3bf9c71e9a",
-      "takenAt": "2026-01-01T00:08:21",
+      "takenAt": "2026-01-01T00:08:21+09:00",
       "worldId": "wrld_d048292b-42ad-4204-9372-0103d9a46f71"
     },
     {
       "sha1": "e56c17f4c0425bf4c21f95a6661ebc2d2f70d5cb",
-      "takenAt": "2026-01-01T01:11:33",
+      "takenAt": "2026-01-01T01:11:33+09:00",
       "worldId": "wrld_571be847-fc14-45c5-bc25-12ee29588c7f"
     },
     {
       "sha1": "16c81eb3906f4604d353f61117e26be576df5f6d",
-      "takenAt": "2026-01-01T21:37:49",
+      "takenAt": "2026-01-01T21:37:49+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "c704a36b03d75891df6cd18fc0d4c1a1b93a7c2c",
-      "takenAt": "2026-01-01T21:38:15",
+      "takenAt": "2026-01-01T21:38:15+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "2c616829c23516e2fab7a417ab89a7db8bde2d7e",
-      "takenAt": "2026-01-01T21:40:30",
+      "takenAt": "2026-01-01T21:40:30+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "9397480f52e9c58bdd3b0caed9c03b2036683a4c",
-      "takenAt": "2026-01-01T21:41:01",
+      "takenAt": "2026-01-01T21:41:01+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "9e6fcf667cfa06c317cdb1f2ea5ee82c18c33ec6",
-      "takenAt": "2026-01-01T21:41:44",
+      "takenAt": "2026-01-01T21:41:44+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "1f7237da8161998b5d691ce4633084e0742a6914",
-      "takenAt": "2026-01-01T21:43:33",
+      "takenAt": "2026-01-01T21:43:33+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "d43ab0f5002da8a11f2ea74edcf96ebf9e001918",
-      "takenAt": "2026-01-01T21:44:24",
+      "takenAt": "2026-01-01T21:44:24+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "68ceb567a085a1c7dad798eb71e9fb58ca74fdda",
-      "takenAt": "2026-01-01T21:44:53",
+      "takenAt": "2026-01-01T21:44:53+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "2b1d6eef930f08e4cfe1df99f1c7f449d19a28ef",
-      "takenAt": "2026-01-01T21:45:29",
+      "takenAt": "2026-01-01T21:45:29+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "9d446311d70faf8d1a7ad1f0ddd816c1f111c96a",
-      "takenAt": "2026-01-01T21:47:00",
+      "takenAt": "2026-01-01T21:47:00+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "021e22da1648c1001d04a15e75022b7156eb5068",
-      "takenAt": "2026-01-01T21:48:42",
+      "takenAt": "2026-01-01T21:48:42+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "e52d2cfa62cd0176e50b2389af0da2f6e98946e8",
-      "takenAt": "2026-01-01T21:57:37",
+      "takenAt": "2026-01-01T21:57:37+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "2cb555c3145733f7504b761b4ed35845f6a92258",
-      "takenAt": "2026-01-01T22:01:16",
+      "takenAt": "2026-01-01T22:01:16+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "57083e4f2f372dc2b6c90ecd91f839928aa632c9",
-      "takenAt": "2026-01-01T22:01:42",
+      "takenAt": "2026-01-01T22:01:42+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "d868951dd2fab0433183e5afee93d0a797e6ed83",
-      "takenAt": "2026-01-01T22:02:34",
+      "takenAt": "2026-01-01T22:02:34+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "766c8e97fdd8e1dfa04118b2e2fb94a7aa8e5cd4",
-      "takenAt": "2026-01-01T22:03:24",
+      "takenAt": "2026-01-01T22:03:24+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "fe7f61c5ec72797d1e84b7b0f90f5ce3be5948b7",
-      "takenAt": "2026-01-01T22:03:29",
+      "takenAt": "2026-01-01T22:03:29+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "3726c1cfc2ac1ff6a9086120f9942493ee6c5c99",
-      "takenAt": "2026-01-01T22:05:09",
+      "takenAt": "2026-01-01T22:05:09+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "6e281af5152090d4d2d67b90998ab516e565d696",
-      "takenAt": "2026-01-01T22:05:25",
+      "takenAt": "2026-01-01T22:05:25+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "54e53ddd752418ba047dae23bcfdcfcd86303c11",
-      "takenAt": "2026-01-01T22:06:01",
+      "takenAt": "2026-01-01T22:06:01+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "e98a66936f7157cbd3ba4ec5c2f6fe0f9b0bd488",
-      "takenAt": "2026-01-01T22:06:24",
+      "takenAt": "2026-01-01T22:06:24+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "c924d2d23f1dea2f104bcd8e95784970f7500504",
-      "takenAt": "2026-01-01T22:06:31",
+      "takenAt": "2026-01-01T22:06:31+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "9784eaf059c5cfaa683483f356ec0885efc1b8dc",
-      "takenAt": "2026-01-01T22:08:16",
+      "takenAt": "2026-01-01T22:08:16+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "3a31974c051eefff2c0b8de88d2f8e85f699bfcd",
-      "takenAt": "2026-01-01T22:08:59",
+      "takenAt": "2026-01-01T22:08:59+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "826adb4376c2707d1fafa4deaf8824e25ed021fc",
-      "takenAt": "2026-01-01T22:13:24",
+      "takenAt": "2026-01-01T22:13:24+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "e5ab01e0dd39999491f59eff55b28cb86ac00d4a",
-      "takenAt": "2026-01-01T22:14:07",
+      "takenAt": "2026-01-01T22:14:07+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "17ad480bd2064e68e240759b49cf3ceb0fb9e719",
-      "takenAt": "2026-01-01T22:15:27",
+      "takenAt": "2026-01-01T22:15:27+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "ce6385174b6518422353215e3b2e9577acfe06ef",
-      "takenAt": "2026-01-01T22:16:53",
+      "takenAt": "2026-01-01T22:16:53+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "b648218a406bec0f01665414014443b5b230e948",
-      "takenAt": "2026-01-01T22:17:22",
+      "takenAt": "2026-01-01T22:17:22+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "50c2f44370764d7268f5f1bfa6b5d73af8ffe781",
-      "takenAt": "2026-01-01T22:17:55",
+      "takenAt": "2026-01-01T22:17:55+09:00",
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16"
     },
     {
       "sha1": "98c58115128fdf49c840424bb505accbe0eb9628",
-      "takenAt": "2026-01-01T23:26:54",
+      "takenAt": "2026-01-01T23:26:54+09:00",
       "worldId": "wrld_ddc945c1-aae9-412f-8915-f621651f5852"
     },
     {
       "sha1": "23cd9327546e65f69bb7053bf14f3b90d103cedf",
-      "takenAt": "2026-01-02T00:35:06",
+      "takenAt": "2026-01-02T00:35:06+09:00",
       "worldId": "wrld_83423a77-3f49-4687-8de1-ab57f259bf40"
     },
     {
       "sha1": "5d4ed0f141b10ed78e720de09bbcd5f795eef098",
-      "takenAt": "2026-01-02T23:16:42",
+      "takenAt": "2026-01-02T23:16:42+09:00",
       "worldId": "wrld_b2d24c29-1ded-4990-a90d-dd6dcc440300"
     },
     {
       "sha1": "ed3640c49dbe060904d463bb441e9359d577e78f",
-      "takenAt": "2026-01-02T23:25:25",
+      "takenAt": "2026-01-02T23:25:25+09:00",
       "worldId": "wrld_b2d24c29-1ded-4990-a90d-dd6dcc440300"
     },
     {
       "sha1": "8f8bfd2677e11cc1127bb688c583f6a14f617408",
-      "takenAt": "2026-01-03T23:14:00",
+      "takenAt": "2026-01-03T23:14:00+09:00",
       "worldId": "wrld_eff4e7c4-5b5a-4cbd-bc24-7303b0360132"
     },
     {
       "sha1": "86212e8709ef83cd54a0a711d1b64004c1c4e866",
-      "takenAt": "2026-01-03T23:19:02",
+      "takenAt": "2026-01-03T23:19:02+09:00",
       "worldId": "wrld_eff4e7c4-5b5a-4cbd-bc24-7303b0360132"
     },
     {
       "sha1": "8841d1a04ca9749a7dd6760221c4da8a94bbbe45",
-      "takenAt": "2026-01-04T21:05:43",
+      "takenAt": "2026-01-04T21:05:43+09:00",
       "worldId": "wrld_009dde3f-1635-4e3e-9c1b-ed7ce76042c5"
     },
     {
       "sha1": "fc7b87143d8c2b5d14e7d4339af6fca35da38202",
-      "takenAt": "2026-01-07T23:32:54",
+      "takenAt": "2026-01-07T23:32:54+09:00",
       "worldId": "wrld_d78e6039-3f4f-4133-a1db-a951843f3dc0"
     },
     {
       "sha1": "87ad4333b46ee454290c678a2c476a8eb5838dae",
-      "takenAt": "2026-01-11T22:55:57",
+      "takenAt": "2026-01-11T22:55:57+09:00",
       "worldId": "wrld_ddc945c1-aae9-412f-8915-f621651f5852"
     },
     {
       "sha1": "21ff8574faa3f9a5ce9e64462693b64015f859ef",
-      "takenAt": "2026-01-11T23:17:19",
+      "takenAt": "2026-01-11T23:17:19+09:00",
       "worldId": "wrld_f765b39d-8402-4a33-beb6-42fe29b016b4"
     },
     {
       "sha1": "02150c6bc3ba69206966bd1581c695387ba0006b",
-      "takenAt": "2026-01-11T23:18:50",
+      "takenAt": "2026-01-11T23:18:50+09:00",
       "worldId": "wrld_f765b39d-8402-4a33-beb6-42fe29b016b4"
     },
     {
       "sha1": "943d0f6fc3e6353def11b859d042f2d7a5c2f1d3",
-      "takenAt": "2026-01-21T21:40:27",
+      "takenAt": "2026-01-21T21:40:27+09:00",
       "worldId": "wrld_283cf2a7-3206-4c0b-817e-c9f532dac9dd"
     },
     {
       "sha1": "53e143af35a78f64a7336a23ed2bbf349c364cbf",
-      "takenAt": "2026-01-21T22:57:29",
+      "takenAt": "2026-01-21T22:57:29+09:00",
       "worldId": "wrld_5f4e7897-d6b5-4c41-9d1f-92957847ea9f"
     },
     {
       "sha1": "47831e3f1a3bf1cc8113f7cb27094e27da5b6237",
-      "takenAt": "2026-01-22T23:25:36",
+      "takenAt": "2026-01-22T23:25:36+09:00",
       "worldId": "wrld_42276029-7868-4344-b143-36ef11fea6b9"
     },
     {
       "sha1": "78a6192aa7630f4a254458b4f55c7c9de9486355",
-      "takenAt": "2026-01-22T23:26:17",
+      "takenAt": "2026-01-22T23:26:17+09:00",
       "worldId": "wrld_42276029-7868-4344-b143-36ef11fea6b9"
     },
     {
       "sha1": "097fad1a5367bb92b55c214773fa3f321c9817a3",
-      "takenAt": "2026-01-23T22:27:16",
+      "takenAt": "2026-01-23T22:27:16+09:00",
       "worldId": "wrld_6aa4eb04-0c21-405c-ac1e-5cefff8b2fff"
     },
     {
       "sha1": "872449bd5a793427e1ab14a73f520647b2766865",
-      "takenAt": "2026-01-23T22:27:25",
+      "takenAt": "2026-01-23T22:27:25+09:00",
       "worldId": "wrld_6aa4eb04-0c21-405c-ac1e-5cefff8b2fff"
     },
     {
       "sha1": "f6c5a393f4910329ef5059db61e06e27cef8d8ef",
-      "takenAt": "2026-01-25T22:33:35",
+      "takenAt": "2026-01-25T22:33:35+09:00",
       "worldId": "wrld_7f0a9b5a-5a2f-4beb-bd26-2809a7bac8f9"
     },
     {
       "sha1": "aa77026f749a7642248a5fb430d0122937c84fc9",
-      "takenAt": "2026-01-27T22:01:40",
+      "takenAt": "2026-01-27T22:01:40+09:00",
       "worldId": "wrld_905c02bf-ca5d-4d8e-910f-79face959f49"
     },
     {
       "sha1": "7dc149bb2edd9b48057fd1a13be8d4580c592fd5",
-      "takenAt": "2026-01-31T22:41:18",
+      "takenAt": "2026-01-31T22:41:18+09:00",
       "worldId": "wrld_9d4b9acd-d611-47a8-a48c-697c011cfe4e"
     },
     {
       "sha1": "0318a1895cedd6dcbeb179b495a1e001e199a815",
-      "takenAt": "2026-01-31T22:41:33",
+      "takenAt": "2026-01-31T22:41:33+09:00",
       "worldId": "wrld_9d4b9acd-d611-47a8-a48c-697c011cfe4e"
     },
     {
       "sha1": "a8bd8da74ed1f541869cf78e386c7000cb2def8e",
-      "takenAt": "2026-01-31T22:57:40",
+      "takenAt": "2026-01-31T22:57:40+09:00",
       "worldId": "wrld_d096f90b-4700-426d-9b88-1e12962c5d6f"
     },
     {
       "sha1": "313606842ae2a5e66c3abe114dbb421a3b4049cf",
-      "takenAt": "2026-01-31T23:00:30",
+      "takenAt": "2026-01-31T23:00:30+09:00",
       "worldId": "wrld_d096f90b-4700-426d-9b88-1e12962c5d6f"
     },
     {
       "sha1": "1d681c4e1fa1f3eb0eafda5725a165f72f6a4787",
-      "takenAt": "2026-01-31T23:01:06",
+      "takenAt": "2026-01-31T23:01:06+09:00",
       "worldId": "wrld_d096f90b-4700-426d-9b88-1e12962c5d6f"
     },
     {
       "sha1": "5ff5f2718c2a1d3d66cfe52b5777b8f14c45ccf0",
-      "takenAt": "2026-02-01T21:41:51",
+      "takenAt": "2026-02-01T21:41:51+09:00",
       "worldId": "wrld_3c7acff8-5674-4a60-b8ce-fd763448db87"
     },
     {
       "sha1": "788d7d565d9c1d36a9126d86ce9a9493c8e5a904",
-      "takenAt": "2026-02-01T23:01:38",
+      "takenAt": "2026-02-01T23:01:38+09:00",
       "worldId": "wrld_b1dc7c8d-cf64-4a95-8dc2-850d5e02e9ab"
     },
     {
       "sha1": "2931b8fc4276e20b57863fa7d084150e1354173a",
-      "takenAt": "2026-02-02T23:08:03",
+      "takenAt": "2026-02-02T23:08:03+09:00",
       "worldId": "wrld_0127f520-07bf-4bba-8748-debcf0b997ec"
     },
     {
       "sha1": "8d066cd4609c06e8dfaf7fd225e4c5564529d464",
-      "takenAt": "2026-02-02T23:10:51",
+      "takenAt": "2026-02-02T23:10:51+09:00",
       "worldId": "wrld_0127f520-07bf-4bba-8748-debcf0b997ec"
     },
     {
       "sha1": "46915abea02e8bbbb7d12c3d680d9906020bea30",
-      "takenAt": "2026-02-05T21:35:15",
+      "takenAt": "2026-02-05T21:35:15+09:00",
       "worldId": "wrld_f632080e-81f2-49ca-bc4e-4e532fe772a6"
     },
     {
       "sha1": "164b067a2ed6034b1a949267b3a489415e5e44bc",
-      "takenAt": "2026-02-05T23:29:26",
+      "takenAt": "2026-02-05T23:29:26+09:00",
       "worldId": "wrld_82289d50-597e-4050-bc1c-2051fa5eace7"
     },
     {
       "sha1": "04a35249f75eaaca05f81c6db79c42559a1e7554",
-      "takenAt": "2026-02-07T23:35:30",
+      "takenAt": "2026-02-07T23:35:30+09:00",
       "worldId": "wrld_e80aaed7-97ea-4efc-86a0-5ed631ef026e"
     },
     {
       "sha1": "a030bbab30a4dc4e746d9201bd26fa8c7f2bb529",
-      "takenAt": "2026-02-10T22:06:35",
+      "takenAt": "2026-02-10T22:06:35+09:00",
       "worldId": "wrld_6aa4eb04-0c21-405c-ac1e-5cefff8b2fff"
     },
     {
       "sha1": "1ef1632067ce50c647e217cef597e139079cd9a7",
-      "takenAt": "2026-02-13T22:32:05",
+      "takenAt": "2026-02-13T22:32:05+09:00",
       "worldId": "wrld_6aa4eb04-0c21-405c-ac1e-5cefff8b2fff"
     },
     {
       "sha1": "683a4b6629c51e627545727a9d083954cfcb5d51",
-      "takenAt": "2026-02-14T22:00:53",
+      "takenAt": "2026-02-14T22:00:53+09:00",
       "worldId": "wrld_6aa4eb04-0c21-405c-ac1e-5cefff8b2fff"
     },
     {
       "sha1": "a185dfcbeebfb1165a33d952ae0255ab79b1c486",
-      "takenAt": "2026-02-14T22:33:00",
+      "takenAt": "2026-02-14T22:33:00+09:00",
       "worldId": "wrld_71cbd14c-f2a2-421a-ad8b-869483b01770"
     },
     {
       "sha1": "d609f3d2a26a04108c52738abc1bfe6d81b3683d",
-      "takenAt": "2026-02-14T22:56:33",
+      "takenAt": "2026-02-14T22:56:33+09:00",
       "worldId": "wrld_ecb39cf6-b8d7-48dd-98ed-26c31d1a4257"
     },
     {
       "sha1": "671f1200521562b85a2b19164a06a795ca3c037f",
-      "takenAt": "2026-02-18T21:34:36",
+      "takenAt": "2026-02-18T21:34:36+09:00",
       "worldId": "wrld_b1d6808d-a891-4217-b91f-a0662e3ee621"
     },
     {
       "sha1": "897cac1a1e6f98e5482385d6e36baadb5b1d7a52",
-      "takenAt": "2026-02-18T21:35:16",
+      "takenAt": "2026-02-18T21:35:16+09:00",
       "worldId": "wrld_b1d6808d-a891-4217-b91f-a0662e3ee621"
     },
     {
       "sha1": "dddbda506a67ce67426fc91fc537dcf56aa22135",
-      "takenAt": "2026-02-18T21:36:22",
+      "takenAt": "2026-02-18T21:36:22+09:00",
       "worldId": "wrld_b1d6808d-a891-4217-b91f-a0662e3ee621"
     },
     {
       "sha1": "ef77776b7233670b0163229795263ae603a81086",
-      "takenAt": "2026-02-18T21:54:57",
+      "takenAt": "2026-02-18T21:54:57+09:00",
       "worldId": "wrld_20bb0e2d-2230-4770-afa6-3cc3c03ce9d6"
     },
     {
       "sha1": "2dad6b6e0c9a28164205525995dd7b780eabd6de",
-      "takenAt": "2026-02-18T21:55:01",
-      "worldId": "wrld_20bb0e2d-2230-4770-afa6-3cc3c03ce9d6"
-    },
-    {
-      "sha1": "346478e7378259ae7238acf327069ff68adcf721",
-      "takenAt": "2026-02-18T21:55:33",
+      "takenAt": "2026-02-18T21:55:01+09:00",
       "worldId": "wrld_20bb0e2d-2230-4770-afa6-3cc3c03ce9d6"
     },
     {
       "sha1": "66ef7a0c7663d488a70d893ec55cd34e0b3f3cde",
-      "takenAt": "2026-02-18T22:00:14",
+      "takenAt": "2026-02-18T22:00:14+09:00",
       "worldId": "wrld_6dcb50cc-da39-4214-9927-fc31615d1cfa"
     },
     {
       "sha1": "ad96c9dec91d5dae4af39114c59b4e33c74422c8",
-      "takenAt": "2026-02-18T22:00:20",
+      "takenAt": "2026-02-18T22:00:20+09:00",
       "worldId": "wrld_6dcb50cc-da39-4214-9927-fc31615d1cfa"
     },
     {
       "sha1": "0219c908bb35961b6f52cd86c975c68b2842f715",
-      "takenAt": "2026-02-18T22:01:08",
+      "takenAt": "2026-02-18T22:01:08+09:00",
       "worldId": "wrld_6dcb50cc-da39-4214-9927-fc31615d1cfa"
     },
     {
       "sha1": "075787d0a8c68e08b3f00138b7f9913a0151b67d",
-      "takenAt": "2026-02-18T22:03:32",
+      "takenAt": "2026-02-18T22:03:32+09:00",
       "worldId": "wrld_37d9f462-0a2b-466a-948f-cb0afa42c78d"
     },
     {
       "sha1": "e5d2a57317f56a78b623953444c8379b4c426fb5",
-      "takenAt": "2026-02-18T22:04:19",
+      "takenAt": "2026-02-18T22:04:19+09:00",
       "worldId": "wrld_37d9f462-0a2b-466a-948f-cb0afa42c78d"
     },
     {
       "sha1": "518da8fd71ccc23bfadb7ce660b5bd506baad0a6",
-      "takenAt": "2026-02-18T22:05:25",
+      "takenAt": "2026-02-18T22:05:25+09:00",
       "worldId": "wrld_7a68f64f-e75b-4257-afe7-5bec37d5a2af"
     },
     {
       "sha1": "1de0d353a08b92e62066af9864976cc36c44cc30",
-      "takenAt": "2026-02-18T22:07:29",
+      "takenAt": "2026-02-18T22:07:29+09:00",
       "worldId": "wrld_7a68f64f-e75b-4257-afe7-5bec37d5a2af"
     },
     {
       "sha1": "767cf12d44cec1f04d13a2e4792b81e7377ec2b2",
-      "takenAt": "2026-02-18T22:09:52",
+      "takenAt": "2026-02-18T22:09:52+09:00",
       "worldId": "wrld_7a68f64f-e75b-4257-afe7-5bec37d5a2af"
     },
     {
       "sha1": "fa347daced32e0ebbfe5476128c840ae66200c70",
-      "takenAt": "2026-02-18T22:35:23",
+      "takenAt": "2026-02-18T22:35:23+09:00",
       "worldId": "wrld_fad17823-602d-4cd3-85d1-ace514e75710"
     },
     {
       "sha1": "35e4ce9fbb2b90dc20997ea37744fc97eceb0d20",
-      "takenAt": "2026-02-18T22:36:37",
+      "takenAt": "2026-02-18T22:36:37+09:00",
       "worldId": "wrld_fad17823-602d-4cd3-85d1-ace514e75710"
     },
     {
       "sha1": "ae7df972f9ce052c625fef3fa07c9709eed59a53",
-      "takenAt": "2026-02-18T22:47:13",
+      "takenAt": "2026-02-18T22:47:13+09:00",
       "worldId": "wrld_71cbd14c-f2a2-421a-ad8b-869483b01770"
     },
     {
       "sha1": "da70c0ae4863261f7ad83f1badd552b1f8c13786",
-      "takenAt": "2026-02-19T21:23:01",
+      "takenAt": "2026-02-19T21:23:01+09:00",
       "worldId": "wrld_9d54544c-8f89-4409-bf6f-6a95b62cb119"
     },
     {
       "sha1": "554841f9bbd8ce624ac709c72aaed4a7645356e0",
-      "takenAt": "2026-02-19T21:31:38",
+      "takenAt": "2026-02-19T21:31:38+09:00",
       "worldId": "wrld_f2d6c0ca-2018-449d-a4f1-77ebd8da136e"
     },
     {
       "sha1": "772208fd954f98d0cc83e169534d549c44ac847b",
-      "takenAt": "2026-02-19T21:37:39",
+      "takenAt": "2026-02-19T21:37:39+09:00",
       "worldId": "wrld_ffc088ae-90df-439b-bc66-0003f8f3f6a7"
     },
     {
       "sha1": "44a9ccf290a21f887ef04f6e52bdb14e44544be0",
-      "takenAt": "2026-02-19T23:16:45",
+      "takenAt": "2026-02-19T23:16:45+09:00",
       "worldId": "wrld_d9b3fd1c-a4ac-4671-8766-17cdb561732a"
     },
     {
       "sha1": "2ccff3b589829c001e9db47149c05d54d30f94d2",
-      "takenAt": "2026-02-19T23:23:40",
+      "takenAt": "2026-02-19T23:23:40+09:00",
       "worldId": "wrld_240299fa-7378-463b-a96b-74413aa20cb6"
     },
     {
       "sha1": "d2436a186566249be449f582be4c9f7a171e1d83",
-      "takenAt": "2026-02-20T22:34:28",
+      "takenAt": "2026-02-20T22:34:28+09:00",
       "worldId": "wrld_6dd750e8-b253-4e79-9eb7-2af07490353f"
     },
     {
       "sha1": "1fbc040703c53150e9f76d50eb87bb225583c96d",
-      "takenAt": "2026-02-20T22:54:19",
+      "takenAt": "2026-02-20T22:54:19+09:00",
       "worldId": "wrld_b305d7f6-84f2-4687-8a25-ae8b35030a08"
     },
     {
       "sha1": "a726398fe9011ad80dd49feab1ebe03f8e1c67f3",
-      "takenAt": "2026-02-20T23:22:24",
+      "takenAt": "2026-02-20T23:22:24+09:00",
       "worldId": "wrld_40f98daf-3c98-47d9-8541-27e460d474a1"
     },
     {
       "sha1": "daa043daefdcbd42e2c91cabe1ab5fe7fc69c09c",
-      "takenAt": "2026-02-20T23:22:54",
+      "takenAt": "2026-02-20T23:22:54+09:00",
       "worldId": "wrld_40f98daf-3c98-47d9-8541-27e460d474a1"
     },
     {
       "sha1": "7b82cb4b97a10c8becf3560acdfb9c52620985de",
-      "takenAt": "2026-02-21T22:04:31",
+      "takenAt": "2026-02-21T22:04:31+09:00",
       "worldId": "wrld_919c43c4-bb02-411d-9e62-651ce6cd4f60"
     },
     {
       "sha1": "2968c6006ab8cb19d233532c895beff9888eeba8",
-      "takenAt": "2026-02-21T22:17:10",
+      "takenAt": "2026-02-21T22:17:10+09:00",
       "worldId": "wrld_0cf105b8-a983-481d-acd6-ad25e9ae63be"
     },
     {
       "sha1": "68779848b29e12ac1854ad337226d23986b91fd4",
-      "takenAt": "2026-02-21T22:18:18",
+      "takenAt": "2026-02-21T22:18:18+09:00",
       "worldId": "wrld_0cf105b8-a983-481d-acd6-ad25e9ae63be"
     },
     {
       "sha1": "6f12c0266b95d45f26f3ebc3fdf584c169425199",
-      "takenAt": "2026-02-21T22:38:54",
+      "takenAt": "2026-02-21T22:38:54+09:00",
       "worldId": "wrld_c9ec7ff2-ca47-40e6-b7ec-7d9ba35aced7"
     },
     {
       "sha1": "5fefcbddcbc20f41bc544547b034eaba68fd8bd1",
-      "takenAt": "2026-02-21T22:45:17",
+      "takenAt": "2026-02-21T22:45:17+09:00",
       "worldId": "wrld_c9ec7ff2-ca47-40e6-b7ec-7d9ba35aced7"
     },
     {
       "sha1": "9b18a88471a5726f3614ccf18a4c4c1e52d88595",
-      "takenAt": "2026-02-21T22:53:20",
+      "takenAt": "2026-02-21T22:53:20+09:00",
       "worldId": "wrld_c9ec7ff2-ca47-40e6-b7ec-7d9ba35aced7"
     },
     {
       "sha1": "277d7fd44017b48f27ee8b91c411090c8c348bab",
-      "takenAt": "2026-02-22T21:18:40",
+      "takenAt": "2026-02-22T21:18:40+09:00",
       "worldId": "wrld_33193c3e-2a06-45fa-b506-6f2a2db46289"
     },
     {
       "sha1": "d0a098f53abb2dbba6fc3ada4eb4339dc4cc977e",
-      "takenAt": "2026-02-22T21:43:22",
+      "takenAt": "2026-02-22T21:43:22+09:00",
       "worldId": "wrld_4d3e1e35-886a-4ce9-b33c-e650bc307196"
     },
     {
       "sha1": "660311fadf43a0944faf7864572b779a09c4a114",
-      "takenAt": "2026-02-22T23:23:11",
+      "takenAt": "2026-02-22T23:23:11+09:00",
       "worldId": "wrld_4d3e1e35-886a-4ce9-b33c-e650bc307196"
     },
     {
       "sha1": "e22967c9288c2480fafb0641efdef07dd52098f0",
-      "takenAt": "2026-02-24T21:24:29",
+      "takenAt": "2026-02-24T21:24:29+09:00",
       "worldId": "wrld_76c8535e-359a-4b8d-93f2-a3e3501fc08b"
     },
     {
       "sha1": "39b95f78c999e938ba5d1c222f54d11522991ccc",
-      "takenAt": "2026-02-24T21:27:24",
+      "takenAt": "2026-02-24T21:27:24+09:00",
       "worldId": "wrld_0443ce24-24e8-40bb-bfbd-e2d6285326e1"
     },
     {
       "sha1": "f2241a8ef612568715e890383f2c408e19619e9f",
-      "takenAt": "2026-02-24T21:27:57",
+      "takenAt": "2026-02-24T21:27:57+09:00",
       "worldId": "wrld_0443ce24-24e8-40bb-bfbd-e2d6285326e1"
     },
     {
       "sha1": "f4a71d4292fc496e2fffa72b406a4123a01c7135",
-      "takenAt": "2026-02-24T21:29:38",
+      "takenAt": "2026-02-24T21:29:38+09:00",
       "worldId": "wrld_0443ce24-24e8-40bb-bfbd-e2d6285326e1"
     },
     {
       "sha1": "46d4ba08bb0bbaf729905d2d4680a26edebb05f1",
-      "takenAt": "2026-02-24T21:30:10",
+      "takenAt": "2026-02-24T21:30:10+09:00",
       "worldId": "wrld_0443ce24-24e8-40bb-bfbd-e2d6285326e1"
     },
     {
       "sha1": "fa5a4875ad4430eceb26af531f41f3c24c41a6cc",
-      "takenAt": "2026-02-24T21:51:21",
+      "takenAt": "2026-02-24T21:51:21+09:00",
       "worldId": "wrld_ec0354ef-5d3c-4499-9a48-43b66c00efc9"
     },
     {
       "sha1": "38ae278a37f09d2d4bd591310198eca3635e4659",
-      "takenAt": "2026-02-24T21:52:43",
+      "takenAt": "2026-02-24T21:52:43+09:00",
       "worldId": "wrld_ec0354ef-5d3c-4499-9a48-43b66c00efc9"
     },
     {
       "sha1": "1a6eb6ebe90445a25f5fbe1c811d8fad56b4facb",
-      "takenAt": "2026-02-24T21:54:32",
+      "takenAt": "2026-02-24T21:54:32+09:00",
       "worldId": "wrld_ec0354ef-5d3c-4499-9a48-43b66c00efc9"
     },
     {
       "sha1": "1131ecf835bd24afc5d79b28c322ae07a21fd954",
-      "takenAt": "2026-02-24T22:02:13",
+      "takenAt": "2026-02-24T22:02:13+09:00",
       "worldId": "wrld_41e4cd8b-2ec3-43d4-8187-2f1637fb047f"
     },
     {
       "sha1": "836fd5603e109c9cbf4a144a006d88c7bcde7f52",
-      "takenAt": "2026-02-24T22:07:10",
+      "takenAt": "2026-02-24T22:07:10+09:00",
       "worldId": "wrld_db0a4502-b097-4979-a7e2-16119cc5895a"
     },
     {
       "sha1": "439f3e9200c5b8fc84046c22a23751a366267cc9",
-      "takenAt": "2026-02-24T22:11:34",
+      "takenAt": "2026-02-24T22:11:34+09:00",
       "worldId": "wrld_db0a4502-b097-4979-a7e2-16119cc5895a"
     },
     {
       "sha1": "1580a4dd597eb15c2ee26e64d33997d41f4412c5",
-      "takenAt": "2026-02-24T22:15:07",
+      "takenAt": "2026-02-24T22:15:07+09:00",
       "worldId": "wrld_db0a4502-b097-4979-a7e2-16119cc5895a"
     },
     {
       "sha1": "1bbe0f56b847da711ea03b11072ebc5a6c9b47ef",
-      "takenAt": "2026-02-24T22:43:33",
+      "takenAt": "2026-02-24T22:43:33+09:00",
       "worldId": "wrld_e1dcb059-ac5b-4294-8d7e-8b97eaf15073"
     },
     {
       "sha1": "e2ace421d35645d3de1278fdfe732eb051294f58",
-      "takenAt": "2026-02-25T21:59:13",
+      "takenAt": "2026-02-25T21:59:13+09:00",
       "worldId": "wrld_843b56c6-6c63-45fc-99ed-001ba7dde6a5"
     },
     {
       "sha1": "3ec056039572e5862ddd6e6873268980aa91af0e",
-      "takenAt": "2026-02-25T22:00:36",
+      "takenAt": "2026-02-25T22:00:36+09:00",
       "worldId": "wrld_843b56c6-6c63-45fc-99ed-001ba7dde6a5"
     },
     {
       "sha1": "131a05fd09ffe9ad909e01ef8969477ee45644b1",
-      "takenAt": "2026-02-25T22:01:44",
+      "takenAt": "2026-02-25T22:01:44+09:00",
       "worldId": "wrld_843b56c6-6c63-45fc-99ed-001ba7dde6a5"
     },
     {
       "sha1": "9548cc6acfc662529f5e2adbe8d9af95182203fa",
-      "takenAt": "2026-02-25T22:02:19",
+      "takenAt": "2026-02-25T22:02:19+09:00",
       "worldId": "wrld_843b56c6-6c63-45fc-99ed-001ba7dde6a5"
     },
     {
       "sha1": "fad4eafb339f863618cfb62a0f9bec491a9856e2",
-      "takenAt": "2026-02-25T22:08:39",
+      "takenAt": "2026-02-25T22:08:39+09:00",
       "worldId": "wrld_843b56c6-6c63-45fc-99ed-001ba7dde6a5"
     },
     {
       "sha1": "85eda646cc740db9bf824a4db980fa261548a2be",
-      "takenAt": "2026-02-25T22:10:06",
+      "takenAt": "2026-02-25T22:10:06+09:00",
       "worldId": "wrld_843b56c6-6c63-45fc-99ed-001ba7dde6a5"
     },
     {
       "sha1": "9c80ac9a608f067568a4c27cb71c5caf982c5c54",
-      "takenAt": "2026-02-25T22:11:35",
+      "takenAt": "2026-02-25T22:11:35+09:00",
       "worldId": "wrld_843b56c6-6c63-45fc-99ed-001ba7dde6a5"
     },
     {
       "sha1": "03b40fb7b415d0f1c6f9205156dbeddf5cb6b5f1",
-      "takenAt": "2026-02-25T23:07:10",
+      "takenAt": "2026-02-25T23:07:10+09:00",
       "worldId": "wrld_843b56c6-6c63-45fc-99ed-001ba7dde6a5"
     },
     {
       "sha1": "e4210b615bd114971df9fb10e740c273b71196ec",
-      "takenAt": "2026-02-25T23:09:06",
+      "takenAt": "2026-02-25T23:09:06+09:00",
       "worldId": "wrld_843b56c6-6c63-45fc-99ed-001ba7dde6a5"
     },
     {
       "sha1": "4e4bb2f52cab861e4b1d621525aad2d9627a8664",
-      "takenAt": "2026-02-26T00:07:20",
+      "takenAt": "2026-02-26T00:07:20+09:00",
       "worldId": "wrld_c2b6fd94-5d0f-4984-ac5a-7fa31bab1ce3"
     },
     {
       "sha1": "e262a51e4372aaf371dd04e3183f5d57695b3cbc",
-      "takenAt": "2026-02-27T00:04:22",
+      "takenAt": "2026-02-27T00:04:22+09:00",
       "worldId": "wrld_2024c4dd-6698-49a7-9aa0-d0175fb0de34"
     },
     {
       "sha1": "3e3ac9801b66e25e930a44a6a4e364df4843f7ac",
-      "takenAt": "2026-02-27T00:04:46",
+      "takenAt": "2026-02-27T00:04:46+09:00",
       "worldId": "wrld_2024c4dd-6698-49a7-9aa0-d0175fb0de34"
     },
     {
       "sha1": "be911a8fb293808806bb15bc352390d38d5c76a8",
-      "takenAt": "2026-02-27T00:05:12",
+      "takenAt": "2026-02-27T00:05:12+09:00",
       "worldId": "wrld_2024c4dd-6698-49a7-9aa0-d0175fb0de34"
     },
     {
       "sha1": "111146053e37d749583754818ea3401d8d5d1546",
-      "takenAt": "2026-02-27T00:09:38",
+      "takenAt": "2026-02-27T00:09:38+09:00",
       "worldId": "wrld_57b0c481-a06f-4022-a7fd-fb05ddeb17da"
     },
     {
       "sha1": "d61437e92565c700bd7ef9d65d5fb5b21e34b236",
-      "takenAt": "2026-02-27T00:10:32",
+      "takenAt": "2026-02-27T00:10:32+09:00",
       "worldId": "wrld_57b0c481-a06f-4022-a7fd-fb05ddeb17da"
     },
     {
       "sha1": "2c6e075355565a318dd038692205fb1ec9fe7a77",
-      "takenAt": "2026-02-27T21:58:57",
+      "takenAt": "2026-02-27T21:58:57+09:00",
       "worldId": "wrld_7dc4a1a7-a44b-4d88-9d4a-d3ef9e1fa526"
     },
     {
       "sha1": "eff39c4215ebde860c81b66a9220cc73bf271a61",
-      "takenAt": "2026-02-28T20:10:54",
+      "takenAt": "2026-02-28T20:10:54+09:00",
       "worldId": "wrld_96253ba9-ff23-44e5-8bac-ced3a754c9db"
     },
     {
       "sha1": "d91ad33890730ca8d7efcda395dfcf1d20596c45",
-      "takenAt": "2026-02-28T20:12:40",
+      "takenAt": "2026-02-28T20:12:40+09:00",
       "worldId": "wrld_96253ba9-ff23-44e5-8bac-ced3a754c9db"
     },
     {
       "sha1": "c57a861ae09e18578e4a7d5dd4dd2099b769fd1e",
-      "takenAt": "2026-02-28T20:13:51",
+      "takenAt": "2026-02-28T20:13:51+09:00",
       "worldId": "wrld_96253ba9-ff23-44e5-8bac-ced3a754c9db"
     },
     {
       "sha1": "6faccd7cc807282bbf44d705f572fe3d5486db9a",
-      "takenAt": "2026-02-28T20:14:21",
+      "takenAt": "2026-02-28T20:14:21+09:00",
       "worldId": "wrld_96253ba9-ff23-44e5-8bac-ced3a754c9db"
     },
     {
       "sha1": "b41e757ac4bf3206df2a4d99e031f85f98155378",
-      "takenAt": "2026-02-28T20:15:55",
+      "takenAt": "2026-02-28T20:15:55+09:00",
       "worldId": "wrld_96253ba9-ff23-44e5-8bac-ced3a754c9db"
     },
     {
       "sha1": "5e3436cefe8e6e388144e890461ddc0f4bc01615",
-      "takenAt": "2026-02-28T20:17:31",
+      "takenAt": "2026-02-28T20:17:31+09:00",
       "worldId": "wrld_96253ba9-ff23-44e5-8bac-ced3a754c9db"
     },
     {
       "sha1": "a30dad2cb6df5fd2dcc8f6a40ec4443edd57022b",
-      "takenAt": "2026-02-28T22:05:28",
+      "takenAt": "2026-02-28T22:05:28+09:00",
       "worldId": "wrld_96253ba9-ff23-44e5-8bac-ced3a754c9db"
     },
     {
       "sha1": "1fdc2b64749e3d864266ac97a9785e9a871d519d",
-      "takenAt": "2026-02-28T22:10:06",
+      "takenAt": "2026-02-28T22:10:06+09:00",
       "worldId": "wrld_96253ba9-ff23-44e5-8bac-ced3a754c9db"
     },
     {
       "sha1": "74379d150b32c13dfb2442a5d88579d260ccb583",
-      "takenAt": "2026-02-28T22:18:17",
+      "takenAt": "2026-02-28T22:18:17+09:00",
       "worldId": "wrld_96253ba9-ff23-44e5-8bac-ced3a754c9db"
     },
     {
       "sha1": "2e113065a78683d5c8a40e88acca67c720d6dfac",
-      "takenAt": "2026-03-01T20:56:28",
+      "takenAt": "2026-03-01T20:56:28+09:00",
       "worldId": "wrld_cbbb3310-b7a8-4567-a4ad-87555560547b"
     },
     {
       "sha1": "f4adf2fefe9b491d88defebc1961e7ffa057b235",
-      "takenAt": "2026-03-01T23:07:51",
+      "takenAt": "2026-03-01T23:07:51+09:00",
       "worldId": "wrld_7bcc1618-76b6-4922-817c-eba126941045"
     },
     {
       "sha1": "e75d321723c04526d5ba1d1a70813650bcd28083",
-      "takenAt": "2026-03-01T23:11:47",
+      "takenAt": "2026-03-01T23:11:47+09:00",
       "worldId": "wrld_e307dde1-5cac-4d93-8dce-bac7126b1674"
     },
     {
       "sha1": "0c304da7b442d4df6cceb019076440427485c9a5",
-      "takenAt": "2026-03-01T23:15:34",
+      "takenAt": "2026-03-01T23:15:34+09:00",
       "worldId": "wrld_bc21ae41-5d84-4c84-866e-2c6806c7e4fd"
+    },
+    {
+      "sha1": "f563a4bef0588a82a00afbeb203707d625af3b65",
+      "takenAt": "2026-03-02T21:29:44+09:00",
+      "worldId": "wrld_35cc1494-8908-444b-9994-9a7ca6c6ca75"
+    },
+    {
+      "sha1": "0389203358da098e646a1e85df75197f4e21c8a6",
+      "takenAt": "2026-03-02T21:30:03+09:00",
+      "worldId": "wrld_35cc1494-8908-444b-9994-9a7ca6c6ca75"
+    },
+    {
+      "sha1": "d14071b86b9132b537de2bae54ddb664da998c20",
+      "takenAt": "2026-03-02T21:30:32+09:00",
+      "worldId": "wrld_35cc1494-8908-444b-9994-9a7ca6c6ca75"
+    },
+    {
+      "sha1": "2888a4b6e7d9d56105d45a64de2fed17922ee0ba",
+      "takenAt": "2026-03-02T21:33:38+09:00",
+      "worldId": "wrld_ef241e3c-a1e0-491c-bf51-3d2a274c3010"
+    },
+    {
+      "sha1": "f7929a490f69e02ea4b878f29345a771b552d7c7",
+      "takenAt": "2026-03-02T21:47:38+09:00",
+      "worldId": "wrld_6da6ee43-0697-4861-a4bb-9d2c96136b05"
+    },
+    {
+      "sha1": "38d06df086033b5730b77949067a377ae78bdc8b",
+      "takenAt": "2026-03-02T21:48:16+09:00",
+      "worldId": "wrld_6da6ee43-0697-4861-a4bb-9d2c96136b05"
+    },
+    {
+      "sha1": "026ddbb3f1c6e8172097d93440f3bca34bb1a51f",
+      "takenAt": "2026-03-02T21:57:32+09:00",
+      "worldId": "wrld_512ff6d0-c697-483e-92c8-e211055aa4b7"
+    },
+    {
+      "sha1": "1e200bdbc9cf55fb9e891c42e292789242d1b0e7",
+      "takenAt": "2026-03-02T22:38:26+09:00",
+      "worldId": "wrld_8e8811c2-5b6e-4335-866f-092358d8256a"
+    },
+    {
+      "sha1": "432e47f6fad132ad6cea679ee847a5989d0715a2",
+      "takenAt": "2026-03-02T22:38:45+09:00",
+      "worldId": "wrld_8e8811c2-5b6e-4335-866f-092358d8256a"
+    },
+    {
+      "sha1": "9a441c860b335703d2e1c0a9cb125175d6e2a623",
+      "takenAt": "2026-03-03T22:26:36+09:00",
+      "worldId": "wrld_8ea9a4d0-764f-44c0-9584-d0e93f2668cd"
     }
   ],
   "worlds": [
     {
       "worldId": "wrld_d4d009ed-06ea-4148-b1d1-fea5206c175f",
-      "worldName": "vent․"
+      "worldName": "vent․",
+      "note": ""
     },
     {
       "worldId": "wrld_5a4247fb-6600-4c1b-a6b9-7d875355be69",
-      "worldName": "Yayoi INAKA"
+      "worldName": "Yayoi INAKA",
+      "note": ""
     },
     {
       "worldId": "wrld_3e4a1f3d-f701-4654-a30c-3d40071e1c23",
-      "worldName": "2764 2号店"
+      "worldName": "2764 2号店",
+      "note": ""
     },
     {
       "worldId": "wrld_4aace314-8e3c-427f-994b-d269d9adb870",
-      "worldName": "朝霧もなく、花は咲く-The lotus blooms‚ even without the morning mist-（WIP）"
+      "worldName": "朝霧もなく、花は咲く-The lotus blooms‚ even without the morning mist-（WIP）",
+      "note": ""
     },
     {
       "worldId": "wrld_6b5d5bc6-765b-486c-a3c7-03836ef2a373",
-      "worldName": "WBD VRC Baseball - wwg"
+      "worldName": "WBD VRC Baseball - wwg",
+      "note": "本格的な野球を割と手軽にプレイできるワールド。ただLighthouseもしくはそれに準ずるトラッキング環境でないと不利かも"
     },
     {
       "worldId": "wrld_47c75ab4-1246-4f04-9384-d60be45234ec",
-      "worldName": "Zone 086"
+      "worldName": "Zone 086",
+      "note": ""
     },
     {
       "worldId": "wrld_b5c49166-2d50-4e48-a825-2ee483d043b6",
-      "worldName": "Shore of Ghosts"
+      "worldName": "Shore of Ghosts",
+      "note": ""
     },
     {
       "worldId": "wrld_07c6c17c-9f37-4fdb-aa41-c842d2a452d6",
-      "worldName": "Eiravyn"
+      "worldName": "Eiravyn",
+      "note": ""
     },
     {
       "worldId": "wrld_285e486d-2353-47db-beb4-6df0d2c5d581",
-      "worldName": "獣が如く 月狼会事務所"
+      "worldName": "獣が如く 月狼会事務所",
+      "note": ""
     },
     {
       "worldId": "wrld_b2d24c29-1ded-4990-a90d-dd6dcc440300",
-      "worldName": "Japan Shrine［winter］"
+      "worldName": "Japan Shrine［winter］",
+      "note": "とてもよく作りこまれた神社とその参道のワールド"
     },
     {
       "worldId": "wrld_6f55a286-b851-4d3e-8933-e7a31138edd7",
-      "worldName": "PokoPeaLand"
+      "worldName": "PokoPeaLand",
+      "note": "観覧車ありコースターありたこ焼きありのテーマパーク。ここのお化け屋敷はやばい"
     },
     {
       "worldId": "wrld_0f2e25a6-1c09-4f25-9fdb-2c8cd009edfd",
-      "worldName": "Rain of you"
+      "worldName": "Rain of you",
+      "note": ""
     },
     {
       "worldId": "wrld_22a0e3e6-8537-45fe-9cc7-aec045ed5fc1",
-      "worldName": "Wither ｜ 萎える"
+      "worldName": "Wither ｜ 萎える",
+      "note": ""
     },
     {
       "worldId": "wrld_2319737c-df8a-4efa-a69b-940391422a23",
-      "worldName": "Lumitide"
+      "worldName": "Lumitide",
+      "note": ""
     },
     {
       "worldId": "wrld_2bdeb15d-38c7-462e-b4ff-5a135390b47b",
-      "worldName": "Denoise․"
+      "worldName": "Denoise․",
+      "note": "荒廃した駅を改築したセーフハウス"
     },
     {
       "worldId": "wrld_1f6ac4dc-2101-466f-a989-9bbc5b13a96c",
-      "worldName": "Abandoned Asylum"
+      "worldName": "Abandoned Asylum",
+      "note": ""
     },
     {
       "worldId": "wrld_ef66230d-9a3a-4a98-a704-cfebeb25cd90",
-      "worldName": "Project Vertigo"
+      "worldName": "Project Vertigo",
+      "note": ""
     },
     {
       "worldId": "wrld_4ad8b953-c81d-42e9-b342-c223beae1d77",
-      "worldName": "Memories"
+      "worldName": "Memories",
+      "note": ""
     },
     {
       "worldId": "wrld_db95005e-66b9-4244-98ee-dd307d4d1b70",
-      "worldName": "Ryuichi's Borealis"
+      "worldName": "Ryuichi's Borealis",
+      "note": ""
     },
     {
       "worldId": "wrld_c55fe71d-3854-4734-8f3d-3a5757a111b4",
-      "worldName": "誰も知らない願いの墓標ーA gravestone for wishes no one knows aboutー"
+      "worldName": "誰も知らない願いの墓標ーA gravestone for wishes no one knows aboutー",
+      "note": ""
     },
     {
       "worldId": "wrld_415ef912-5150-4808-b1ea-4f8ce2432045",
-      "worldName": "おまいり Omairi"
+      "worldName": "おまいり Omairi",
+      "note": ""
     },
     {
       "worldId": "wrld_24f06038-613e-47e7-86b4-6c594674ba85",
-      "worldName": "蒼星樹"
+      "worldName": "蒼星樹",
+      "note": ""
     },
     {
       "worldId": "wrld_5b786184-c3e0-4c05-bcf1-c6f81503abf5",
-      "worldName": "蝶恋花 - Whispers of the Blossom Valley"
+      "worldName": "蝶恋花 - Whispers of the Blossom Valley",
+      "note": ""
     },
     {
       "worldId": "wrld_31caa0de-e6be-464e-b424-c31ce00c5f2d",
-      "worldName": "青い海とレモン"
+      "worldName": "青い海とレモン",
+      "note": ""
     },
     {
       "worldId": "wrld_28cb3044-b883-467a-b841-6de11ca13a31",
-      "worldName": "精霊宿りし輝晶の泉 -Spirits Crystalline Spring-"
+      "worldName": "精霊宿りし輝晶の泉 -Spirits Crystalline Spring-",
+      "note": ""
     },
     {
       "worldId": "wrld_3090a85a-abba-4c04-8dea-e54ede2eb47e",
-      "worldName": "出立の際には"
+      "worldName": "出立の際には",
+      "note": ""
     },
     {
       "worldId": "wrld_8f973ca3-9315-4f7d-84cc-9303f394797b",
-      "worldName": "「 ⁄ 」"
+      "worldName": "「 ⁄ 」",
+      "note": ""
     },
     {
       "worldId": "wrld_351a1a5e-faf4-4592-996d-a4ebc813a188",
-      "worldName": "フィギュアになれる部屋"
+      "worldName": "フィギュアになれる部屋",
+      "note": ""
     },
     {
       "worldId": "wrld_fcd3f18e-4d4e-4a44-95e1-f20277aad7f5",
-      "worldName": "星屑トワイライト ~Stardust Twilight~"
+      "worldName": "星屑トワイライト ~Stardust Twilight~",
+      "note": ""
     },
     {
       "worldId": "wrld_6fdf3a22-1101-486b-a723-daa568986ae0",
-      "worldName": "深紅の境界 - Crimson Divide"
+      "worldName": "深紅の境界 - Crimson Divide",
+      "note": ""
     },
     {
       "worldId": "wrld_e8627147-3eab-47f1-8e85-2f05723ae26f",
-      "worldName": "常桜の集い場"
+      "worldName": "常桜の集い場",
+      "note": ""
     },
     {
       "worldId": "wrld_a1b9a620-9bc0-4925-8ece-7ae1a2a6018d",
-      "worldName": "残影 -Reminiscence of the Yggdrasill-"
+      "worldName": "残影 -Reminiscence of the Yggdrasill-",
+      "note": ""
     },
     {
       "worldId": "wrld_a309ebed-e7c2-4fc4-bafd-bf39dea0e8b3",
-      "worldName": "砂と星の海 - Voyage of Imagination"
+      "worldName": "砂と星の海 - Voyage of Imagination",
+      "note": ""
     },
     {
       "worldId": "wrld_cc0f6ff7-2053-4214-80c3-57f786f4e37d",
-      "worldName": "今日も夜がやってくる ～Gloom and Doom in Midnights Bloom～"
+      "worldName": "今日も夜がやってくる ～Gloom and Doom in Midnights Bloom～",
+      "note": "「またね」　　そう言うと、彼は"
     },
     {
       "worldId": "wrld_fc7d1a92-4fac-42e9-9853-ab2fc048e419",
-      "worldName": "月と凛花-Moon and the Dignified Flower-"
+      "worldName": "月と凛花-Moon and the Dignified Flower-",
+      "note": ""
     },
     {
       "worldId": "wrld_11f9a6a6-5db3-41ae-984b-f2724052822a",
-      "worldName": "骸と皓月"
+      "worldName": "骸と皓月",
+      "note": ""
     },
     {
       "worldId": "wrld_47270cae-e1c7-4dec-b963-5a7eb56c268a",
-      "worldName": "階段堂書店"
+      "worldName": "階段堂書店",
+      "note": "坂の途中に佇む小さな書店"
     },
     {
       "worldId": "wrld_b9078cb5-4e20-4c39-893e-ff7aa77d7e63",
-      "worldName": "海上都市「エメス」⁄VLFPs ＂E․M․E․T․H․＂"
+      "worldName": "海上都市「エメス」⁄VLFPs ＂E․M․E․T․H․＂",
+      "note": "サイバーパンクな大通り"
     },
     {
       "worldId": "wrld_b1c45264-91ba-4048-be3e-2cb979c93fd6",
-      "worldName": "壊れた未来の大聖堂、信仰の証 - Cathedral of the Broken Future‚ Evidence of Faith"
+      "worldName": "壊れた未来の大聖堂、信仰の証 - Cathedral of the Broken Future‚ Evidence of Faith",
+      "note": ""
     },
     {
       "worldId": "wrld_a8b17ca6-8cf5-437a-bc47-9e440161dfc8",
-      "worldName": "花と魔法"
+      "worldName": "花と魔法",
+      "note": ""
     },
     {
       "worldId": "wrld_188b3d52-d8cf-4b9e-a762-9466eb21ec33",
-      "worldName": "じめじめはっかーるーむ"
+      "worldName": "じめじめはっかーるーむ",
+      "note": ""
     },
     {
       "worldId": "wrld_7fccaa7d-ea8d-4e58-9bbc-d14e24534f14",
-      "worldName": "Nightmare Illusion"
+      "worldName": "Nightmare Illusion",
+      "note": ""
     },
     {
       "worldId": "wrld_6ae24d40-2fa8-4e6e-88df-c979a5db7653",
-      "worldName": "星屑の原"
+      "worldName": "星屑の原",
+      "note": ""
     },
     {
       "worldId": "wrld_aa6e7212-d364-45eb-9482-aa3b75ed92c4",
-      "worldName": "The Arrow of Time"
+      "worldName": "The Arrow of Time",
+      "note": ""
     },
     {
       "worldId": "wrld_4e4b6b19-b38c-4ca3-9697-efb4554d9ffb",
-      "worldName": "Uni0WDワールド"
+      "worldName": "Uni0WDワールド",
+      "note": "ナニ四駆なんだろうなあ……"
     },
     {
       "worldId": "wrld_ebd39163-7b07-4bb6-8cdb-478bcc76a5cf",
-      "worldName": "BAR BLOWBACK （2025）"
+      "worldName": "BAR BLOWBACK （2025）",
+      "note": ""
     },
     {
       "worldId": "wrld_acc31d70-74b8-4e63-b75d-16f05e16987e",
-      "worldName": "Thus Far"
+      "worldName": "Thus Far",
+      "note": ""
     },
     {
       "worldId": "wrld_6660f3bd-c4d7-482f-ba1a-ccd0106f1315",
-      "worldName": "科学とオカルトの狭間で"
+      "worldName": "科学とオカルトの狭間で",
+      "note": "都市伝説解体センターのファンメイドワールド。地下の事務所を再現している"
     },
     {
       "worldId": "wrld_124b621e-06cb-4a75-9843-62c9c1418209",
-      "worldName": "METAFES 2025 FIRE DAY"
+      "worldName": "METAFES 2025 FIRE DAY",
+      "note": ""
     },
     {
       "worldId": "wrld_b78de466-e9b8-4e70-bc30-85073af77452",
-      "worldName": "Cloudy Rooftop"
+      "worldName": "Cloudy Rooftop",
+      "note": ""
     },
     {
       "worldId": "wrld_c9141272-3225-491d-b293-2ee98975facb",
-      "worldName": "CHAMBER OF FOX"
+      "worldName": "CHAMBER OF FOX",
+      "note": "豪華なバーワールド。比較的広めで会合にも使えるかも"
     },
     {
       "worldId": "wrld_18820e1e-2f7c-4dde-b4bd-0c6038e26cd5",
-      "worldName": "MarinWorldWorld"
+      "worldName": "MarinWorldWorld",
+      "note": ""
     },
     {
       "worldId": "wrld_6cbad47b-3657-431e-bb7f-1984e07f44e3",
-      "worldName": "HABITATION"
+      "worldName": "HABITATION",
+      "note": "クライミングワールド。とてつもなく長い。良質なブルータリズムを摂取できるが、筋肉痛を覚悟しろ"
     },
     {
       "worldId": "wrld_7cb65abe-40e6-43e8-8dc1-520a7e292cf1",
-      "worldName": "Von"
+      "worldName": "Von",
+      "note": ""
     },
     {
       "worldId": "wrld_14c19548-b88d-4300-87c9-1f3d8c9ff500",
-      "worldName": "Nokoba"
+      "worldName": "Nokoba",
+      "note": ""
     },
     {
       "worldId": "wrld_dc1ab8bf-b7c7-4de7-9e92-e0b375b2676c",
-      "worldName": "青言葉 - Words and her blue ｜ คำพูดและสีฟ้าของเธอ․"
+      "worldName": "青言葉 - Words and her blue ｜ คำพูดและสีฟ้าของเธอ․",
+      "note": ""
     },
     {
       "worldId": "wrld_963512ca-f96c-4e54-8cca-29a800576684",
-      "worldName": "_Unforgotten"
+      "worldName": "_Unforgotten",
+      "note": ""
     },
     {
       "worldId": "wrld_277e695d-725c-4cda-98bc-7796af643ef5",
-      "worldName": "Greywater Point"
+      "worldName": "Greywater Point",
+      "note": ""
     },
     {
       "worldId": "wrld_dd146b02-948b-4da1-b181-618792ff25b9",
-      "worldName": "しよ温泉宿ShiyoOnsen"
+      "worldName": "しよ温泉宿ShiyoOnsen",
+      "note": ""
     },
     {
       "worldId": "wrld_ed1acb6a-fc2e-4d07-8ce7-86c36420fe47",
-      "worldName": "Exhibition「スナック MEIKO 」 - Anique Museum"
+      "worldName": "Exhibition「スナック MEIKO 」 - Anique Museum",
+      "note": "さまざまな企画展が定期的に行われているようだ。その都度ワールド名が変わる"
     },
     {
       "worldId": "wrld_2e2363ef-4452-4b63-8933-32f1f67ba553",
-      "worldName": "Boreal Heights"
+      "worldName": "Boreal Heights",
+      "note": "窓の外にネオンが煌めくサイバーパンクなチルワ"
     },
     {
       "worldId": "wrld_69c41e95-1539-426a-a321-34412e0b021e",
-      "worldName": "GIGAS -ASTRAIOS-"
+      "worldName": "GIGAS -ASTRAIOS-",
+      "note": "一対多の非対称PvP。わちゃわちゃ盛り上がれ"
     },
     {
       "worldId": "wrld_251da81b-4c64-48dd-903b-9f23df42dae7",
-      "worldName": "Secret Stream"
+      "worldName": "Secret Stream",
+      "note": ""
     },
     {
       "worldId": "wrld_ab2c1526-c1b1-419d-b138-be32591e799f",
-      "worldName": "VRC PIXELART EXHIBITION 2․0"
+      "worldName": "VRC PIXELART EXHIBITION 2․0",
+      "note": "ピクセルアート作家による合同展示。ボリュームが多く見ごたえがある"
     },
     {
       "worldId": "wrld_0f774bfe-143d-4e12-9db0-85e017df28d6",
-      "worldName": "８畳間出口"
+      "worldName": "８畳間出口",
+      "note": "異変があったら引き返す、よくあるシステム"
     },
     {
       "worldId": "wrld_1ddbfcf7-280c-484c-87e0-228e7fa1d826",
-      "worldName": "終末の玉響-tamayura-"
+      "worldName": "終末の玉響-tamayura-",
+      "note": ""
     },
     {
       "worldId": "wrld_7a8ed4b3-6e31-45dc-95ba-2629e1eb8c27",
-      "worldName": "事故物件-stigmatized property-"
+      "worldName": "事故物件-stigmatized property-",
+      "note": ""
     },
     {
       "worldId": "wrld_429aa72f-0727-41d7-83a8-8402f2709066",
-      "worldName": "METAL WARRIOR"
+      "worldName": "METAL WARRIOR",
+      "note": "巨大なロボットを相手にするPvE、ドローンの攻撃をかいくぐって撃ち合うPvPvEが楽しめる"
     },
     {
       "worldId": "wrld_0d333062-c99b-474f-91b4-cee7a28519cb",
-      "worldName": "Adopt A Furry ǃ"
+      "worldName": "Adopt A Furry ǃ",
+      "note": "気に入る子を探そう"
     },
     {
       "worldId": "wrld_043affb0-0dd7-44f9-badf-bfb85374afad",
-      "worldName": "Connecting ․․․"
+      "worldName": "Connecting ․․․",
+      "note": ""
     },
     {
       "worldId": "wrld_4f92d02d-f930-4e5c-a477-e5cb8f4494fb",
-      "worldName": "GrappleRush"
+      "worldName": "GrappleRush",
+      "note": "スリングショットで跳んでゴールを目指せ！妨害アイテムに負けるな！"
     },
     {
       "worldId": "wrld_0c1aaf36-f67a-4ee3-b6fb-ec52baf6679e",
-      "worldName": "交易都市アステルリーズ"
+      "worldName": "交易都市アステルリーズ",
+      "note": ""
     },
     {
       "worldId": "wrld_81128c28-05a4-4518-a8eb-8c4e7af09375",
-      "worldName": "ワルシャワ酒場 «Атасǃ»"
+      "worldName": "ワルシャワ酒場 «Атасǃ»",
+      "note": ""
     },
     {
       "worldId": "wrld_e1b40cdd-e81c-494e-a977-ccc70d3cea82",
-      "worldName": "Vket 2025 W Parareal Shinjuku"
+      "worldName": "Vket 2025 W Parareal Shinjuku",
+      "note": ""
     },
     {
       "worldId": "wrld_8da29e15-b925-4360-8263-8ab18f850b97",
-      "worldName": "Vket 2025 W Kowloon Empire - Void Alley - Orderless"
+      "worldName": "Vket 2025 W Kowloon Empire - Void Alley - Orderless",
+      "note": ""
     },
     {
       "worldId": "wrld_20909c04-c52a-4f33-aea7-44532495d89c",
-      "worldName": "Vket 2025 W YOUtopia - Wild we-St․"
+      "worldName": "Vket 2025 W YOUtopia - Wild we-St․",
+      "note": ""
     },
     {
       "worldId": "wrld_3d2caab1-f16c-4b01-80a2-7dbb1fe814d4",
-      "worldName": "Vket 2025 W Nostalgia Storybook - The Diva and ??'s Wild Adventure"
+      "worldName": "Vket 2025 W Nostalgia Storybook - The Diva and ??'s Wild Adventure",
+      "note": ""
     },
     {
       "worldId": "wrld_e5e5bb68-391d-459e-b746-a1068c55dca6",
-      "worldName": "Vket 2025 W YOUtopia - Rising Sun St․"
+      "worldName": "Vket 2025 W YOUtopia - Rising Sun St․",
+      "note": ""
     },
     {
       "worldId": "wrld_1b0729a5-f667-43fe-a740-f36e950b86e7",
-      "worldName": "Vket 2025 W Vket MAAARTǃ - Juicy"
+      "worldName": "Vket 2025 W Vket MAAARTǃ - Juicy",
+      "note": ""
     },
     {
       "worldId": "wrld_577bcb75-a418-41f0-b9fc-9d888c7eeb76",
-      "worldName": "Vket 2025 W VketPlaza -Quest Mode- - Volcano City"
+      "worldName": "Vket 2025 W VketPlaza -Quest Mode- - Volcano City",
+      "note": ""
     },
     {
       "worldId": "wrld_73a17704-2f27-472b-90bf-dcf7df6a50ad",
-      "worldName": "Vket 2025 W Parareal Singapore"
+      "worldName": "Vket 2025 W Parareal Singapore",
+      "note": ""
     },
     {
       "worldId": "wrld_6c2e2a3b-45ae-4bc9-9cb2-d2a81482827a",
-      "worldName": "Forklift Simulator -Cargo Terminal2025-"
+      "worldName": "Forklift Simulator -Cargo Terminal2025-",
+      "note": "大型フォークリフト運転シミュレータ。タイムアタックもあるぞ"
     },
     {
       "worldId": "wrld_63cbfc3b-3037-44c5-9739-b7284fda528d",
-      "worldName": "健全なお部屋2 ⁄ -SFW- ROOM2"
+      "worldName": "健全なお部屋2 ⁄ -SFW- ROOM2",
+      "note": "健全です"
     },
     {
       "worldId": "wrld_8ca15987-54f5-46c7-bb53-60a5c69582be",
-      "worldName": "Avatar Museum 13"
+      "worldName": "Avatar Museum 13",
+      "note": "なりたい姿、見つかりましたか？"
     },
     {
       "worldId": "wrld_a560491e-6f55-4d13-a96f-cdbc34dd80f8",
-      "worldName": "VRC NYE 2026 - Normal Capacity"
+      "worldName": "VRC NYE 2026 - Normal Capacity",
+      "note": ""
     },
     {
       "worldId": "wrld_d048292b-42ad-4204-9372-0103d9a46f71",
-      "worldName": "Gion Street - 祇園通り日本"
+      "worldName": "Gion Street - 祇園通り日本",
+      "note": ""
     },
     {
       "worldId": "wrld_571be847-fc14-45c5-bc25-12ee29588c7f",
-      "worldName": "正月の湯宿～New Years Hot Spring Inn～"
+      "worldName": "正月の湯宿～New Years Hot Spring Inn～",
+      "note": ""
     },
     {
       "worldId": "wrld_de53549a-20cf-4c6f-abea-dcda197e1e16",
-      "worldName": "ORGANISM （v1․5）"
+      "worldName": "ORGANISM （v1․5）",
+      "note": "広大なリミナルスペース。ぜひVRで。"
     },
     {
       "worldId": "wrld_ddc945c1-aae9-412f-8915-f621651f5852",
-      "worldName": "Way to you ⁄ 君へ至る道"
+      "worldName": "Way to you ⁄ 君へ至る道",
+      "note": ""
     },
     {
       "worldId": "wrld_83423a77-3f49-4687-8de1-ab57f259bf40",
-      "worldName": "Fractured Winter"
+      "worldName": "Fractured Winter",
+      "note": ""
     },
     {
       "worldId": "wrld_eff4e7c4-5b5a-4cbd-bc24-7303b0360132",
-      "worldName": "Parietal"
+      "worldName": "Parietal",
+      "note": ""
     },
     {
       "worldId": "wrld_009dde3f-1635-4e3e-9c1b-ed7ce76042c5",
-      "worldName": "でびるコネクション 召喚士の部屋"
+      "worldName": "でびるコネクション 召喚士の部屋",
+      "note": "でびコネのファンメイドワールド。おなじみの部屋"
     },
     {
       "worldId": "wrld_d78e6039-3f4f-4133-a1db-a951843f3dc0",
-      "worldName": "あいうえバトル！"
+      "worldName": "あいうえバトル！",
+      "note": "対戦型Wordle。少人数でも大人数でも。"
     },
     {
       "worldId": "wrld_f765b39d-8402-4a33-beb6-42fe29b016b4",
-      "worldName": "忘却の奥、終わりなき静寂"
+      "worldName": "忘却の奥、終わりなき静寂",
+      "note": ""
     },
     {
       "worldId": "wrld_283cf2a7-3206-4c0b-817e-c9f532dac9dd",
-      "worldName": "This rain is just like my life․"
+      "worldName": "This rain is just like my life․",
+      "note": "晴れの日が来ますように"
     },
     {
       "worldId": "wrld_5f4e7897-d6b5-4c41-9d1f-92957847ea9f",
-      "worldName": "OSF 28 ＂Obscura Highrise＂"
+      "worldName": "OSF 28 ＂Obscura Highrise＂",
+      "note": ""
     },
     {
       "worldId": "wrld_42276029-7868-4344-b143-36ef11fea6b9",
-      "worldName": "Gas station"
+      "worldName": "Gas station",
+      "note": "しんしんと雪が降るなか佇むガソリンスタンド"
     },
     {
       "worldId": "wrld_6aa4eb04-0c21-405c-ac1e-5cefff8b2fff",
-      "worldName": "VRChat BattleField Beta"
+      "worldName": "VRChat BattleField Beta",
+      "note": ""
     },
     {
       "worldId": "wrld_7f0a9b5a-5a2f-4beb-bd26-2809a7bac8f9",
-      "worldName": "Ancient Cathedral"
+      "worldName": "Ancient Cathedral",
+      "note": ""
     },
     {
       "worldId": "wrld_905c02bf-ca5d-4d8e-910f-79face959f49",
-      "worldName": "38万キロの孤独"
+      "worldName": "38万キロの孤独",
+      "note": ""
     },
     {
       "worldId": "wrld_9d4b9acd-d611-47a8-a48c-697c011cfe4e",
-      "worldName": "Frutiger Aero World （Beta）"
+      "worldName": "Frutiger Aero World （Beta）",
+      "note": ""
     },
     {
       "worldId": "wrld_d096f90b-4700-426d-9b88-1e12962c5d6f",
-      "worldName": "夜中の裏路地-Sector B-603-BackAlley"
+      "worldName": "夜中の裏路地-Sector B-603-BackAlley",
+      "note": ""
     },
     {
       "worldId": "wrld_3c7acff8-5674-4a60-b8ce-fd763448db87",
-      "worldName": "Chernobyl - BETA"
+      "worldName": "Chernobyl - BETA",
+      "note": ""
     },
     {
       "worldId": "wrld_b1dc7c8d-cf64-4a95-8dc2-850d5e02e9ab",
-      "worldName": "終幕世界とハルマ"
+      "worldName": "終幕世界とハルマ",
+      "note": ""
     },
     {
       "worldId": "wrld_0127f520-07bf-4bba-8748-debcf0b997ec",
-      "worldName": "内カメ覗き込むかわいいやつを撮れる"
+      "worldName": "内カメ覗き込むかわいいやつを撮れる",
+      "note": ""
     },
     {
       "worldId": "wrld_f632080e-81f2-49ca-bc4e-4e532fe772a6",
-      "worldName": "非コード人のアコード"
+      "worldName": "非コード人のアコード",
+      "note": "集え、馬の骨よ"
     },
     {
       "worldId": "wrld_82289d50-597e-4050-bc1c-2051fa5eace7",
-      "worldName": "微々"
+      "worldName": "微々",
+      "note": ""
     },
     {
       "worldId": "wrld_e80aaed7-97ea-4efc-86a0-5ed631ef026e",
-      "worldName": "Apocalypse"
+      "worldName": "Apocalypse",
+      "note": "荒れ果てた都市の一角"
     },
     {
       "worldId": "wrld_71cbd14c-f2a2-421a-ad8b-869483b01770",
-      "worldName": "Tranquility Cave"
+      "worldName": "Tranquility Cave",
+      "note": ""
     },
     {
       "worldId": "wrld_ecb39cf6-b8d7-48dd-98ed-26c31d1a4257",
-      "worldName": "Stratocubulus"
+      "worldName": "Stratocubulus",
+      "note": ""
     },
     {
       "worldId": "wrld_b1d6808d-a891-4217-b91f-a0662e3ee621",
-      "worldName": "黒磯駅"
+      "worldName": "黒磯駅",
+      "note": ""
     },
     {
       "worldId": "wrld_20bb0e2d-2230-4770-afa6-3cc3c03ce9d6",
-      "worldName": "月時雨通り ~Tsuki Shigure Street~"
+      "worldName": "月時雨通り ~Tsuki Shigure Street~",
+      "note": ""
     },
     {
       "worldId": "wrld_6dcb50cc-da39-4214-9927-fc31615d1cfa",
-      "worldName": "Perimeter Lab ［Marathon］"
+      "worldName": "Perimeter Lab ［Marathon］",
+      "note": "散らかった研究室。ここで何があったんだろう"
     },
     {
       "worldId": "wrld_37d9f462-0a2b-466a-948f-cb0afa42c78d",
-      "worldName": "Elevator 004"
+      "worldName": "Elevator 004",
+      "note": "降りたらそこはクラブでした"
     },
     {
       "worldId": "wrld_7a68f64f-e75b-4257-afe7-5bec37d5a2af",
-      "worldName": "ーゆめたびー"
+      "worldName": "ーゆめたびー",
+      "note": "誰の夢だろう"
     },
     {
       "worldId": "wrld_fad17823-602d-4cd3-85d1-ace514e75710",
-      "worldName": "CONSTRUCT"
+      "worldName": "CONSTRUCT",
+      "note": "狭めのブルータリズムワールド"
     },
     {
       "worldId": "wrld_9d54544c-8f89-4409-bf6f-6a95b62cb119",
-      "worldName": "-ADMIN-"
+      "worldName": "-ADMIN-",
+      "note": "さあ電線を張る仕事に戻るんだ。何？石が足りない？自分で掘りに行け。"
     },
     {
       "worldId": "wrld_f2d6c0ca-2018-449d-a4f1-77ebd8da136e",
-      "worldName": "謎解きワールド「Click」"
+      "worldName": "謎解きワールド「Click」",
+      "note": "ボタンをクリックするだけの簡単なお仕事です"
     },
     {
       "worldId": "wrld_ffc088ae-90df-439b-bc66-0003f8f3f6a7",
-      "worldName": "town of connection"
+      "worldName": "town of connection",
+      "note": ""
     },
     {
       "worldId": "wrld_d9b3fd1c-a4ac-4671-8766-17cdb561732a",
-      "worldName": "Exhibition ⁄ little traitors"
+      "worldName": "Exhibition ⁄ little traitors",
+      "note": ""
     },
     {
       "worldId": "wrld_240299fa-7378-463b-a96b-74413aa20cb6",
-      "worldName": "追憶の原風景"
+      "worldName": "追憶の原風景",
+      "note": ""
     },
     {
       "worldId": "wrld_6dd750e8-b253-4e79-9eb7-2af07490353f",
-      "worldName": "パフェ職人への道~Parfait Masters Journey~"
+      "worldName": "パフェ職人への道~Parfait Masters Journey~",
+      "note": "キミだけの欲張りパフェを作ろう"
     },
     {
       "worldId": "wrld_b305d7f6-84f2-4687-8a25-ae8b35030a08",
-      "worldName": "終点の住処 Last Station Home"
+      "worldName": "終点の住処 Last Station Home",
+      "note": ""
     },
     {
       "worldId": "wrld_40f98daf-3c98-47d9-8541-27e460d474a1",
-      "worldName": "L․I․F․E"
+      "worldName": "L․I․F․E",
+      "note": ""
     },
     {
       "worldId": "wrld_919c43c4-bb02-411d-9e62-651ce6cd4f60",
-      "worldName": "Mor Dhona"
+      "worldName": "Mor Dhona",
+      "note": ""
     },
     {
       "worldId": "wrld_0cf105b8-a983-481d-acd6-ad25e9ae63be",
-      "worldName": "_NODEONE"
+      "worldName": "_NODEONE",
+      "note": ""
     },
     {
       "worldId": "wrld_c9ec7ff2-ca47-40e6-b7ec-7d9ba35aced7",
-      "worldName": "Dear‚ALICE․"
+      "worldName": "Dear‚ALICE․",
+      "note": "広めのチルワ"
     },
     {
       "worldId": "wrld_33193c3e-2a06-45fa-b506-6f2a2db46289",
-      "worldName": "Fractured Dimension"
+      "worldName": "Fractured Dimension",
+      "note": "光よ！"
     },
     {
       "worldId": "wrld_4d3e1e35-886a-4ce9-b33c-e650bc307196",
-      "worldName": "mikinel's Private Island"
+      "worldName": "mikinel's Private Island",
+      "note": "雰囲気の良い小島のチルワ"
     },
     {
       "worldId": "wrld_76c8535e-359a-4b8d-93f2-a3e3501fc08b",
-      "worldName": "4gm4o"
+      "worldName": "4gm4o",
+      "note": "閉園した遊園地のフォトグラメトリ"
     },
     {
       "worldId": "wrld_0443ce24-24e8-40bb-bfbd-e2d6285326e1",
-      "worldName": "Missing Mail and Lost Packages"
+      "worldName": "Missing Mail and Lost Packages",
+      "note": ""
     },
     {
       "worldId": "wrld_ec0354ef-5d3c-4499-9a48-43b66c00efc9",
-      "worldName": "CORELiA ˸ preview"
+      "worldName": "CORELiA ˸ preview",
+      "note": ""
     },
     {
       "worldId": "wrld_41e4cd8b-2ec3-43d4-8187-2f1637fb047f",
-      "worldName": "Dragon Hill"
+      "worldName": "Dragon Hill",
+      "note": "切り取られた氷河の中の廃駅"
     },
     {
       "worldId": "wrld_db0a4502-b097-4979-a7e2-16119cc5895a",
-      "worldName": "水底の街夢の残響"
+      "worldName": "水底の街夢の残響",
+      "note": ""
     },
     {
       "worldId": "wrld_e1dcb059-ac5b-4294-8d7e-8b97eaf15073",
-      "worldName": "逢光に感謝と別れを"
+      "worldName": "逢光に感謝と別れを",
+      "note": ""
     },
     {
       "worldId": "wrld_843b56c6-6c63-45fc-99ed-001ba7dde6a5",
-      "worldName": "Patriki VR （ver․1․1）"
+      "worldName": "Patriki VR （ver․1․1）",
+      "note": ""
     },
     {
       "worldId": "wrld_c2b6fd94-5d0f-4984-ac5a-7fa31bab1ce3",
-      "worldName": "Pool 9"
+      "worldName": "Pool 9",
+      "note": ""
     },
     {
       "worldId": "wrld_2024c4dd-6698-49a7-9aa0-d0175fb0de34",
-      "worldName": "Nightrealm˸ The Sanctuary REMADE"
+      "worldName": "Nightrealm˸ The Sanctuary REMADE",
+      "note": "RPGのダンジョンのような洞窟。最適化されていないため重たい。"
     },
     {
       "worldId": "wrld_57b0c481-a06f-4022-a7fd-fb05ddeb17da",
-      "worldName": "魔術師の宇宙 The Mages Inner Universe"
+      "worldName": "魔術師の宇宙 The Mages Inner Universe",
+      "note": ""
     },
     {
       "worldId": "wrld_7dc4a1a7-a44b-4d88-9d4a-d3ef9e1fa526",
-      "worldName": "暗い鏡の中に - Through a Glass‚ Darkly"
+      "worldName": "暗い鏡の中に - Through a Glass‚ Darkly",
+      "note": "合わせ鏡"
     },
     {
       "worldId": "wrld_96253ba9-ff23-44e5-8bac-ced3a754c9db",
-      "worldName": "․⁄ repression"
+      "worldName": "․⁄ repression",
+      "note": "白を基調とした幾何学ワールド。フォトスポットが多数ある"
     },
     {
       "worldId": "wrld_cbbb3310-b7a8-4567-a4ad-87555560547b",
-      "worldName": "Nameless bar"
+      "worldName": "Nameless bar",
+      "note": "汎用的に使えるバーワールド"
     },
     {
       "worldId": "wrld_7bcc1618-76b6-4922-817c-eba126941045",
-      "worldName": "Solitude"
+      "worldName": "Solitude",
+      "note": ""
     },
     {
       "worldId": "wrld_e307dde1-5cac-4d93-8dce-bac7126b1674",
-      "worldName": "VRChat 98"
+      "worldName": "VRChat 98",
+      "note": ""
     },
     {
       "worldId": "wrld_bc21ae41-5d84-4c84-866e-2c6806c7e4fd",
-      "worldName": "Cloudtopia【TEST2․0】"
+      "worldName": "Cloudtopia【TEST2․0】",
+      "note": ""
+    },
+    {
+      "worldId": "wrld_35cc1494-8908-444b-9994-9a7ca6c6ca75",
+      "worldName": "Silent District",
+      "note": ""
+    },
+    {
+      "worldId": "wrld_ef241e3c-a1e0-491c-bf51-3d2a274c3010",
+      "worldName": "Sakurame PortalWorld -勿忘桜-",
+      "note": ""
+    },
+    {
+      "worldId": "wrld_6da6ee43-0697-4861-a4bb-9d2c96136b05",
+      "worldName": "夜明け前のテラリウム",
+      "note": "チルワ…… と見せかけてリミナルチックな空間を有する"
+    },
+    {
+      "worldId": "wrld_512ff6d0-c697-483e-92c8-e211055aa4b7",
+      "worldName": "DERELICT",
+      "note": ""
+    },
+    {
+      "worldId": "wrld_8e8811c2-5b6e-4335-866f-092358d8256a",
+      "worldName": "寝室、角部屋、陽あたり良好。",
+      "note": ""
+    },
+    {
+      "worldId": "wrld_8ea9a4d0-764f-44c0-9584-d0e93f2668cd",
+      "worldName": "雨端 Amahaji -Night-",
+      "note": ""
     }
   ]
 }
