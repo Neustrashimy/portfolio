@@ -3,7 +3,7 @@
 "use strict";
 
 /*
-    公開向けギャラリー app.js（素朴な構文寄り）
+    公開向けギャラリー app.js
 
     方針：
     - 設定値、DOM参照、状態は「素朴なオブジェクト」
@@ -12,7 +12,7 @@
 */
 
 /** @typedef {{ sha1: string, takenAt: string, worldId: (string|null) }} CatalogItem */
-/** @typedef {{ worldId: string, worldName: string }} WorldInfo */
+/** @typedef {{ worldId: string, worldName: string, note: (string|null|undefined) }} WorldInfo */
 /** @typedef {{ items: CatalogItem[], worlds: WorldInfo[] }} Catalog */
 
 /* -----------------------------
@@ -60,8 +60,8 @@ var state = {
     catalog: null,
     thumbObserver: null,
 
-    // worldId -> worldName
-    worldIdToName: Object.create(null),
+    // worldId -> { worldName, note }
+    worldIdToInfo: Object.create(null),
 
     // grouping
     groupByWorld: true,
@@ -94,6 +94,10 @@ function initElements() {
 
     el.modal = mustGetEl("photoModal");
     el.modalPolaroid = mustGetEl("modalPolaroid");
+
+    // 初期状態は非表示（モーダルはdisplay:noneだが、念のため）
+    el.modalPolaroid.hidden = true;
+
     el.modalImage = mustGetEl("modalImage");
 
     // index.htmlで aタグにしたので HTMLAnchorElement 扱い
@@ -167,15 +171,18 @@ async function main() {
         setStatus("loading catalog...");
         state.catalog = await loadCatalog(settings.catalog_url);
 
-        state.worldIdToName = buildWorldIdToName(state.catalog);
-        initWorldSelect(state.catalog, state.worldIdToName);
+        // 後方互換の吸収（note:null、TZなし日時など）
+        normalizeCatalogData(state.catalog);
+
+        state.worldIdToInfo = buildWorldIdToInfo(state.catalog);
+        initWorldSelect(state.catalog, state.worldIdToInfo);
 
         // grouping状態を復元
         state.groupByWorld = loadGroupByWorld(true);
         el.groupToggle.checked = state.groupByWorld;
 
+        setStatus("items=" + state.catalog.items.length);
         render();
-        setStatus("items=" + state.catalog.items.length + " / sorted by takenAt (desc)");
     } catch (e) {
         console.error(e);
         setStatus("failed to load catalog. (is catalog.json present?)");
@@ -249,7 +256,61 @@ function validateCatalogShape(data) {
     }
 }
 
-function buildWorldIdToName(catalog) {
+function normalizeCatalogData(catalog) {
+    // worlds[].note: null -> "" （後方互換）
+    if (catalog && Array.isArray(catalog.worlds)) {
+        for (var i = 0; i < catalog.worlds.length; i++) {
+            var w = catalog.worlds[i];
+            if (!w) {
+                continue;
+            }
+
+            // note が null/undefined の旧データを吸収
+            if (w.note === null || typeof w.note === "undefined") {
+                w.note = "";
+            }
+
+            // 念のため（数値などが混ざっても落ちないように）
+            if (typeof w.note !== "string") {
+                w.note = String(w.note);
+            }
+        }
+    }
+
+    // items[].takenAt: TZ無し -> +09:00 として読み替え（後方互換）
+    if (catalog && Array.isArray(catalog.items)) {
+        for (var j = 0; j < catalog.items.length; j++) {
+            var it = catalog.items[j];
+            if (!it) {
+                continue;
+            }
+            if (typeof it.takenAt !== "string") {
+                continue;
+            }
+            it.takenAt = normalizeTakenAtTz(it.takenAt);
+        }
+    }
+}
+
+function normalizeTakenAtTz(takenAt) {
+    // 例: 2026-02-24T12:34:56  -> 2026-02-24T12:34:56+09:00
+    // 例: 2026-02-24T12:34:56Z -> そのまま
+    // 例: 2026-02-24T12:34:56+09:00 -> そのまま
+    if (!takenAt) {
+        return takenAt;
+    }
+    if (hasTimezoneSuffix(takenAt)) {
+        return takenAt;
+    }
+    return takenAt + "+09:00";
+}
+
+function hasTimezoneSuffix(text) {
+    // 末尾が Z / +0900 / +09:00 / -0500 / -05:00 などなら「TZあり」
+    return /([zZ]|[+\-]\d\d:?\d\d)$/.test(text);
+}
+
+function buildWorldIdToInfo(catalog) {
     var dict = Object.create(null);
 
     for (var i = 0; i < catalog.worlds.length; i++) {
@@ -263,7 +324,14 @@ function buildWorldIdToName(catalog) {
         if (!w.worldName) {
             continue;
         }
-        dict[w.worldId] = w.worldName;
+
+        // normalizeCatalogData() で note は文字列に寄せてある前提
+        var note = typeof w.note === "string" ? w.note : "";
+
+        dict[w.worldId] = {
+            worldName: w.worldName,
+            note: note
+        };
     }
 
     return dict;
@@ -272,20 +340,20 @@ function buildWorldIdToName(catalog) {
 /* -----------------------------
     World Select
 ----------------------------- */
-function initWorldSelect(catalog, worldIdToName) {
+function initWorldSelect(catalog, worldIdToInfo) {
     el.worldSelect.innerHTML = "";
 
     addOption(el.worldSelect, settings.key_all, "All worlds");
 
-    // worldIdToName を配列にしてソート
+    // worldIdToInfo を配列にしてソート
     var list = [];
-    var keys = Object.keys(worldIdToName);
+    var keys = Object.keys(worldIdToInfo);
 
     for (var i = 0; i < keys.length; i++) {
         var worldId = keys[i];
         list.push({
             worldId: worldId,
-            worldName: worldIdToName[worldId]
+            worldName: worldIdToInfo[worldId].worldName
         });
     }
 
@@ -342,7 +410,7 @@ function render() {
         items = filterItemsByWorld(items, worldFilter);
     }
 
-    // 新しい順固定
+    // 新しい順固定（publish側はdesc固定）
     items.sort(function (a, b) {
         return b.takenAt.localeCompare(a.takenAt);
     });
@@ -366,7 +434,7 @@ function renderGrouped(items) {
     // グループキーの並び順
     var groupKeys = Object.keys(groups);
     groupKeys.sort(function (a, b) {
-        return compareWorldKeys(a, b, state.worldIdToName);
+        return compareWorldKeys(a, b, state.worldIdToInfo);
     });
 
     for (var i = 0; i < groupKeys.length; i++) {
@@ -377,10 +445,11 @@ function renderGrouped(items) {
             return b.takenAt.localeCompare(a.takenAt);
         });
 
-        var worldName = getWorldName(key, state.worldIdToName);
+        var worldName = getWorldName(key, state.worldIdToInfo);
+        var worldNote = getWorldNote(key, state.worldIdToInfo);
         var worldId = key === settings.key_unknown ? null : key;
 
-        el.content.appendChild(renderWorldSection(worldName, worldId, groupItems));
+        el.content.appendChild(renderWorldSection(worldName, worldId, worldNote, groupItems));
 
         // ワールド区切り：薄い1pxのhr
         if (i < groupKeys.length - 1) {
@@ -398,7 +467,7 @@ function renderFlat(items) {
         var it = items[i];
         var worldId = it.worldId ? it.worldId : null;
         var worldKey = worldId ? worldId : settings.key_unknown;
-        var worldName = getWorldName(worldKey, state.worldIdToName);
+        var worldName = getWorldName(worldKey, state.worldIdToInfo);
 
         grid.appendChild(renderCard(it, worldName, worldId));
     }
@@ -448,7 +517,7 @@ function renderWorldDivider() {
     return hr;
 }
 
-function compareWorldKeys(a, b, worldIdToName) {
+function compareWorldKeys(a, b, worldIdToInfo) {
     // unknownは最後
     if (a === settings.key_unknown && b !== settings.key_unknown) {
         return 1;
@@ -457,8 +526,8 @@ function compareWorldKeys(a, b, worldIdToName) {
         return -1;
     }
 
-    var an = getWorldName(a, worldIdToName);
-    var bn = getWorldName(b, worldIdToName);
+    var an = getWorldName(a, worldIdToInfo);
+    var bn = getWorldName(b, worldIdToInfo);
 
     var c = an.localeCompare(bn, "ja");
     if (c !== 0) {
@@ -469,14 +538,33 @@ function compareWorldKeys(a, b, worldIdToName) {
     return a.localeCompare(b);
 }
 
-function getWorldName(worldKey, worldIdToName) {
+function getWorldName(worldKey, worldIdToInfo) {
     if (worldKey === settings.key_unknown) {
         return "(unknown)";
     }
-    return worldIdToName[worldKey] || worldKey;
+
+    var info = worldIdToInfo[worldKey];
+    if (!info) {
+        return worldKey;
+    }
+
+    return info.worldName || worldKey;
 }
 
-function renderWorldSection(worldName, worldId, items) {
+function getWorldNote(worldKey, worldIdToInfo) {
+    if (worldKey === settings.key_unknown) {
+        return "";
+    }
+
+    var info = worldIdToInfo[worldKey];
+    if (!info) {
+        return "";
+    }
+
+    return info.note || "";
+}
+
+function renderWorldSection(worldName, worldId, worldNote, items) {
     var wrap = document.createElement("section");
     wrap.className = "world-section";
 
@@ -501,6 +589,14 @@ function renderWorldSection(worldName, worldId, items) {
     h.appendChild(count);
 
     wrap.appendChild(h);
+
+    // World備考（note）：空文字は未設定扱い
+    if (worldNote) {
+        var note = document.createElement("div");
+        note.className = "world-note";
+        note.textContent = worldNote;
+        wrap.appendChild(note);
+    }
 
     var grid = document.createElement("div");
     grid.className = "grid";
@@ -674,6 +770,9 @@ function closeModal() {
     unlockScroll();
 
     clearImage(el.modalImage);
+
+    // 次回の読み込み中に中身が見えないように
+    el.modalPolaroid.hidden = true;
 
     state.modalStandardSrc = "";
     state.modalThumbSrc = "";
