@@ -4,11 +4,6 @@
 
 /*
     公開向けギャラリー app.js
-
-    方針：
-    - 設定値、DOM参照、状態は「素朴なオブジェクト」
-    - Mapなどは使わず、配列＋プレーンオブジェクト（辞書）
-    - モーダル表示時は body fixed 方式でスクロール位置を見た目ごと固定
 */
 
 /** @typedef {{ sha1: string, takenAt: string, worldId: (string|null) }} CatalogItem */
@@ -31,7 +26,8 @@ var settings = {
     key_unknown: "__unknown__",
 
     // UI保存キー
-    ls_group_by_world: "vrc_gallery_group_by_world"
+    ls_group_by_world: "vrc_gallery_group_by_world",
+    ls_order_by_last_visited: "vrc_gallery_order_by_last_visited"
 };
 
 /* -----------------------------
@@ -40,6 +36,8 @@ var settings = {
 var el = {
     worldSelect: null,
     groupToggle: null,
+    orderToggle: null,
+    orderToggleLabel: null,
     content: null,
     status: null,
 
@@ -65,6 +63,7 @@ var state = {
 
     // grouping
     groupByWorld: true,
+    orderByLastVisited: true,
 
     // modal
     isModalOpen: false,
@@ -89,6 +88,10 @@ window.addEventListener("DOMContentLoaded", function () {
 function initElements() {
     el.worldSelect = mustGetEl("worldSelect");
     el.groupToggle = mustGetEl("groupToggle");
+
+    el.orderToggle = mustGetEl("orderToggle");
+    el.orderToggleLabel = mustGetEl("orderToggleLabel");
+
     el.content = mustGetEl("content");
     el.status = mustGetEl("status");
 
@@ -118,6 +121,17 @@ function wireEvents() {
     el.groupToggle.addEventListener("change", function () {
         state.groupByWorld = !!el.groupToggle.checked;
         saveGroupByWorld(state.groupByWorld);
+
+        updateOrderToggleEnabled();
+        render();
+    });
+
+    // order toggle (グルーピングON時のみ意味がある)
+    el.orderToggle.addEventListener("change", function () {
+        state.orderByLastVisited = !!el.orderToggle.checked;
+        saveOrderByLastVisited(state.orderByLastVisited);
+
+        // グルーピングOFFのときに変更されることはない（disabled）想定だが、念のため
         render();
     });
 
@@ -181,6 +195,13 @@ async function main() {
         state.groupByWorld = loadGroupByWorld(true);
         el.groupToggle.checked = state.groupByWorld;
 
+        // order状態を復元（デフォルトON）
+        state.orderByLastVisited = loadOrderByLastVisited(true);
+        el.orderToggle.checked = state.orderByLastVisited;
+
+        // グルーピングOFFならグレーアウト
+        updateOrderToggleEnabled();
+
         setStatus("items=" + state.catalog.items.length);
         render();
     } catch (e) {
@@ -204,8 +225,19 @@ function setStatus(text) {
     el.status.textContent = text;
 }
 
+function updateOrderToggleEnabled() {
+    // Group by world がOFFの場合は無効化（グレーアウト）
+    if (state.groupByWorld) {
+        el.orderToggle.disabled = false;
+        el.orderToggleLabel.classList.remove("is-disabled");
+    } else {
+        el.orderToggle.disabled = true;
+        el.orderToggleLabel.classList.add("is-disabled");
+    }
+}
+
 /* -----------------------------
-    localStorage (grouping)
+    localStorage (grouping / order)
 ----------------------------- */
 function loadGroupByWorld(defaultValue) {
     try {
@@ -225,6 +257,29 @@ function loadGroupByWorld(defaultValue) {
 function saveGroupByWorld(value) {
     try {
         window.localStorage.setItem(settings.ls_group_by_world, value ? "1" : "0");
+    } catch (e) {
+        // localStorageが使えない環境でも動作は継続する
+    }
+}
+
+function loadOrderByLastVisited(defaultValue) {
+    try {
+        var raw = window.localStorage.getItem(settings.ls_order_by_last_visited);
+        if (raw === "1") {
+            return true;
+        }
+        if (raw === "0") {
+            return false;
+        }
+        return defaultValue;
+    } catch (e) {
+        return defaultValue;
+    }
+}
+
+function saveOrderByLastVisited(value) {
+    try {
+        window.localStorage.setItem(settings.ls_order_by_last_visited, value ? "1" : "0");
     } catch (e) {
         // localStorageが使えない環境でも動作は継続する
     }
@@ -429,18 +484,40 @@ function render() {
 
 function renderGrouped(items) {
     // worldId 単位でグルーピング（辞書）
+    // ※ items は takenAt desc 済みなので、各グループの先頭が「そのワールドの最新」とみなせる
     var groups = groupItemsByWorld(items);
+
+    // worldKey -> lastVisited(time value)
+    var lastVisitedByKey = Object.create(null);
+    var keysForLv = Object.keys(groups);
+    for (var i = 0; i < keysForLv.length; i++) {
+        var k = keysForLv[i];
+        var arr = groups[k];
+        if (arr && arr.length > 0) {
+            lastVisitedByKey[k] = toTimeValue(arr[0].takenAt);
+        } else {
+            lastVisitedByKey[k] = 0;
+        }
+    }
 
     // グループキーの並び順
     var groupKeys = Object.keys(groups);
-    groupKeys.sort(function (a, b) {
-        return compareWorldKeys(a, b, state.worldIdToInfo);
-    });
 
-    for (var i = 0; i < groupKeys.length; i++) {
-        var key = groupKeys[i];
+    if (state.orderByLastVisited) {
+        groupKeys.sort(function (a, b) {
+            return compareWorldKeysByLastVisited(a, b, lastVisitedByKey, state.worldIdToInfo);
+        });
+    } else {
+        groupKeys.sort(function (a, b) {
+            return compareWorldKeys(a, b, state.worldIdToInfo);
+        });
+    }
+
+    for (var j = 0; j < groupKeys.length; j++) {
+        var key = groupKeys[j];
         var groupItems = groups[key] || [];
 
+        // 念のため（データ順が崩れても最新順になる）
         groupItems.sort(function (a, b) {
             return b.takenAt.localeCompare(a.takenAt);
         });
@@ -452,7 +529,7 @@ function renderGrouped(items) {
         el.content.appendChild(renderWorldSection(worldName, worldId, worldNote, groupItems));
 
         // ワールド区切り：薄い1pxのhr
-        if (i < groupKeys.length - 1) {
+        if (j < groupKeys.length - 1) {
             el.content.appendChild(renderWorldDivider());
         }
     }
@@ -536,6 +613,36 @@ function compareWorldKeys(a, b, worldIdToInfo) {
 
     // 同名の場合はIDで安定ソート
     return a.localeCompare(b);
+}
+
+function compareWorldKeysByLastVisited(a, b, lastVisitedByKey, worldIdToInfo) {
+    // unknownは最後（last visitedより優先して最後に寄せる）
+    if (a === settings.key_unknown && b !== settings.key_unknown) {
+        return 1;
+    }
+    if (a !== settings.key_unknown && b === settings.key_unknown) {
+        return -1;
+    }
+
+    var at = lastVisitedByKey[a] || 0;
+    var bt = lastVisitedByKey[b] || 0;
+
+    if (at !== bt) {
+        // 新しい（大きい）ほど先頭
+        return bt - at;
+    }
+
+    // 同時刻なら、名前で安定ソート
+    return compareWorldKeys(a, b, worldIdToInfo);
+}
+
+function toTimeValue(takenAt) {
+    // Date.parse は ISO8601(+09:00等)なら解釈できる
+    var t = Date.parse(takenAt);
+    if (Number.isNaN(t)) {
+        return 0;
+    }
+    return t;
 }
 
 function getWorldName(worldKey, worldIdToInfo) {

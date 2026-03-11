@@ -168,6 +168,22 @@ body {
     color: rgba(20, 20, 20, 0.78);
 }
 
+/* “Order by last visited” は少し下げてネスト感 */
+.checkbox--sub {
+    margin-top: 6px;
+    padding-left: 18px;
+}
+
+/* Grouping OFF のときのグレーアウト */
+.checkbox.is-disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.checkbox.is-disabled input {
+    cursor: not-allowed;
+}
+
 /* ワールドセクション：背景で主張しない */
 .world-section {
     padding: 6px 0 10px 0;
