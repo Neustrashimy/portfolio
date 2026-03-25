@@ -10,170 +10,136 @@
 /** @typedef {{ worldId: string, worldName: string, note: (string|null|undefined) }} WorldInfo */
 /** @typedef {{ items: CatalogItem[], worlds: WorldInfo[] }} Catalog */
 
-/* -----------------------------
-    設定
------------------------------ */
-var settings = {
-    catalog_url: "./catalog.json",
+// ─── 定数 ────────────────────────────────────────────────────────────────────
 
-    thumb_w: 148,
-    thumb_h: 148,
+const CATALOG_URL = "./catalog.json";
 
-    lazy_root_margin: "700px 0px",
-    lazy_threshold: 0.01,
+const THUMB_W = 148;
+const THUMB_H = 148;
 
-    key_all: "__all__",
-    key_unknown: "__unknown__",
+const LAZY_ROOT_MARGIN = "700px 0px";
+const LAZY_THRESHOLD   = 0.01;
 
-    // UI保存キー
-    ls_group_by_world: "vrc_gallery_group_by_world",
-    ls_order_by_last_visited: "vrc_gallery_order_by_last_visited"
+// ワールドフィルタ用の特殊キー
+const KEY_ALL     = "__all__";
+const KEY_UNKNOWN = "__unknown__";
+
+// localStorage キー
+const LS_GROUP_BY_WORLD        = "vrc_gallery_group_by_world";
+const LS_ORDER_BY_LAST_VISITED = "vrc_gallery_order_by_last_visited";
+
+// ─── DOM参照（起動時に埋める） ────────────────────────────────────────────────
+
+const el = {
+    worldSelect:       /** @type {HTMLSelectElement}  */ (null),
+    groupToggle:       /** @type {HTMLInputElement}   */ (null),
+    orderToggle:       /** @type {HTMLInputElement}   */ (null),
+    orderToggleLabel:  /** @type {HTMLElement}        */ (null),
+    content:           /** @type {HTMLElement}        */ (null),
+    status:            /** @type {HTMLElement}        */ (null),
+
+    // モーダル（ポラロイド）
+    modal:             /** @type {HTMLElement}        */ (null),
+    modalPolaroid:     /** @type {HTMLElement}        */ (null),
+    modalImage:        /** @type {HTMLImageElement}   */ (null),
+    modalWorldName:    /** @type {HTMLAnchorElement}  */ (null),
+    modalSha1:         /** @type {HTMLElement}        */ (null),
+    modalTakenAt:      /** @type {HTMLElement}        */ (null),
+    modalClose:        /** @type {HTMLElement}        */ (null),
 };
 
-/* -----------------------------
-    DOM参照（起動時に埋める）
------------------------------ */
-var el = {
-    worldSelect: null,
-    groupToggle: null,
-    orderToggle: null,
-    orderToggleLabel: null,
-    content: null,
-    status: null,
+// ─── 状態 ─────────────────────────────────────────────────────────────────────
 
-    // Modal（ポラロイド）
-    modal: null,
-    modalPolaroid: null,
-    modalImage: null,
-    modalWorldName: null,
-    modalSha1: null,
-    modalTakenAt: null,
-    modalClose: null
-};
-
-/* -----------------------------
-    状態
------------------------------ */
-var state = {
+const state = {
+    /** @type {Catalog|null} */
     catalog: null,
+
+    /** @type {IntersectionObserver|null} */
     thumbObserver: null,
 
-    // worldId -> { worldName, note }
+    /** worldId -> { worldName, note } @type {Record<string, { worldName: string, note: string }>} */
     worldIdToInfo: Object.create(null),
 
-    // grouping
-    groupByWorld: true,
+    // グルーピング設定
+    groupByWorld:       true,
     orderByLastVisited: true,
 
-    // modal
-    isModalOpen: false,
-    lastFocused: null,
+    // モーダル
+    isModalOpen:      false,
+    lastFocused:      /** @type {HTMLElement|null} */ (null),
     modalStandardSrc: "",
-    modalThumbSrc: "",
+    modalThumbSrc:    "",
 
     // スクロール固定用
-    scrollYBeforeModal: 0,
-    bodyPaddingRightBeforeModal: ""
+    scrollYBeforeModal:          0,
+    bodyPaddingRightBeforeModal: "",
 };
 
-/* -----------------------------
-    起動
------------------------------ */
-window.addEventListener("DOMContentLoaded", function () {
+// ─── 起動 ─────────────────────────────────────────────────────────────────────
+
+window.addEventListener("DOMContentLoaded", () => {
     initElements();
     wireEvents();
     void main();
 });
 
 function initElements() {
-    el.worldSelect = mustGetEl("worldSelect");
-    el.groupToggle = mustGetEl("groupToggle");
-
-    el.orderToggle = mustGetEl("orderToggle");
+    el.worldSelect      = mustGetEl("worldSelect");
+    el.groupToggle      = mustGetEl("groupToggle");
+    el.orderToggle      = mustGetEl("orderToggle");
     el.orderToggleLabel = mustGetEl("orderToggleLabel");
+    el.content          = mustGetEl("content");
+    el.status           = mustGetEl("status");
 
-    el.content = mustGetEl("content");
-    el.status = mustGetEl("status");
+    el.modal            = mustGetEl("photoModal");
+    el.modalPolaroid    = mustGetEl("modalPolaroid");
+    el.modalImage       = mustGetEl("modalImage");
+    el.modalWorldName   = /** @type {HTMLAnchorElement} */ (mustGetEl("modalWorldName"));
+    el.modalSha1        = mustGetEl("modalSha1");
+    el.modalTakenAt     = mustGetEl("modalTakenAt");
+    el.modalClose       = mustGetEl("modalClose");
 
-    el.modal = mustGetEl("photoModal");
-    el.modalPolaroid = mustGetEl("modalPolaroid");
-
-    // 初期状態は非表示（モーダルはdisplay:noneだが、念のため）
+    // 初期状態は非表示
     el.modalPolaroid.hidden = true;
-
-    el.modalImage = mustGetEl("modalImage");
-
-    // index.htmlで aタグにしたので HTMLAnchorElement 扱い
-    el.modalWorldName = /** @type {HTMLAnchorElement} */ (mustGetEl("modalWorldName"));
-
-    el.modalSha1 = mustGetEl("modalSha1");
-    el.modalTakenAt = mustGetEl("modalTakenAt");
-    el.modalClose = mustGetEl("modalClose");
 }
 
 function wireEvents() {
-    // world select
-    el.worldSelect.addEventListener("change", function () {
-        render();
-    });
+    el.worldSelect.addEventListener("change", () => render());
 
-    // grouping toggle
-    el.groupToggle.addEventListener("change", function () {
-        state.groupByWorld = !!el.groupToggle.checked;
-        saveGroupByWorld(state.groupByWorld);
-
+    el.groupToggle.addEventListener("change", () => {
+        state.groupByWorld = el.groupToggle.checked;
+        saveBoolean(LS_GROUP_BY_WORLD, state.groupByWorld);
         updateOrderToggleEnabled();
         render();
     });
 
-    // order toggle (グルーピングON時のみ意味がある)
-    el.orderToggle.addEventListener("change", function () {
-        state.orderByLastVisited = !!el.orderToggle.checked;
-        saveOrderByLastVisited(state.orderByLastVisited);
-
-        // グルーピングOFFのときに変更されることはない（disabled）想定だが、念のため
+    el.orderToggle.addEventListener("change", () => {
+        state.orderByLastVisited = el.orderToggle.checked;
+        saveBoolean(LS_ORDER_BY_LAST_VISITED, state.orderByLastVisited);
         render();
     });
 
-    // modal close button
-    el.modalClose.addEventListener("click", function () {
-        closeModal();
+    el.modalClose.addEventListener("click", closeModal);
+
+    // オーバーレイ（モーダル背景）クリックで閉じる
+    el.modal.addEventListener("click", (ev) => {
+        if (state.isModalOpen && ev.target === el.modal) closeModal();
     });
 
-    // overlay click to close
-    el.modal.addEventListener("click", function (ev) {
-        if (!state.isModalOpen) {
-            return;
-        }
-        if (ev.target === el.modal) {
-            closeModal();
-        }
-    });
-
-    // modal image click -> open in new tab
-    el.modalImage.addEventListener("click", function (ev) {
-        if (!state.isModalOpen) {
-            return;
-        }
-
-        // overlay click判定に干渉しないように
+    // 画像クリックで新しいタブに開いてモーダルを閉じる
+    el.modalImage.addEventListener("click", (ev) => {
+        if (!state.isModalOpen) return;
         ev.stopPropagation();
-
-        var url = el.modalImage.currentSrc || el.modalImage.src;
+        const url = el.modalImage.currentSrc || el.modalImage.src;
         if (url) {
             openInNewTab(url);
-
-            // “戻る”が即できて楽なので、開いたら閉じる
-            closeModal();
+            closeModal(); // "戻る" ですぐ戻れるように
         }
     });
 
-    // ESC to close
-    document.addEventListener("keydown", function (ev) {
-        if (!state.isModalOpen) {
-            return;
-        }
-        if (ev.key === "Escape") {
+    // ESC で閉じる
+    document.addEventListener("keydown", (ev) => {
+        if (state.isModalOpen && ev.key === "Escape") {
             ev.preventDefault();
             closeModal();
         }
@@ -183,7 +149,7 @@ function wireEvents() {
 async function main() {
     try {
         setStatus("loading catalog...");
-        state.catalog = await loadCatalog(settings.catalog_url);
+        state.catalog = await loadCatalog(CATALOG_URL);
 
         // 後方互換の吸収（note:null、TZなし日時など）
         normalizeCatalogData(state.catalog);
@@ -191,18 +157,15 @@ async function main() {
         state.worldIdToInfo = buildWorldIdToInfo(state.catalog);
         initWorldSelect(state.catalog, state.worldIdToInfo);
 
-        // grouping状態を復元
-        state.groupByWorld = loadGroupByWorld(true);
-        el.groupToggle.checked = state.groupByWorld;
+        // グルーピング設定を復元（デフォルトON）
+        state.groupByWorld       = loadBoolean(LS_GROUP_BY_WORLD,        true);
+        state.orderByLastVisited = loadBoolean(LS_ORDER_BY_LAST_VISITED, true);
+        el.groupToggle.checked   = state.groupByWorld;
+        el.orderToggle.checked   = state.orderByLastVisited;
 
-        // order状態を復元（デフォルトON）
-        state.orderByLastVisited = loadOrderByLastVisited(true);
-        el.orderToggle.checked = state.orderByLastVisited;
-
-        // グルーピングOFFならグレーアウト
         updateOrderToggleEnabled();
 
-        setStatus("items=" + state.catalog.items.length);
+        setStatus(`items=${state.catalog.items.length}`);
         render();
     } catch (e) {
         console.error(e);
@@ -210,770 +173,616 @@ async function main() {
     }
 }
 
-/* -----------------------------
-    Utility
------------------------------ */
+// ─── ユーティリティ ───────────────────────────────────────────────────────────
+
+/**
+ * getElementById のラッパー（要素が存在しない場合は即エラー）
+ * @param {string} id
+ * @returns {HTMLElement}
+ */
 function mustGetEl(id) {
-    var found = document.getElementById(id);
-    if (!found) {
-        throw new Error("Missing element: #" + id);
-    }
+    const found = document.getElementById(id);
+    if (!found) throw new Error(`Missing element: #${id}`);
     return found;
 }
 
-function setStatus(text) {
-    el.status.textContent = text;
-}
+/** ステータスバーにテキストを表示 */
+const setStatus = (text) => { el.status.textContent = text; };
 
+/**
+ * グルーピングON時だけ「最後に訪れた順」を有効にする
+ */
 function updateOrderToggleEnabled() {
-    // Group by world がOFFの場合は無効化（グレーアウト）
-    if (state.groupByWorld) {
-        el.orderToggle.disabled = false;
-        el.orderToggleLabel.classList.remove("is-disabled");
-    } else {
-        el.orderToggle.disabled = true;
-        el.orderToggleLabel.classList.add("is-disabled");
+    const enabled = state.groupByWorld;
+    el.orderToggle.disabled = !enabled;
+    el.orderToggleLabel.classList.toggle("is-disabled", !enabled);
+}
+
+// ─── localStorage（boolean の読み書き） ──────────────────────────────────────
+
+/**
+ * boolean を "1"/"0" として保存
+ * @param {string} key
+ * @param {boolean} value
+ */
+function saveBoolean(key, value) {
+    try {
+        window.localStorage.setItem(key, value ? "1" : "0");
+    } catch {
+        // localStorage が使えない環境でも動作継続
     }
 }
 
-/* -----------------------------
-    localStorage (grouping / order)
------------------------------ */
-function loadGroupByWorld(defaultValue) {
+/**
+ * "1"/"0" で保存された boolean を読み込む
+ * @param {string} key
+ * @param {boolean} defaultValue
+ * @returns {boolean}
+ */
+function loadBoolean(key, defaultValue) {
     try {
-        var raw = window.localStorage.getItem(settings.ls_group_by_world);
-        if (raw === "1") {
-            return true;
-        }
-        if (raw === "0") {
-            return false;
-        }
+        const raw = window.localStorage.getItem(key);
+        if (raw === "1") return true;
+        if (raw === "0") return false;
         return defaultValue;
-    } catch (e) {
-        return defaultValue;
-    }
-}
-
-function saveGroupByWorld(value) {
-    try {
-        window.localStorage.setItem(settings.ls_group_by_world, value ? "1" : "0");
-    } catch (e) {
-        // localStorageが使えない環境でも動作は継続する
-    }
-}
-
-function loadOrderByLastVisited(defaultValue) {
-    try {
-        var raw = window.localStorage.getItem(settings.ls_order_by_last_visited);
-        if (raw === "1") {
-            return true;
-        }
-        if (raw === "0") {
-            return false;
-        }
-        return defaultValue;
-    } catch (e) {
+    } catch {
         return defaultValue;
     }
 }
 
-function saveOrderByLastVisited(value) {
-    try {
-        window.localStorage.setItem(settings.ls_order_by_last_visited, value ? "1" : "0");
-    } catch (e) {
-        // localStorageが使えない環境でも動作は継続する
-    }
-}
+// ─── カタログ 読み込み・正規化 ────────────────────────────────────────────────
 
-/* -----------------------------
-    Catalog Load / Validate
------------------------------ */
+/**
+ * catalog.json を fetch して返す
+ * @param {string} url
+ * @returns {Promise<Catalog>}
+ */
 async function loadCatalog(url) {
-    var res = await fetch(url, { cache: "no-store" });
-    if (!res.ok) {
-        throw new Error("fetch failed: " + res.status + " " + res.statusText);
-    }
+    const res = await fetch(url, { cache: "no-store" });
+    if (!res.ok) throw new Error(`fetch failed: ${res.status} ${res.statusText}`);
 
-    var data = await res.json();
-    validateCatalogShape(data);
+    const data = await res.json();
+    if (!data || !Array.isArray(data.items) || !Array.isArray(data.worlds)) {
+        throw new Error("Invalid catalog shape");
+    }
     return /** @type {Catalog} */ (data);
 }
 
-function validateCatalogShape(data) {
-    if (!data) {
-        throw new Error("Invalid catalog: null");
-    }
-    if (!Array.isArray(data.items)) {
-        throw new Error("Invalid catalog: items");
-    }
-    if (!Array.isArray(data.worlds)) {
-        throw new Error("Invalid catalog: worlds");
-    }
-}
-
+/**
+ * 後方互換の正規化（旧データの note:null、TZなし日時を吸収）
+ * @param {Catalog} catalog
+ */
 function normalizeCatalogData(catalog) {
-    // worlds[].note: null -> "" （後方互換）
-    if (catalog && Array.isArray(catalog.worlds)) {
-        for (var i = 0; i < catalog.worlds.length; i++) {
-            var w = catalog.worlds[i];
-            if (!w) {
-                continue;
-            }
-
-            // note が null/undefined の旧データを吸収
-            if (w.note === null || typeof w.note === "undefined") {
-                w.note = "";
-            }
-
-            // 念のため（数値などが混ざっても落ちないように）
-            if (typeof w.note !== "string") {
-                w.note = String(w.note);
-            }
-        }
+    for (const w of catalog.worlds) {
+        if (!w) continue;
+        // note: null/undefined/非文字列 → 文字列に統一
+        if (w.note == null)                  w.note = "";
+        else if (typeof w.note !== "string") w.note = String(w.note);
     }
 
-    // items[].takenAt: TZ無し -> +09:00 として読み替え（後方互換）
-    if (catalog && Array.isArray(catalog.items)) {
-        for (var j = 0; j < catalog.items.length; j++) {
-            var it = catalog.items[j];
-            if (!it) {
-                continue;
-            }
-            if (typeof it.takenAt !== "string") {
-                continue;
-            }
-            it.takenAt = normalizeTakenAtTz(it.takenAt);
-        }
+    for (const it of catalog.items) {
+        if (!it || typeof it.takenAt !== "string") continue;
+        // TZなし → +09:00 として補完
+        if (!hasTimezoneSuffix(it.takenAt)) it.takenAt += "+09:00";
     }
 }
 
-function normalizeTakenAtTz(takenAt) {
-    // 例: 2026-02-24T12:34:56  -> 2026-02-24T12:34:56+09:00
-    // 例: 2026-02-24T12:34:56Z -> そのまま
-    // 例: 2026-02-24T12:34:56+09:00 -> そのまま
-    if (!takenAt) {
-        return takenAt;
-    }
-    if (hasTimezoneSuffix(takenAt)) {
-        return takenAt;
-    }
-    return takenAt + "+09:00";
-}
+/**
+ * 文字列の末尾にタイムゾーン表記があるか判定
+ * （Z / +09:00 / +0900 / -05:00 などに対応）
+ * @param {string} text
+ * @returns {boolean}
+ */
+const hasTimezoneSuffix = (text) => /([zZ]|[+\-]\d\d:?\d\d)$/.test(text);
 
-function hasTimezoneSuffix(text) {
-    // 末尾が Z / +0900 / +09:00 / -0500 / -05:00 などなら「TZあり」
-    return /([zZ]|[+\-]\d\d:?\d\d)$/.test(text);
-}
-
+/**
+ * worldId -> { worldName, note } の辞書を構築
+ * @param {Catalog} catalog
+ * @returns {Record<string, { worldName: string, note: string }>}
+ */
 function buildWorldIdToInfo(catalog) {
-    var dict = Object.create(null);
-
-    for (var i = 0; i < catalog.worlds.length; i++) {
-        var w = catalog.worlds[i];
-        if (!w) {
-            continue;
-        }
-        if (!w.worldId) {
-            continue;
-        }
-        if (!w.worldName) {
-            continue;
-        }
-
-        // normalizeCatalogData() で note は文字列に寄せてある前提
-        var note = typeof w.note === "string" ? w.note : "";
-
+    const dict = Object.create(null);
+    for (const w of catalog.worlds) {
+        if (!w?.worldId || !w.worldName) continue;
         dict[w.worldId] = {
             worldName: w.worldName,
-            note: note
+            note: typeof w.note === "string" ? w.note : "",
         };
     }
-
     return dict;
 }
 
-/* -----------------------------
-    World Select
------------------------------ */
+// ─── ワールドセレクト ─────────────────────────────────────────────────────────
+
+/**
+ * ワールドセレクトボックスを初期化
+ * @param {Catalog} catalog
+ * @param {Record<string, { worldName: string }>} worldIdToInfo
+ */
 function initWorldSelect(catalog, worldIdToInfo) {
     el.worldSelect.innerHTML = "";
+    addOption(el.worldSelect, KEY_ALL, "All worlds");
 
-    addOption(el.worldSelect, settings.key_all, "All worlds");
+    const sorted = Object.entries(worldIdToInfo)
+        .map(([id, info]) => ({ id, name: info.worldName }))
+        .sort((a, b) => a.name.localeCompare(b.name, "ja"));
 
-    // worldIdToInfo を配列にしてソート
-    var list = [];
-    var keys = Object.keys(worldIdToInfo);
-
-    for (var i = 0; i < keys.length; i++) {
-        var worldId = keys[i];
-        list.push({
-            worldId: worldId,
-            worldName: worldIdToInfo[worldId].worldName
-        });
+    for (const { id, name } of sorted) {
+        addOption(el.worldSelect, id, name);
     }
 
-    list.sort(function (a, b) {
-        return a.worldName.localeCompare(b.worldName, "ja");
-    });
-
-    for (var j = 0; j < list.length; j++) {
-        addOption(el.worldSelect, list[j].worldId, list[j].worldName);
-    }
-
-    // unknown の存在チェック
-    var hasUnknown = false;
-    for (var k = 0; k < catalog.items.length; k++) {
-        if (!catalog.items[k].worldId) {
-            hasUnknown = true;
-            break;
-        }
-    }
-    if (hasUnknown) {
-        addOption(el.worldSelect, settings.key_unknown, "(unknown)");
+    if (catalog.items.some(it => !it.worldId)) {
+        addOption(el.worldSelect, KEY_UNKNOWN, "(unknown)");
     }
 }
 
+/**
+ * select に option を追加するヘルパー
+ */
 function addOption(select, value, label) {
-    var opt = document.createElement("option");
+    const opt = document.createElement("option");
     opt.value = value;
     opt.textContent = label;
     select.appendChild(opt);
 }
 
-/* -----------------------------
-    Render
------------------------------ */
-function render() {
-    if (!state.catalog) {
-        return;
-    }
+// ─── 再描画 ───────────────────────────────────────────────────────────────────
 
-    // 既存observerを破棄して作り直し（簡単で事故りにくい）
-    if (state.thumbObserver) {
-        state.thumbObserver.disconnect();
-    }
+function render() {
+    if (!state.catalog) return;
+
+    // ThumbObserver をリセット
+    state.thumbObserver?.disconnect();
     state.thumbObserver = createThumbObserver();
 
-    var worldFilter = el.worldSelect.value;
+    const worldFilter = el.worldSelect.value;
 
-    // items をコピーしてフィルタ
-    var items = state.catalog.items.slice();
+    // フィルタ（元の配列を破壊しないようにコピー）
+    let items = state.catalog.items.slice();
+    if      (worldFilter === KEY_UNKNOWN) items = items.filter(it => !it.worldId);
+    else if (worldFilter !== KEY_ALL)     items = items.filter(it => it.worldId === worldFilter);
 
-    if (worldFilter === settings.key_unknown) {
-        items = filterItemsUnknown(items);
-    } else if (worldFilter !== settings.key_all) {
-        items = filterItemsByWorld(items, worldFilter);
-    }
+    // 新しい順固定（公開側は desc 固定）
+    items.sort((a, b) => b.takenAt.localeCompare(a.takenAt));
 
-    // 新しい順固定（publish側はdesc固定）
-    items.sort(function (a, b) {
-        return b.takenAt.localeCompare(a.takenAt);
-    });
-
-    // 描画
     el.content.innerHTML = "";
 
-    if (state.groupByWorld) {
-        renderGrouped(items);
-    } else {
-        renderFlat(items);
-    }
+    if (state.groupByWorld) renderGrouped(items);
+    else                    renderFlat(items);
 
-    setStatus("showing " + items.length + " items");
+    setStatus(`showing ${items.length} items`);
 }
 
+// ─── グループ描画 ─────────────────────────────────────────────────────────────
+
+/**
+ * ワールドごとにグルーピングして描画
+ * @param {CatalogItem[]} items  takenAt desc 済みのアイテム
+ */
 function renderGrouped(items) {
-    // worldId 単位でグルーピング（辞書）
-    // ※ items は takenAt desc 済みなので、各グループの先頭が「そのワールドの最新」とみなせる
-    var groups = groupItemsByWorld(items);
+    // items は takenAt desc 済みなので groups[key][0] がそのワールドの最新
+    const groups = groupItemsByWorldKey(items);
+    const keys   = Object.keys(groups);
 
-    // worldKey -> lastVisited(time value)
-    var lastVisitedByKey = Object.create(null);
-    var keysForLv = Object.keys(groups);
-    for (var i = 0; i < keysForLv.length; i++) {
-        var k = keysForLv[i];
-        var arr = groups[k];
-        if (arr && arr.length > 0) {
-            lastVisitedByKey[k] = toTimeValue(arr[0].takenAt);
-        } else {
-            lastVisitedByKey[k] = 0;
-        }
-    }
+    // 各グループの「最後に訪れた」時刻（先頭要素の takenAt）
+    const lastVisitedMs = Object.fromEntries(
+        keys.map(k => [k, toTimeValue(groups[k][0]?.takenAt)])
+    );
 
-    // グループキーの並び順
-    var groupKeys = Object.keys(groups);
+    // グループキーをソート
+    const comparator = state.orderByLastVisited
+        ? (a, b) => compareByLastVisited(a, b, lastVisitedMs)
+        : (a, b) => compareByName(a, b);
 
-    if (state.orderByLastVisited) {
-        groupKeys.sort(function (a, b) {
-            return compareWorldKeysByLastVisited(a, b, lastVisitedByKey, state.worldIdToInfo);
-        });
-    } else {
-        groupKeys.sort(function (a, b) {
-            return compareWorldKeys(a, b, state.worldIdToInfo);
-        });
-    }
+    keys.sort(comparator);
 
-    for (var j = 0; j < groupKeys.length; j++) {
-        var key = groupKeys[j];
-        var groupItems = groups[key] || [];
-
-        // 念のため（データ順が崩れても最新順になる）
-        groupItems.sort(function (a, b) {
-            return b.takenAt.localeCompare(a.takenAt);
-        });
-
-        var worldName = getWorldName(key, state.worldIdToInfo);
-        var worldNote = getWorldNote(key, state.worldIdToInfo);
-        var worldId = key === settings.key_unknown ? null : key;
+    keys.forEach((key, i) => {
+        const groupItems = groups[key].sort((a, b) => b.takenAt.localeCompare(a.takenAt));
+        const worldId    = key === KEY_UNKNOWN ? null : key;
+        const worldName  = resolveWorldName(key);
+        const worldNote  = resolveWorldNote(key);
 
         el.content.appendChild(renderWorldSection(worldName, worldId, worldNote, groupItems));
 
-        // ワールド区切り：薄い1pxのhr
-        if (j < groupKeys.length - 1) {
-            el.content.appendChild(renderWorldDivider());
-        }
-    }
+        // ワールド間の区切り線（最後のグループには不要）
+        if (i < keys.length - 1) el.content.appendChild(renderWorldDivider());
+    });
 }
 
+/**
+ * グルーピングなし：全件を1グリッドで描画
+ * @param {CatalogItem[]} items
+ */
 function renderFlat(items) {
-    // まとめて1つのgridに描画
-    var grid = document.createElement("div");
+    const grid = document.createElement("div");
     grid.className = "grid";
 
-    for (var i = 0; i < items.length; i++) {
-        var it = items[i];
-        var worldId = it.worldId ? it.worldId : null;
-        var worldKey = worldId ? worldId : settings.key_unknown;
-        var worldName = getWorldName(worldKey, state.worldIdToInfo);
-
+    for (const it of items) {
+        const worldId   = it.worldId ?? null;
+        const worldKey  = worldId ?? KEY_UNKNOWN;
+        const worldName = resolveWorldName(worldKey);
         grid.appendChild(renderCard(it, worldName, worldId));
     }
 
     el.content.appendChild(grid);
 }
 
-function filterItemsUnknown(items) {
-    var out = [];
-    for (var i = 0; i < items.length; i++) {
-        if (!items[i].worldId) {
-            out.push(items[i]);
-        }
+// ─── グループ化ヘルパー ───────────────────────────────────────────────────────
+
+/**
+ * アイテムを worldId キーでグルーピング
+ * @param {CatalogItem[]} items
+ * @returns {Record<string, CatalogItem[]>}
+ */
+function groupItemsByWorldKey(items) {
+    const groups = Object.create(null);
+    for (const it of items) {
+        const key = it.worldId ?? KEY_UNKNOWN;
+        (groups[key] ??= []).push(it);
     }
-    return out;
-}
-
-function filterItemsByWorld(items, worldId) {
-    var out = [];
-    for (var i = 0; i < items.length; i++) {
-        if (items[i].worldId === worldId) {
-            out.push(items[i]);
-        }
-    }
-    return out;
-}
-
-function groupItemsByWorld(items) {
-    var groups = Object.create(null);
-
-    for (var i = 0; i < items.length; i++) {
-        var it = items[i];
-        var key = it.worldId ? it.worldId : settings.key_unknown;
-
-        if (!groups[key]) {
-            groups[key] = [];
-        }
-        groups[key].push(it);
-    }
-
     return groups;
 }
 
-function renderWorldDivider() {
-    var hr = document.createElement("hr");
-    hr.className = "world-divider";
-    return hr;
+/**
+ * ワールドキーをワールド名順で比較（KEY_UNKNOWN は末尾固定）
+ * @param {string} a
+ * @param {string} b
+ * @returns {number}
+ */
+function compareByName(a, b) {
+    if (a === KEY_UNKNOWN) return  1;
+    if (b === KEY_UNKNOWN) return -1;
+    const c = resolveWorldName(a).localeCompare(resolveWorldName(b), "ja");
+    return c !== 0 ? c : a.localeCompare(b); // 同名の場合はIDで安定ソート
 }
 
-function compareWorldKeys(a, b, worldIdToInfo) {
-    // unknownは最後
-    if (a === settings.key_unknown && b !== settings.key_unknown) {
-        return 1;
-    }
-    if (a !== settings.key_unknown && b === settings.key_unknown) {
-        return -1;
-    }
-
-    var an = getWorldName(a, worldIdToInfo);
-    var bn = getWorldName(b, worldIdToInfo);
-
-    var c = an.localeCompare(bn, "ja");
-    if (c !== 0) {
-        return c;
-    }
-
-    // 同名の場合はIDで安定ソート
-    return a.localeCompare(b);
+/**
+ * ワールドキーを「最後に訪れた順」で比較（同時刻はワールド名順）
+ * @param {string} a
+ * @param {string} b
+ * @param {Record<string, number>} lastVisitedMs
+ * @returns {number}
+ */
+function compareByLastVisited(a, b, lastVisitedMs) {
+    if (a === KEY_UNKNOWN) return  1;
+    if (b === KEY_UNKNOWN) return -1;
+    const diff = (lastVisitedMs[b] ?? 0) - (lastVisitedMs[a] ?? 0);
+    return diff !== 0 ? diff : compareByName(a, b);
 }
 
-function compareWorldKeysByLastVisited(a, b, lastVisitedByKey, worldIdToInfo) {
-    // unknownは最後（last visitedより優先して最後に寄せる）
-    if (a === settings.key_unknown && b !== settings.key_unknown) {
-        return 1;
-    }
-    if (a !== settings.key_unknown && b === settings.key_unknown) {
-        return -1;
-    }
-
-    var at = lastVisitedByKey[a] || 0;
-    var bt = lastVisitedByKey[b] || 0;
-
-    if (at !== bt) {
-        // 新しい（大きい）ほど先頭
-        return bt - at;
-    }
-
-    // 同時刻なら、名前で安定ソート
-    return compareWorldKeys(a, b, worldIdToInfo);
-}
-
+/**
+ * takenAt 文字列をミリ秒に変換（パース失敗は 0）
+ * @param {string} takenAt
+ * @returns {number}
+ */
 function toTimeValue(takenAt) {
-    // Date.parse は ISO8601(+09:00等)なら解釈できる
-    var t = Date.parse(takenAt);
-    if (Number.isNaN(t)) {
-        return 0;
-    }
-    return t;
+    const t = Date.parse(takenAt);
+    return Number.isNaN(t) ? 0 : t;
 }
 
-function getWorldName(worldKey, worldIdToInfo) {
-    if (worldKey === settings.key_unknown) {
-        return "(unknown)";
-    }
+// ─── ワールド情報解決 ─────────────────────────────────────────────────────────
 
-    var info = worldIdToInfo[worldKey];
-    if (!info) {
-        return worldKey;
-    }
-
-    return info.worldName || worldKey;
+/**
+ * worldKey から表示名を解決
+ * @param {string} worldKey
+ * @returns {string}
+ */
+function resolveWorldName(worldKey) {
+    if (worldKey === KEY_UNKNOWN) return "(unknown)";
+    const info = state.worldIdToInfo[worldKey];
+    return info?.worldName || worldKey;
 }
 
-function getWorldNote(worldKey, worldIdToInfo) {
-    if (worldKey === settings.key_unknown) {
-        return "";
-    }
-
-    var info = worldIdToInfo[worldKey];
-    if (!info) {
-        return "";
-    }
-
-    return info.note || "";
+/**
+ * worldKey から note を解決
+ * @param {string} worldKey
+ * @returns {string}
+ */
+function resolveWorldNote(worldKey) {
+    if (worldKey === KEY_UNKNOWN) return "";
+    return state.worldIdToInfo[worldKey]?.note ?? "";
 }
 
+// ─── セクション・カード描画 ───────────────────────────────────────────────────
+
+/**
+ * ワールドセクション（h2 + note + grid）を生成
+ * @param {string}        worldName
+ * @param {string|null}   worldId
+ * @param {string}        worldNote
+ * @param {CatalogItem[]} items
+ * @returns {HTMLElement}
+ */
 function renderWorldSection(worldName, worldId, worldNote, items) {
-    var wrap = document.createElement("section");
+    const wrap = document.createElement("section");
     wrap.className = "world-section";
 
-    var h = document.createElement("h2");
+    // 見出し（worldId がある場合はリンク化）
+    const h = document.createElement("h2");
     h.className = "world-title";
 
     if (worldId) {
-        var a = document.createElement("a");
-        a.className = "world-title__link";
-        a.href = "https://vrchat.com/home/world/" + worldId + "/info";
+        const a = document.createElement("a");
+        a.className   = "world-title__link";
+        a.href        = `https://vrchat.com/home/world/${worldId}/info`;
         a.textContent = worldName;
-        a.target = "_blank";
-        a.rel = "noopener";
+        a.target      = "_blank";
+        a.rel         = "noopener";
         h.appendChild(a);
     } else {
         h.textContent = worldName;
     }
 
-    var count = document.createElement("span");
-    count.textContent = "  (" + items.length + ")";
-    count.className = "world-title__count";
-    h.appendChild(count);
+    const countSpan = document.createElement("span");
+    countSpan.className   = "world-title__count";
+    countSpan.textContent = `  (${items.length})`;
+    h.appendChild(countSpan);
 
     wrap.appendChild(h);
 
-    // World備考（note）：空文字は未設定扱い
+    // 備考（空文字は未設定とみなして非表示）
     if (worldNote) {
-        var note = document.createElement("div");
-        note.className = "world-note";
-        note.textContent = worldNote;
-        wrap.appendChild(note);
+        const noteEl = document.createElement("div");
+        noteEl.className   = "world-note";
+        noteEl.textContent = worldNote;
+        wrap.appendChild(noteEl);
     }
 
-    var grid = document.createElement("div");
+    const grid = document.createElement("div");
     grid.className = "grid";
-
-    for (var i = 0; i < items.length; i++) {
-        grid.appendChild(renderCard(items[i], worldName, worldId));
-    }
+    for (const it of items) grid.appendChild(renderCard(it, worldName, worldId));
 
     wrap.appendChild(grid);
     return wrap;
 }
 
+/**
+ * ワールド区切り線（hr）を生成
+ * @returns {HTMLHRElement}
+ */
+function renderWorldDivider() {
+    const hr = document.createElement("hr");
+    hr.className = "world-divider";
+    return hr;
+}
+
+/**
+ * サムネカードを生成
+ * @param {CatalogItem} it
+ * @param {string}      worldName
+ * @param {string|null} worldId
+ * @returns {HTMLElement}
+ */
 function renderCard(it, worldName, worldId) {
-    var card = document.createElement("div");
+    const card = document.createElement("div");
     card.className = "card";
 
-    var btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "thumb-button";
-    btn.addEventListener("click", function () {
-        openModal(it, worldName, worldId);
-    });
-
-    var img = document.createElement("img");
-    img.className = "thumb";
-    img.alt = it.sha1;
-
-    // レイアウト安定用
-    img.width = settings.thumb_w;
-    img.height = settings.thumb_h;
-
-    // lazy-load
+    // サムネ画像（lazy-load）
+    const img = document.createElement("img");
+    img.className   = "thumb";
+    img.alt         = it.sha1;
+    img.width       = THUMB_W;
+    img.height      = THUMB_H;
     img.dataset.src = buildThumbPath(it.sha1);
-    if (state.thumbObserver) {
-        state.thumbObserver.observe(img);
-    }
+    state.thumbObserver?.observe(img);
 
+    const btn = document.createElement("button");
+    btn.type      = "button";
+    btn.className = "thumb-button";
+    btn.addEventListener("click", () => openModal(it, worldName, worldId));
     btn.appendChild(img);
-    card.appendChild(btn);
 
-    var meta = document.createElement("div");
+    // メタ情報（sha1の先頭8文字 + 撮影日時）
+    const meta = document.createElement("div");
     meta.className = "meta";
 
-    var line1 = document.createElement("div");
-    line1.className = "meta__sha1";
-    line1.textContent = it.sha1.slice(0, 8);
+    const sha1El = document.createElement("div");
+    sha1El.className   = "meta__sha1";
+    sha1El.textContent = it.sha1.slice(0, 8);
 
-    var line2 = document.createElement("div");
-    line2.className = "meta__takenat";
-    line2.textContent = it.takenAt;
+    const takenAtEl = document.createElement("div");
+    takenAtEl.className   = "meta__takenat";
+    takenAtEl.textContent = it.takenAt;
 
-    meta.appendChild(line1);
-    meta.appendChild(line2);
+    meta.appendChild(sha1El);
+    meta.appendChild(takenAtEl);
+
+    card.appendChild(btn);
     card.appendChild(meta);
-
     return card;
 }
 
-/* -----------------------------
-    Lazy Load
------------------------------ */
+// ─── Lazy-load ────────────────────────────────────────────────────────────────
+
+/**
+ * 画像遅延読み込み用の IntersectionObserver を生成
+ * （未対応ブラウザでは即時読み込みにフォールバック）
+ * @returns {IntersectionObserver}
+ */
 function createThumbObserver() {
-    // IntersectionObserverがない環境は即時ロード
     if (!("IntersectionObserver" in window)) {
-        return {
-            observe: function (img) {
-                loadImgNow(img);
-            },
-            unobserve: function () { },
-            disconnect: function () { }
-        };
+        return { observe: loadImgNow, unobserve: () => {}, disconnect: () => {} };
     }
 
     return new IntersectionObserver(
-        function (entries, observer) {
-            for (var i = 0; i < entries.length; i++) {
-                var entry = entries[i];
-                if (!entry.isIntersecting) {
-                    continue;
-                }
-
-                var img = /** @type {HTMLImageElement} */ (entry.target);
-                loadImgNow(img);
-                observer.unobserve(img);
+        (entries, observer) => {
+            for (const entry of entries) {
+                if (!entry.isIntersecting) continue;
+                loadImgNow(/** @type {HTMLImageElement} */ (entry.target));
+                observer.unobserve(entry.target);
             }
         },
-        {
-            root: null,
-            rootMargin: settings.lazy_root_margin,
-            threshold: settings.lazy_threshold
-        }
+        { root: null, rootMargin: LAZY_ROOT_MARGIN, threshold: LAZY_THRESHOLD }
     );
 }
 
+/**
+ * data-src を src に昇格して読み込み開始
+ * @param {HTMLImageElement} img
+ */
 function loadImgNow(img) {
-    var src = img.dataset.src;
-    if (!src) {
-        return;
-    }
-    if (img.src) {
-        return;
-    }
-
+    const src = img.dataset.src;
+    if (!src || img.src) return;
     img.src = src;
-
-    img.addEventListener(
-        "error",
-        function () {
-            img.removeAttribute("src");
-            img.style.visibility = "hidden";
-        },
-        { once: true }
-    );
+    img.addEventListener("error", () => {
+        img.removeAttribute("src");
+        img.style.visibility = "hidden";
+    }, { once: true });
 }
 
-/* -----------------------------
-    Path Builder
------------------------------ */
-function buildThumbPath(sha1) {
-    var head2 = sha1.slice(0, 2);
-    return "./thumbs/" + head2 + "/" + sha1 + ".webp";
-}
+// ─── パス生成 ─────────────────────────────────────────────────────────────────
 
-function buildStandardPath(sha1) {
-    var head2 = sha1.slice(0, 2);
-    return "./standard/" + head2 + "/" + sha1 + ".webp";
-}
+/** thumbs の相対パスを構築 */
+const buildThumbPath    = (sha1) => `./thumbs/${sha1.slice(0, 2)}/${sha1}.webp`;
 
-/* -----------------------------
-    Modal (Polaroid)
------------------------------ */
+/** standard の相対パスを構築 */
+const buildStandardPath = (sha1) => `./standard/${sha1.slice(0, 2)}/${sha1}.webp`;
+
+// ─── モーダル（ポラロイド） ───────────────────────────────────────────────────
+
+/**
+ * モーダルを開く
+ * @param {CatalogItem} it
+ * @param {string}      worldName
+ * @param {string|null} worldId
+ */
 function openModal(it, worldName, worldId) {
-    state.lastFocused = /** @type {any} */ (document.activeElement);
+    state.lastFocused = /** @type {HTMLElement} */ (document.activeElement);
 
-    // モーダルのワールド名：リンク化（unknownはリンク無し）
     setModalWorldLink(worldName, worldId);
-
-    el.modalSha1.textContent = it.sha1.slice(0, 8);
+    el.modalSha1.textContent    = it.sha1.slice(0, 8);
     el.modalTakenAt.textContent = it.takenAt;
 
-    state.isModalOpen = true;
-
-    // 画像URLを保持（standard優先、失敗時thumb）
+    state.isModalOpen      = true;
     state.modalStandardSrc = buildStandardPath(it.sha1);
-    state.modalThumbSrc = buildThumbPath(it.sha1);
+    state.modalThumbSrc    = buildThumbPath(it.sha1);
 
+    // standard を優先して表示し、失敗したらサムネにフォールバック
     setImageWithFallback(el.modalImage, state.modalStandardSrc, state.modalThumbSrc);
 
     el.modalPolaroid.hidden = false;
-
     el.modal.classList.add("is-open");
     el.modal.setAttribute("aria-hidden", "false");
 
-    // 背景スクロールを「見た目ごと」固定
     lockScroll();
-
     el.modalClose.focus();
 }
 
+/**
+ * モーダルを閉じる
+ */
 function closeModal() {
-    if (!state.isModalOpen) {
-        return;
-    }
+    if (!state.isModalOpen) return;
 
     state.isModalOpen = false;
-
     el.modal.classList.remove("is-open");
     el.modal.setAttribute("aria-hidden", "true");
 
-    // スクロール復帰
     unlockScroll();
-
     clearImage(el.modalImage);
 
-    // 次回の読み込み中に中身が見えないように
+    // 次回表示までコンテンツを隠す
     el.modalPolaroid.hidden = true;
 
     state.modalStandardSrc = "";
-    state.modalThumbSrc = "";
+    state.modalThumbSrc    = "";
 
-    if (state.lastFocused && typeof state.lastFocused.focus === "function") {
-        state.lastFocused.focus();
-    }
+    state.lastFocused?.focus();
     state.lastFocused = null;
 }
 
+/**
+ * モーダルのワールド名リンクを設定
+ * @param {string}      worldName
+ * @param {string|null} worldId
+ */
 function setModalWorldLink(worldName, worldId) {
     el.modalWorldName.textContent = worldName;
 
     if (worldId) {
-        el.modalWorldName.href = "https://vrchat.com/home/world/" + worldId + "/info";
+        el.modalWorldName.href   = `https://vrchat.com/home/world/${worldId}/info`;
         el.modalWorldName.target = "_blank";
-        el.modalWorldName.rel = "noopener";
+        el.modalWorldName.rel    = "noopener";
     } else {
-        // href無しにして、見た目もリンクっぽくしない（CSSで:not([href])対応）
+        // href なしにしてリンク表示を無効化（CSS で :not([href]) 対応）
         el.modalWorldName.removeAttribute("href");
         el.modalWorldName.removeAttribute("target");
         el.modalWorldName.removeAttribute("rel");
     }
 }
 
-/*
-    スクロール固定（body fixed方式）
-*/
+// ─── スクロール固定（body fixed 方式） ───────────────────────────────────────
+
 function lockScroll() {
-    var y = window.scrollY || 0;
-    state.scrollYBeforeModal = y;
+    state.scrollYBeforeModal = window.scrollY || 0;
 
-    // スクロールバー幅（横ガタつき抑制）
-    var scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-
+    // スクロールバー消滅による横ガタつきを補正
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
     state.bodyPaddingRightBeforeModal = document.body.style.paddingRight || "";
     if (scrollbarWidth > 0) {
-        document.body.style.paddingRight = String(scrollbarWidth) + "px";
+        document.body.style.paddingRight = `${scrollbarWidth}px`;
     }
 
     document.body.style.position = "fixed";
-    document.body.style.top = "-" + String(y) + "px";
-    document.body.style.left = "0";
-    document.body.style.right = "0";
-    document.body.style.width = "100%";
+    document.body.style.top      = `-${state.scrollYBeforeModal}px`;
+    document.body.style.left     = "0";
+    document.body.style.right    = "0";
+    document.body.style.width    = "100%";
 
     document.documentElement.classList.add("is-modal-open");
 }
 
 function unlockScroll() {
-    var y = state.scrollYBeforeModal || 0;
-
-    document.body.style.position = "";
-    document.body.style.top = "";
-    document.body.style.left = "";
-    document.body.style.right = "";
-    document.body.style.width = "";
-
+    document.body.style.position     = "";
+    document.body.style.top          = "";
+    document.body.style.left         = "";
+    document.body.style.right        = "";
+    document.body.style.width        = "";
     document.body.style.paddingRight = state.bodyPaddingRightBeforeModal;
-    state.bodyPaddingRightBeforeModal = "";
 
+    state.bodyPaddingRightBeforeModal = "";
     document.documentElement.classList.remove("is-modal-open");
 
-    window.scrollTo(0, y);
+    window.scrollTo(0, state.scrollYBeforeModal);
 }
 
-/* -----------------------------
-    Image helpers
------------------------------ */
+// ─── 画像ヘルパー ─────────────────────────────────────────────────────────────
+
+/**
+ * primarySrc を優先して読み込み、失敗したら fallbackSrc を表示
+ * @param {HTMLImageElement} img
+ * @param {string} primarySrc
+ * @param {string} fallbackSrc
+ */
 function setImageWithFallback(img, primarySrc, fallbackSrc) {
     img.onerror = null;
-    img.src = "";
-
-    img.onerror = function () {
+    img.src     = "";
+    img.onerror = () => {
         img.onerror = null;
-        img.src = fallbackSrc;
+        img.src     = fallbackSrc;
     };
-
     img.src = primarySrc;
 }
 
+/**
+ * img の src と onerror をリセット
+ * @param {HTMLImageElement} img
+ */
 function clearImage(img) {
     img.onerror = null;
-    img.src = "";
+    img.src     = "";
 }
 
-/* -----------------------------
-    Open in new tab
------------------------------ */
+// ─── 新しいタブで開く ─────────────────────────────────────────────────────────
+
+/**
+ * URL を新しいタブで開く
+ * @param {string} url
+ */
 function openInNewTab(url) {
-    var a = document.createElement("a");
-    a.href = url;
-    a.target = "_blank";
-    a.rel = "noopener noreferrer";
+    const a = Object.assign(document.createElement("a"), {
+        href: url, target: "_blank", rel: "noopener noreferrer",
+    });
     document.body.appendChild(a);
     a.click();
     a.remove();
