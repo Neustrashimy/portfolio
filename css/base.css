@@ -93,6 +93,10 @@ body.is-fs-open {
     overflow: hidden;
 }
 
+.namecard--fs .scroll-cue {
+    display: none;
+}
+
 /* =====================================================================
    Hero — portrait name card. Full-screen on phones.
    ===================================================================== */
@@ -241,8 +245,8 @@ body.is-fs-open {
 .namecard__qr {
     right: clamp(18px, 6%, 40px);
     bottom: clamp(64px, 16%, 110px);
-    width: clamp(52px, 14vw, 74px);
-    height: clamp(52px, 14vw, 74px);
+    width: clamp(66px, 18vw, 96px);
+    height: clamp(66px, 18vw, 96px);
     border-radius: 6px;
     overflow: hidden;
     background: #fff;

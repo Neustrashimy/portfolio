@@ -345,9 +345,8 @@ ol.speclist li::before {
 .chip__meta {
     min-width: 0;
     line-height: 1.3;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
 }
 
 .chip__name {
@@ -358,7 +357,7 @@ ol.speclist li::before {
 .chip__sub {
     font-size: 11px;
     color: var(--ink-soft);
-    margin-left: 6px;
+    margin-left: 0;
 }
 
 .chip:hover .chip__sub {
