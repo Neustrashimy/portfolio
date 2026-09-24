@@ -1,5 +1,5 @@
 /* =====================================================================
-   Portfolio — content sections
+   ポートフォリオ - 各セクション(About / Projects / History / Links / フッター)
    ===================================================================== */
 
 main {
@@ -41,21 +41,13 @@ main {
     line-height: 1;
 }
 
-.section__title .ja {
-    font-size: 0.62em;
-    font-weight: 500;
-    color: var(--ink-soft);
-    margin-left: 10px;
-    letter-spacing: 0.08em;
-}
-
 .section__lead {
     color: var(--ink-soft);
     margin: 0 0 26px;
     font-size: clamp(14px, 3.4vw, 15px);
 }
 
-/* ---- About ---- */
+/* ---- About: 自己紹介 ---- */
 .about-intro {
     display: flex;
     gap: clamp(18px, 4vw, 30px);
@@ -103,7 +95,7 @@ main {
     font-size: clamp(14px, 3.4vw, 15px);
 }
 
-/* activity cards */
+/* 活動内容のカード */
 .activities {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -165,7 +157,7 @@ main {
     word-break: break-word;
 }
 
-/* ---- list items (Projects) ---- */
+/* ---- Projects: リンクの一覧 ---- */
 .linkrow {
     display: flex;
     flex-direction: column;
@@ -219,7 +211,7 @@ main {
     opacity: 1;
 }
 
-/* ---- History ---- */
+/* ---- History: 来歴 ---- */
 .subhead {
     font-family: var(--font-mono);
     font-size: 11px;
@@ -262,8 +254,7 @@ main {
     color: var(--ink-soft);
 }
 
-/* collapsible PC history */
-/* compact spec list — PC遍歴 + VR環境 */
+/* 機器の一覧(PC 遍歴・VR 環境) */
 .speclist {
     list-style: none;
     margin: 6px 0 0;
@@ -311,10 +302,12 @@ ol.speclist li::before {
 }
 
 .spec-note::before {
-    content: "— ";
+    /* \2014 は EM DASH を表す。エスケープ直後の空白1個は区切りとして消費されるため、
+       表示用の空白と合わせて2個続けている */
+    content: "\2014  ";
 }
 
-/* ---- Links ---- */
+/* ---- Links: 外部リンク ---- */
 .linkgroup {
     margin-bottom: clamp(22px, 4vw, 34px);
 }
@@ -364,7 +357,7 @@ ol.speclist li::before {
     color: inherit;
 }
 
-/* ---- Footer ---- */
+/* ---- フッター ---- */
 footer {
     max-width: var(--measure, 760px);
     margin: 0 auto;
@@ -384,7 +377,7 @@ footer .mono {
     opacity: 0.8;
 }
 
-/* ---- Scroll reveal (subtle, motion level 2) ---- */
+/* ---- スクロール時のフェードイン(動きを減らす設定の場合は無効) ---- */
 @media (prefers-reduced-motion: no-preference) {
     .reveal {
         opacity: 0;
