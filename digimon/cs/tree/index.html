@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>デジモン進化マップ・サイバースルゥースCS編</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- ヘッダー（黒地＋ストライプはここだけ） -->
+  <header class="site-header">
+    <div class="hazard-bar" aria-hidden="true"></div>
+    <div class="header-inner">
+      <div>
+        <p class="eyebrow">Digimon Story Cyber Sleuth / Evolution Map</p>
+        <h1>デジモン進化マップ</h1>
+        <p class="sub">サイバースルゥース Complete Edition編</p>
+      </div>
+      <div class="controls">
+        <input type="search" id="search" list="names" placeholder="デジモン名で検索" aria-label="デジモン名で検索">
+        <datalist id="names"></datalist>
+        <select id="filter-race" aria-label="種族で絞り込み"><option value="">種族：すべて</option></select>
+        <select id="filter-attr" aria-label="属性で絞り込み"><option value="">属性：すべて</option></select>
+        <div class="seg" role="group" aria-label="表示範囲">
+          <button type="button" id="mode-direct" aria-pressed="true">直接のみ</button>
+          <button type="button" id="mode-all" aria-pressed="false">全系統</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="notice" id="notice" role="status" hidden></p>
+
+    <!-- 選択中デジモンの情報 -->
+    <section class="info" id="info" aria-live="polite"></section>
+
+    <!-- 種族の色の凡例 -->
+    <div class="legend race-legend">
+      <span>種族</span>
+      <span><b class="race-dot race-vaccine"></b>ワクチン</span>
+      <span><b class="race-dot race-data"></b>データ</span>
+      <span><b class="race-dot race-virus"></b>ウィルス</span>
+      <span><b class="race-dot race-free"></b>フリー</span>
+    </div>
+
+    <!-- 世代別マップ本体 -->
+    <div class="map" id="map">
+      <svg id="lines" aria-hidden="true"></svg>
+      <div id="bands"></div>
+    </div>
+  </main>
+
+  <!-- フッター（黒地＋ストライプはここだけ） -->
+  <footer class="site-footer">
+    <p class="footer-inner">デジモン進化マップ・サイバースルゥースCS編 ／ 本ツールは非公式です。</p>
+    <div class="hazard-bar" aria-hidden="true"></div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

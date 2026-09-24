@@ -1,0 +1,174 @@
+/* =====================================================================
+   デジモン進化マップ
+   本文は明るい背景で読みやすさを優先し、
+   公式サイト風の黒地・黄黒ストライプはヘッダーとフッターだけに使う
+   ===================================================================== */
+
+/* ===== 色の定義 ===== */
+:root {
+  /* 本文（明るい配色） */
+  --bg: #f2f4f7;          /* ページの地 */
+  --panel: #ffffff;       /* パネル・帯の地 */
+  --chip: #ffffff;        /* デジモンのボタンの地 */
+  --ink: #1a1f27;         /* 文字 */
+  --muted: #5d6773;       /* 補助の文字 */
+  --line: #d3d9e1;        /* 枠線 */
+  --band-line: #c9d0da;   /* 帯の枠線 */
+  --accent: #8a6a00;      /* 番号の金色（白地でも読める濃さ） */
+  --yellow: #ffd400;      /* 選択中の黄色 */
+  --evo: #0a7fd1;         /* 進化方向の色 */
+  --devo: #e06a00;        /* 退化方向の色 */
+  --focus: #1a1f27;
+  /* 種族の色 */
+  --vaccine: #1f9d5a;
+  --data: #6f52d9;
+  --virus: #d9344f;
+  --free: #7d8793;
+
+  /* ヘッダー・フッター（黒地） */
+  --dark-bg: #0d0f13;
+  --dark-ink: #f2f4f7;
+  --dark-muted: #a3acb7;
+  --dark-accent: #e5bd3a;
+  /* 黄色と黒の警告ストライプ */
+  --hazard: repeating-linear-gradient(-45deg, var(--yellow) 0 8px, #111 8px 16px);
+}
+
+[hidden] { display: none !important; }  /* hidden 属性を display 指定より優先させる */
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+.hazard-bar { height: 8px; background: var(--hazard); }
+
+/* ===== ヘッダー ===== */
+.site-header { background: var(--dark-bg); color: var(--dark-ink); }
+.site-header :focus-visible { outline-color: var(--yellow); }
+.header-inner {
+  max-width: 1200px; margin: 0 auto;
+  padding-inline: 16px; padding-block: 16px 18px;
+  display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 14px;
+}
+.eyebrow {
+  margin: 0; color: var(--dark-accent);
+  font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+}
+h1 { margin: 2px 0 0; font-size: 28px; font-weight: 900; line-height: 1.25; letter-spacing: 0.02em; }
+.sub { color: var(--dark-muted); font-size: 12px; margin: 4px 0 0; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+
+input[type="search"], select {
+  font: inherit; color: var(--ink); background: #fff;
+  border: 1px solid var(--line); border-radius: 4px; padding: 6px 10px;
+}
+input[type="search"] { width: 14em; max-width: 100%; }
+button {
+  font: inherit; color: var(--ink); background: var(--chip);
+  border: 1px solid var(--line); border-radius: 4px; padding: 6px 12px; cursor: pointer;
+}
+button:hover { border-color: var(--muted); }
+
+/* 表示モード切り替え（直接 / 全系統） */
+.seg { display: inline-flex; border: 1px solid #3a414c; border-radius: 4px; overflow: hidden; }
+.seg button { border: 0; border-radius: 0; background: #1d2129; color: var(--dark-ink); }
+.seg button[aria-pressed="true"] { background: var(--yellow); color: #000; font-weight: 700; }
+
+/* ===== 本文 ===== */
+.wrap { max-width: 1200px; margin: 0 auto; padding-inline: 16px; padding-block: 16px 40px; }
+
+/* ===== 選択中デジモンの情報バー ===== */
+.info {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10;
+  padding: 10px 14px;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(20, 30, 45, 0.08);
+  display: grid; gap: 6px;
+}
+.info-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; }
+.info-name { font-weight: 700; font-size: 17px; }
+.info-stage { color: var(--muted); font-size: 12px; }
+.info-no { font-size: 12px; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
+.unknown { color: var(--muted); font-size: 12px; }
+.info-row { display: flex; flex-wrap: wrap; gap: 4px 6px; align-items: center; font-size: 13px; }
+.info-label { font-size: 12px; font-weight: 700; color: var(--muted); min-width: 4.5em; }
+.info-label.evo { color: var(--evo); }
+.info-label.devo { color: var(--devo); }
+.link-chip { padding: 1px 8px; font-size: 12px; border-radius: 999px; }
+.none { color: var(--muted); font-size: 12px; }
+.legend { display: flex; gap: 14px; font-size: 12px; color: var(--muted); }
+.legend i { display: inline-block; width: 18px; height: 3px; vertical-align: middle; margin-right: 4px; border-radius: 2px; }
+
+/* ===== 世代別マップ ===== */
+.map { position: relative; margin-top: 12px; }
+.map svg { position: absolute; inset: 0; z-index: 2; pointer-events: none; overflow: visible; }
+.band {
+  display: grid; grid-template-columns: 6.5em 1fr; gap: 12px;
+  background: var(--panel); border: 1px solid var(--band-line); border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 28px; /* 帯の間に線を通すすき間 */
+}
+.band-label { font-size: 16px; font-weight: 700; line-height: 1.35; }
+.band-count { display: block; font-size: 11px; font-weight: 400; color: var(--muted); font-variant-numeric: tabular-nums; }
+.nodes { display: flex; flex-wrap: wrap; gap: 6px; align-content: flex-start; align-items: flex-start; }
+.node {
+  position: relative; z-index: 3;
+  padding: 3px 9px; font-size: 13px; border-radius: 4px;
+  background: var(--chip); border: 1px solid var(--line);
+  transition: opacity .15s;
+}
+
+/* 選択中は関係ないデジモンを薄く表示 */
+.map.has-selection .node { opacity: 0.3; }
+.map.has-selection .node.is-next,
+.map.has-selection .node.is-prev,
+.map.has-selection .node.is-selected { opacity: 1; }
+/* 絞り込みで外れたものは、選択状態より優先してさらに薄くする（後に書いて上書き） */
+.node.is-filtered-out,
+.map.has-selection .node.is-filtered-out { opacity: 0.18; }
+.node.is-next { border-color: var(--evo); box-shadow: inset 0 0 0 1px var(--evo); }
+.node.is-prev { border-color: var(--devo); box-shadow: inset 0 0 0 1px var(--devo); }
+.node.is-selected { background: var(--yellow); color: #000; font-weight: 700; border-color: #c9a600; box-shadow: none; }
+
+/* ===== マウスを乗せたデジモンまでのルートを強調 ===== */
+/* 重なり順：ルート上のデジモン(5) ＞ 線(4) ＞ その他のデジモン(3)
+   → 線が経由しない他のデジモンの上を通り、ルート上のデジモンの名前は隠さない */
+.map.has-path svg { z-index: 4; }
+.map.has-path .node.is-on-path { z-index: 5; }
+
+/* ルート外の線と、ルート外の強調中デジモンは控えめにする */
+.map.has-path #lines path { stroke-opacity: 0.1; }
+.map.has-path #lines path.on-path { stroke-opacity: 1; stroke-width: 3.5; }
+.map.has-path .node.is-next:not(.is-on-path):not(.is-filtered-out),
+.map.has-path .node.is-prev:not(.is-on-path):not(.is-filtered-out) { opacity: 0.5; box-shadow: none; }
+
+.node.is-on-path.is-next { box-shadow: 0 0 0 2px var(--evo); }
+.node.is-on-path.is-prev { box-shadow: 0 0 0 2px var(--devo); }
+
+/* 種族の色の丸（ノードと凡例で共用） */
+.race-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; }
+.race-vaccine { background: var(--vaccine); }
+.race-data { background: var(--data); }
+.race-virus { background: var(--virus); }
+.race-free { background: var(--free); }
+.race-legend { margin-top: 12px; flex-wrap: wrap; }
+
+.notice { font-size: 12px; color: var(--devo); margin: 0 0 10px; }
+
+/* ===== フッター ===== */
+.site-footer { background: var(--dark-bg); color: var(--dark-muted); }
+.footer-inner { max-width: 1200px; margin: 0 auto; padding-inline: 16px; padding-block: 16px; font-size: 12px; }
+
+@media (max-width: 560px) {
+  h1 { font-size: 24px; }
+  .band { grid-template-columns: 1fr; gap: 6px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .node { transition: none; }
+}
